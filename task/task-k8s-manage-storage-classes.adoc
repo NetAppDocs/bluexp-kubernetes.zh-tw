@@ -25,10 +25,20 @@ NOTE: 如果未定義儲存類別、叢集將顯示需要採取行動。按兩�
 
 .步驟
 . 從Canvas,將Kubernetes工作環境拖放到Cloud Volumes ONTAP 支援ONTAP 動作環境的支援區或Amazon FSX來開啟儲存類別精靈。
-. 提供儲存類別的名稱、選取定義選項、然後按一下*下一步*。
+. 提供儲存類別的名稱。
+. 選擇*檔案系統*或*區塊*儲存設備。
 +
-image:screenshot-k8s-define-storage-class.png["顯示K8s儲存類別定義選項的快照。"]
+.. 對於*區塊*儲存設備、請選取檔案系統類型（fstype）
++
+image:screenshot-k8s-storage-economy.png["在設定K8s儲存類別時、顯示區塊儲存的fstype,選項的快照。"]
 
+.. 對於*區塊*或*檔案系統*儲存設備、您可以選擇啟用儲存經濟效益。
++
+image:screenshot-k8s-storage-fstype.png["在設定區塊或檔案K8s儲存類別時、顯示「儲存經濟」選項的快照。"]
+
+
+
+. 選取Volume擴充、Volume集區和預設儲存類別的選項。單擊 * 下一步 * 。
 . 選取要連線至叢集的工作環境。按一下「 * 新增 * 」。
 +
 image:screenshot-k8s-select-storage-class.png["顯示Kubernetes叢集工作環境選擇的快照。"]

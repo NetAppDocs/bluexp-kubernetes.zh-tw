@@ -178,7 +178,6 @@
   <block id="bbbbc9a2d885b7fef0cb7769ac9bd15e" category="paragraph">您需要在每個Kubernetes叢集上授權Connector角色、以便Connector探索及管理叢集。</block>
   <block id="6b3760e9ce2bfd92685feda2753e312f" category="list-text">備份與還原</block>
   <block id="2dcb994cc66baaaa5ac5f51a666cc470" category="list-text">備份與還原僅需基本授權。</block>
-  <block id="589cddcfb97ddd817654b8448e583560" category="list-text">若要使用Cloud Manager新增儲存類別、則需要擴大授權。</block>
   <block id="e38848cde65bc177038607eba51773c3" category="list-text">安裝Astra Trident</block>
   <block id="0cc29c3016f8edd45e66cfd491cc35e4" category="list-text">您必須提供Cloud Manager完整授權、才能安裝Astra Trident。</block>
   <block id="6ddcbf7c123160275093489b09f57178" category="admonition">安裝Astra Trident時、Cloud Manager會安裝Astra Trident後端和Kubernetes機密、其中包含Astra Trident與儲存叢集通訊所需的認證資料。</block>
@@ -282,9 +281,6 @@
   <block id="fd007b3e14f8b08692b19f1bf6b9ae5b" category="paragraph"><block ref="fd007b3e14f8b08692b19f1bf6b9ae5b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5af4fd067fdcfc2366829de01d0a1fe4" category="paragraph">安裝最新版的Astra Trident。您現在可以新增儲存類別。</block>
   <block id="63c24f9994279591340cd89dcb19f3cd" category="summary">將託管Kubernetes叢集新增至Canvas之後、您可以使用Cloud Manager來管理儲存類別。</block>
-  <block id="6a8b915c7d54f345c01102c31e00f7e1" category="list-text">提供儲存類別的名稱、選取定義選項、然後按一下*下一步*。</block>
-  <block id="26e844784a066d14af9464e1c0366829" category="inline-image-macro">顯示K8s儲存類別定義選項的快照。</block>
-  <block id="2204d229f6006a328688918431aab2cf" category="paragraph"><block ref="2204d229f6006a328688918431aab2cf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="46213c151b950647dd4e20d3c0e13222" category="list-text">選取要連線至叢集的工作環境。按一下「 * 新增 * 」。</block>
   <block id="e0c9fa0852fea63dc1167ab3f2b85fb4" category="inline-image-macro">顯示Kubernetes叢集工作環境選擇的快照。</block>
   <block id="6f78048f5e23feba1c2dfeeb70958d2b" category="paragraph">您可以按一下、從Kubernetes叢集的資源頁面檢視儲存類別。</block>
@@ -487,4 +483,22 @@
   <block id="9a0e220ebe1a9271b56057d3ae4b2a8f" category="paragraph">將受管理的Kubernetes叢集新增至Canvases之後、您可以使用Cloud Manager來管理儲存類別。</block>
   <block id="319a42bc8932c7d4f9387e0c5de9c64c" category="list-text">從Canvas,將Kubernetes工作環境拖放到Cloud Volumes ONTAP 支援ONTAP 動作環境的支援區或Amazon FSX來開啟儲存類別精靈。</block>
   <block id="622535c1c45bf857c104b24a29a940e1" category="paragraph"><block ref="622535c1c45bf857c104b24a29a940e1" category="inline-link-rx"></block></block>
+  <block id="1ccfa8d0f204060ee0f11f2c9eb14095" category="list-text">提供儲存類別的名稱。</block>
+  <block id="c6433cee19c85bb6d8ae6aa94d0f3e29" category="list-text">選擇*檔案系統*或*區塊*儲存設備。</block>
+  <block id="41e48ca5b3f40412908aef4ef536c2c8" category="list-text">對於*區塊*儲存設備、請選取檔案系統類型（fstype）</block>
+  <block id="a021b0b7caf02edd4dae76afb277c7fc" category="inline-image-macro">在設定K8s儲存類別時、顯示區塊儲存的fstype,選項的快照。</block>
+  <block id="f414d56bf773fadbe8e9de31efd23ebc" category="paragraph"><block ref="f414d56bf773fadbe8e9de31efd23ebc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c8eab1b571514f2581e71f1d62ef0a5c" category="list-text">對於*區塊*或*檔案系統*儲存設備、您可以選擇啟用儲存經濟效益。</block>
+  <block id="6b1835b63a667b5d28c6cf5c193ebf6d" category="inline-image-macro">在設定區塊或檔案K8s儲存類別時、顯示「儲存經濟」選項的快照。</block>
+  <block id="65d13d9fa0f964d7b46973f76d2582f8" category="paragraph"><block ref="65d13d9fa0f964d7b46973f76d2582f8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ab5290e8336f16751587ce4bb04bee9a" category="list-text">選取Volume擴充、Volume集區和預設儲存類別的選項。單擊 * 下一步 * 。</block>
+  <block id="ecf10a2bcba311fc1c4036564af2f5af" category="admonition">Cloud Manager會監控Kubernetes叢集是否有變更後端、並在新增新磁碟區時更新持續Volume表格。如果在叢集上設定了自動備份、則會在新的持續磁碟區上自動啟用備份。</block>
+  <block id="4e3c799b30496977a0099e6679f9e67f" category="list-text">若要使用Cloud Manager新增儲存類別、並監控叢集對後端的變更、則需要擴充授權。</block>
+  <block id="3f10ba55f7b5ee2ce092504fcea72477" category="section-title">2022年7月31日</block>
+  <block id="5b68f6193aeecc12614fe4ce8bedf31e" category="list-text">Cloud Manager現在可以使用儲存類別中的新「-watch」動詞、備份及還原Yaml組態、監控Kubernetes叢集對叢集後端所做的變更、並在叢集上設定自動備份時、自動為新的持續磁碟區啟用備份。</block>
+  <block id="26b17225b626fb9238849fd60eabdf60" category="paragraph">+</block>
+  <block id="eb3b05e2bcc0acdca8f3706dc6168810" category="inline-link-macro">定義儲存類別</block>
+  <block id="4d7aa2608f19ed6007e314a1e829a7f0" category="list-text">何時 <block ref="44765f3a3e8511cc80b0083ae1e5f436" category="inline-link-macro-rx"></block>、您現在可以：</block>
+  <block id="41ee8bf0ce0084d7bbc703ebd0503f3f" category="list-text">指定區塊儲存的檔案系統類型（fstype-）</block>
+  <block id="3fce6f9d08f0fed5c965732f940ad498" category="list-text">為區塊和檔案儲存提供儲存經濟效益</block>
 </blocks>

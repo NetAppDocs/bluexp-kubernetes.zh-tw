@@ -110,7 +110,7 @@ image:diagram_kubernetes.png["EKS Kubernetes叢集的架構圖、以及其在Clo
 需要不同的授權才能啟用不同的功能。
 
 備份與還原:: 備份與還原僅需基本授權。
-新增儲存類別:: 若要使用Cloud Manager新增儲存類別、則需要擴大授權。
+新增儲存類別:: 若要使用Cloud Manager新增儲存類別、並監控叢集對後端的變更、則需要擴充授權。
 安裝Astra Trident:: 您必須提供Cloud Manager完整授權、才能安裝Astra Trident。
 +
 --
@@ -144,12 +144,14 @@ rules:
           - namespaces
       verbs:
           - list
+          - watch
     - apiGroups:
           - ''
       resources:
           - persistentvolumes
       verbs:
           - list
+          - watch
     - apiGroups:
           - ''
       resources:
@@ -158,6 +160,7 @@ rules:
       verbs:
           - get
           - list
+          - watch
     - apiGroups:
           - ''
       resources:
@@ -165,6 +168,7 @@ rules:
       verbs:
           - list
           - create
+          - watch
     - apiGroups:
           - storage.k8s.io
       resources:
@@ -177,12 +181,14 @@ rules:
           - tridentbackends
       verbs:
           - list
+          - watch
     - apiGroups:
           - trident.netapp.io
       resources:
           - tridentorchestrators
       verbs:
           - get
+          - watch
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
@@ -221,8 +227,10 @@ rules:
       verbs:
           - get
           - list
+          - watch
           - create
           - delete
+          - watch
     - apiGroups:
           - storage.k8s.io
       resources:
@@ -231,6 +239,7 @@ rules:
           - get
           - create
           - list
+          - watch
           - delete
           - patch
     - apiGroups:
@@ -242,8 +251,10 @@ rules:
       verbs:
           - get
           - list
+          - watch
           - create
           - delete
+          - watch
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding

@@ -18,6 +18,44 @@ summary: 瞭解Cloud Manager Kubernetes的新功能。
 
 
 
+== 2022年7月31日
+
+* Cloud Manager現在可以使用儲存類別中的新「-watch」動詞、備份及還原Yaml組態、監控Kubernetes叢集對叢集後端所做的變更、並在叢集上設定自動備份時、自動為新的持續磁碟區啟用備份。
++
+ifdef::aws[]
+
+
+
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aws.html["AWS中Kubernetes叢集的需求"]
+
+endif::aws[]
+
++
+
+ifdef::azure[]
+
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aks.html["Azure中Kubernetes叢集的需求"]
+
+endif::azure[]
+
++
+
+ifdef::gcp[]
+
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-gke.html["Google Cloud中Kubernetes叢集的需求"]
+
+endif::gcp[]
+
+* 何時 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["定義儲存類別"]、您現在可以：
++
+** 指定區塊儲存的檔案系統類型（fstype-）
+** 為區塊和檔案儲存提供儲存經濟效益
+
+
+
+
+
+
 == 2022年7月3日
 
 * 如果使用Trident營運者部署了Astra Trident、您現在可以使用Cloud Manager升級至最新版的Astra Trident。
