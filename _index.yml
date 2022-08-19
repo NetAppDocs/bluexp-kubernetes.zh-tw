@@ -13,24 +13,18 @@ indexpage:
   - title: 需求
     links:
     - title: AWS上的Kubernetes叢集
-      flavor: aws
       url: "/requirements/kubernetes-reqs-aws.html"
     - title: Azure上的Kubernetes叢集
-      flavor: azure
       url: "/requirements/kubernetes-reqs-aks.html"
     - title: Google Cloud上的Kubernetes叢集
-      flavor: gcp
       url: "/requirements/kubernetes-reqs-gke.html"
   - title: 新增Kubernetes叢集
     links:
     - title: 在AWS上新增叢集
-      flavor: aws
       url: "/task/task-kubernetes-discover-aws.html"
     - title: 在Azure上新增叢集
-      flavor: azure
       url: "/task/task-kubernetes-discover-azure.html"
     - title: 在Google Cloud上新增叢集
-      flavor: gcp
       url: "/task/task-kubernetes-discover-gke.html"
   - title: 管理Kubernetes叢集
     links:
