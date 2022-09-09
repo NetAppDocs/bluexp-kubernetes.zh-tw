@@ -429,19 +429,6 @@
   <block id="187496d0d891ffe76a43f6ffdd995505" category="paragraph"><block ref="187496d0d891ffe76a43f6ffdd995505" category="inline-link-macro-rx"></block></block>
   <block id="e72a8a52b20d0b466a3152c8c60b4f2b" category="paragraph"><block ref="e72a8a52b20d0b466a3152c8c60b4f2b" category="inline-link-macro-rx"></block></block>
   <block id="09e2861e1b9bab7606bd9fd36b62d621" category="paragraph"><block ref="09e2861e1b9bab7606bd9fd36b62d621" category="inline-link-macro-rx"></block></block>
-  <block id="e29d7c0b36af68edd13ebac84f15b44b" category="sidebar">雲端供應商</block>
-  <block id="46aef2e5080a5347df1ce7546e1be1df" category="sidebar">所有雲端供應商</block>
-  <block id="6beccc67ff905f7da0b29dece26b0485" category="sidebar">Amazon Web Services</block>
-  <block id="4847e034bb0a55fcbc8a3380d6a3ab80" category="sidebar">AWS</block>
-  <block id="56ef2682280ac110060b881925a87b80" category="sidebar">Google Cloud</block>
-  <block id="1668ca1bd914c1d847f23b491319ac91" category="sidebar">Microsoft Azure</block>
-  <block id="3a580f142203677f1f0bc30898f63f53" category="sidebar">Azure</block>
-  <block id="5a81378cdc7edd9ea960cf02d6ca78d2" category="paragraph">ifdef::aws[]</block>
-  <block id="6beb2fa01dc121194547db1bfbe03408" category="paragraph">endif::aws[]</block>
-  <block id="b010c7530103ef9947582474d65ff9a3" category="paragraph">ifdef::azure[]</block>
-  <block id="879701946bb2bc7241d0f85fd843455a" category="paragraph">endif::azure[]</block>
-  <block id="6e1e9c83b80f4d22d34cbdf60a71383b" category="paragraph">ifdef::gcp[]</block>
-  <block id="310c228207a0f8446bbe4c5d16978cb7" category="paragraph">endif::gcp[]</block>
   <block id="9caa4ae51ebcef018806ad6f192f8ff2" category="paragraph"><block ref="9caa4ae51ebcef018806ad6f192f8ff2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8fe98c5be333c8d7ddf225ff536de10d" category="paragraph"><block ref="8fe98c5be333c8d7ddf225ff536de10d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d3addf40fe274281b5a1b857dc827df3" category="admonition">如果未定義儲存類別、叢集將顯示需要採取行動。按兩下畫版上的叢集、會開啟動作頁面以新增儲存類別。</block>
@@ -491,14 +478,13 @@
   <block id="c8eab1b571514f2581e71f1d62ef0a5c" category="list-text">對於*區塊*或*檔案系統*儲存設備、您可以選擇啟用儲存經濟效益。</block>
   <block id="6b1835b63a667b5d28c6cf5c193ebf6d" category="inline-image-macro">在設定區塊或檔案K8s儲存類別時、顯示「儲存經濟」選項的快照。</block>
   <block id="65d13d9fa0f964d7b46973f76d2582f8" category="paragraph"><block ref="65d13d9fa0f964d7b46973f76d2582f8" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ab5290e8336f16751587ce4bb04bee9a" category="list-text">選取Volume擴充、Volume集區和預設儲存類別的選項。單擊 * 下一步 * 。</block>
   <block id="ecf10a2bcba311fc1c4036564af2f5af" category="admonition">Cloud Manager會監控Kubernetes叢集是否有變更後端、並在新增新磁碟區時更新持續Volume表格。如果在叢集上設定了自動備份、則會在新的持續磁碟區上自動啟用備份。</block>
   <block id="4e3c799b30496977a0099e6679f9e67f" category="list-text">若要使用Cloud Manager新增儲存類別、並監控叢集對後端的變更、則需要擴充授權。</block>
   <block id="3f10ba55f7b5ee2ce092504fcea72477" category="section-title">2022年7月31日</block>
   <block id="5b68f6193aeecc12614fe4ce8bedf31e" category="list-text">Cloud Manager現在可以使用儲存類別中的新「-watch」動詞、備份及還原Yaml組態、監控Kubernetes叢集對叢集後端所做的變更、並在叢集上設定自動備份時、自動為新的持續磁碟區啟用備份。</block>
-  <block id="26b17225b626fb9238849fd60eabdf60" category="paragraph">+</block>
   <block id="eb3b05e2bcc0acdca8f3706dc6168810" category="inline-link-macro">定義儲存類別</block>
   <block id="4d7aa2608f19ed6007e314a1e829a7f0" category="list-text">何時 <block ref="44765f3a3e8511cc80b0083ae1e5f436" category="inline-link-macro-rx"></block>、您現在可以：</block>
   <block id="41ee8bf0ce0084d7bbc703ebd0503f3f" category="list-text">指定區塊儲存的檔案系統類型（fstype-）</block>
   <block id="3fce6f9d08f0fed5c965732f940ad498" category="list-text">為區塊和檔案儲存提供儲存經濟效益</block>
+  <block id="f7fcb1352aec0188a9f059c28c8b96f2" category="list-text">選取Volume擴充、Volume繫結及預設儲存類別的選項。單擊 * 下一步 * 。</block>
 </blocks>
