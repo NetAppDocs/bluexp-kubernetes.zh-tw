@@ -1,0 +1,45 @@
+---
+sidebar: sidebar 
+permalink: /task/task-kubernetes-discover-openshift.html 
+keywords: kubernetes, k8s, discover kubernetes cluster, discover k8s, openshift, kubernetes support, import kubernetes cluster, import 
+summary: 將自我管理的OpenShift叢集匯入Cloud Manager、以便開始將持續的磁碟區備份到雲端供應商。 
+---
+= 將OpenShift叢集新增至Cloud Manager
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+將自我管理的OpenShift叢集匯入Cloud Manager、以便開始將持續的磁碟區備份到雲端供應商。
+
+
+
+== 匯入叢集
+
+您可以使用Kubernetes組態檔匯入自我管理的Kubernetes叢集。
+
+在新增OpenShift叢集之前、您需要：
+
+* 您在其中建立的「kubeconfig」檔案 link:../requirements/kubernetes-reqs-openshift.html/#create-a-kubeconfig-file["建立Kbeconfig檔案"]。
+* 叢集的公開憑證授權單位（例如、ca．crt）、用戶端金鑰（例如TLS．key）和用戶端憑證（例如TLS．crt）檔案。
+
+
+.步驟
+. 在* Canvas*上、選取*新增工作環境*。
+. 選擇您的雲端供應商、然後選擇* Kubernetes Cluster*、再選擇* Next*。
+. 選擇*匯入叢集*、然後選擇*下一步*。
+. 上傳您在中建立的「kubeconfig-SA」檔案 link:../requirements/kubernetes-reqs-openshift.html/#create-a-kubeconfig-file["建立Kbeconfig檔案"]。選取Kubernetes叢集、然後選取* Next*。
++
+image:screenshot-k8s-aks-import-1.png["匯入Kubernetes叢集頁面的快照、內含組態檔和可用叢集表格。"]
+
+. 上傳叢集憑證。
++
+image:screenshot-oc-certs.png["叢集憑證上傳畫面的快照。"]
+
+
+
+Cloud Manager會將Kubernetes叢集新增至Canvas.

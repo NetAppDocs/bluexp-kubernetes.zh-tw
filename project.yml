@@ -32,6 +32,8 @@ sidebar:
     - title: Google Cloud上的Kubernetes叢集
       flavor: gcp
       url: "/requirements/kubernetes-reqs-gke.html"
+    - title: OpenShift上的Kubernetes叢集
+      url: "/requirements/kubernetes-reqs-openshift.html"
   - title: 新增Kubernetes叢集
     entries:
     - title: 在AWS上新增叢集
@@ -43,6 +45,8 @@ sidebar:
     - title: 在Google Cloud上新增叢集
       flavor: gcp
       url: "/task/task-kubernetes-discover-gke.html"
+    - title: 在OpenShift上新增叢集
+      url: "/task/task-kubernetes-discover-openshift.html"
   - title: 管理Kubernetes叢集
     url: "/concept-manage-k8s.html"
     entries:

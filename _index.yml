@@ -18,6 +18,8 @@ indexpage:
       url: "/requirements/kubernetes-reqs-aks.html"
     - title: Google Cloud上的Kubernetes叢集
       url: "/requirements/kubernetes-reqs-gke.html"
+    - title: OpenShift上的Kubernetes叢集
+      url: "/requirements/kubernetes-reqs-openshift.html"
   - title: 新增Kubernetes叢集
     links:
     - title: 在AWS上新增叢集
@@ -26,6 +28,8 @@ indexpage:
       url: "/task/task-kubernetes-discover-azure.html"
     - title: 在Google Cloud上新增叢集
       url: "/task/task-kubernetes-discover-gke.html"
+    - title: 在OpenShift上新增叢集
+      url: "/task/task-kubernetes-discover-openshift.html"
   - title: 管理Kubernetes叢集
     links:
     - title: 安裝Astra Trident

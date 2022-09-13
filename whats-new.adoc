@@ -18,6 +18,16 @@ summary: 瞭解Cloud Manager Kubernetes的新功能。
 
 
 
+== 2022年9月18日
+
+您現在可以將自我管理的OpenShift叢集匯入Cloud Manager。
+
+* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-openshift.html["OpenShift中的Kubernetes叢集需求"]
+* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-add-openshift.html["將OpenShift叢集新增至Cloud Manager"]
+
+
+
+
 == 2022年7月31日
 
 * Cloud Manager現在可以使用儲存類別中的新「-watch」動詞、備份及還原Yaml組態、監控Kubernetes叢集對叢集後端所做的變更、並在叢集上設定自動備份時、自動為新的持續磁碟區啟用備份。
@@ -30,12 +40,7 @@ link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kuberne
 +
 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-gke.html["Google Cloud中Kubernetes叢集的需求"]
 
-* 何時 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["定義儲存類別"]、您現在可以：
-+
-** 指定區塊儲存的檔案系統類型（fstype-）
-** 為區塊和檔案儲存提供儲存經濟效益
-
-
+* 何時 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["定義儲存類別"]、您現在可以為區塊儲存指定檔案系統類型（fstype-）。
 
 
 

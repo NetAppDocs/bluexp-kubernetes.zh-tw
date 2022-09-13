@@ -471,20 +471,68 @@
   <block id="319a42bc8932c7d4f9387e0c5de9c64c" category="list-text">從Canvas,將Kubernetes工作環境拖放到Cloud Volumes ONTAP 支援ONTAP 動作環境的支援區或Amazon FSX來開啟儲存類別精靈。</block>
   <block id="622535c1c45bf857c104b24a29a940e1" category="paragraph"><block ref="622535c1c45bf857c104b24a29a940e1" category="inline-link-rx"></block></block>
   <block id="1ccfa8d0f204060ee0f11f2c9eb14095" category="list-text">提供儲存類別的名稱。</block>
-  <block id="c6433cee19c85bb6d8ae6aa94d0f3e29" category="list-text">選擇*檔案系統*或*區塊*儲存設備。</block>
-  <block id="41e48ca5b3f40412908aef4ef536c2c8" category="list-text">對於*區塊*儲存設備、請選取檔案系統類型（fstype）</block>
   <block id="a021b0b7caf02edd4dae76afb277c7fc" category="inline-image-macro">在設定K8s儲存類別時、顯示區塊儲存的fstype,選項的快照。</block>
-  <block id="f414d56bf773fadbe8e9de31efd23ebc" category="paragraph"><block ref="f414d56bf773fadbe8e9de31efd23ebc" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c8eab1b571514f2581e71f1d62ef0a5c" category="list-text">對於*區塊*或*檔案系統*儲存設備、您可以選擇啟用儲存經濟效益。</block>
-  <block id="6b1835b63a667b5d28c6cf5c193ebf6d" category="inline-image-macro">在設定區塊或檔案K8s儲存類別時、顯示「儲存經濟」選項的快照。</block>
-  <block id="65d13d9fa0f964d7b46973f76d2582f8" category="paragraph"><block ref="65d13d9fa0f964d7b46973f76d2582f8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ecf10a2bcba311fc1c4036564af2f5af" category="admonition">Cloud Manager會監控Kubernetes叢集是否有變更後端、並在新增新磁碟區時更新持續Volume表格。如果在叢集上設定了自動備份、則會在新的持續磁碟區上自動啟用備份。</block>
   <block id="4e3c799b30496977a0099e6679f9e67f" category="list-text">若要使用Cloud Manager新增儲存類別、並監控叢集對後端的變更、則需要擴充授權。</block>
   <block id="3f10ba55f7b5ee2ce092504fcea72477" category="section-title">2022年7月31日</block>
   <block id="5b68f6193aeecc12614fe4ce8bedf31e" category="list-text">Cloud Manager現在可以使用儲存類別中的新「-watch」動詞、備份及還原Yaml組態、監控Kubernetes叢集對叢集後端所做的變更、並在叢集上設定自動備份時、自動為新的持續磁碟區啟用備份。</block>
   <block id="eb3b05e2bcc0acdca8f3706dc6168810" category="inline-link-macro">定義儲存類別</block>
-  <block id="4d7aa2608f19ed6007e314a1e829a7f0" category="list-text">何時 <block ref="44765f3a3e8511cc80b0083ae1e5f436" category="inline-link-macro-rx"></block>、您現在可以：</block>
-  <block id="41ee8bf0ce0084d7bbc703ebd0503f3f" category="list-text">指定區塊儲存的檔案系統類型（fstype-）</block>
-  <block id="3fce6f9d08f0fed5c965732f940ad498" category="list-text">為區塊和檔案儲存提供儲存經濟效益</block>
   <block id="f7fcb1352aec0188a9f059c28c8b96f2" category="list-text">選取Volume擴充、Volume繫結及預設儲存類別的選項。單擊 * 下一步 * 。</block>
+  <block id="f7ba76d5c9beab0576f118a6254843e9" category="section-title">2022年9月18日</block>
+  <block id="d8d8980dd9fc5d0937a35fea8cb24808" category="paragraph">您現在可以將自我管理的OpenShift叢集匯入Cloud Manager。</block>
+  <block id="b77adae4ee23d10b92f9545417611303" category="inline-link-macro">OpenShift中的Kubernetes叢集需求</block>
+  <block id="fd4ea134fa6bbf226ead48569ec25aaa" category="list-text"><block ref="fd4ea134fa6bbf226ead48569ec25aaa" category="inline-link-macro-rx"></block></block>
+  <block id="f82e729d73d970e1bd3789638aed5dca" category="inline-link-macro">將OpenShift叢集新增至Cloud Manager</block>
+  <block id="049c95d2615dd6bba6242ffae7eae5fe" category="list-text"><block ref="049c95d2615dd6bba6242ffae7eae5fe" category="inline-link-macro-rx"></block></block>
+  <block id="19e7864b32363d7ba3bb16a024e95d79" category="list-text">何時 <block ref="44765f3a3e8511cc80b0083ae1e5f436" category="inline-link-macro-rx"></block>、您現在可以為區塊儲存指定檔案系統類型（fstype-）。</block>
+  <block id="3c2adb793409d16c72d81d49ec7cd745" category="summary">將自我管理的OpenShift叢集匯入Cloud Manager、以便開始將持續的磁碟區備份到雲端供應商。</block>
+  <block id="1d0aa2134f57ae761efb59f68c5d0044" category="paragraph">將自我管理的OpenShift叢集匯入Cloud Manager、以便開始將持續的磁碟區備份到雲端供應商。</block>
+  <block id="775f8efc928538f555b4520733a0825d" category="paragraph">在新增OpenShift叢集之前、您需要：</block>
+  <block id="d795d581b00d494d8c6250bb5e1fcf89" category="inline-link-macro">建立Kbeconfig檔案</block>
+  <block id="40582f5905c5438cc50d0b3856d01bdd" category="list-text">您在其中建立的「kubeconfig」檔案 <block ref="8753453e8f212c09749310e708af84b1" category="inline-link-macro-rx"></block>。</block>
+  <block id="e7076b96b4cfb7668eac66eb624334ad" category="list-text">叢集的公開憑證授權單位（例如、ca．crt）、用戶端金鑰（例如TLS．key）和用戶端憑證（例如TLS．crt）檔案。</block>
+  <block id="17011a566ae4f46bae81e507282825fb" category="list-text">在* Canvas*上、選取*新增工作環境*。</block>
+  <block id="4c031f22edba9db9f5529644e071eb8a" category="list-text">選擇您的雲端供應商、然後選擇* Kubernetes Cluster*、再選擇* Next*。</block>
+  <block id="02ebc3697d40233b9c554520eda51f25" category="list-text">選擇*匯入叢集*、然後選擇*下一步*。</block>
+  <block id="de6737449407eb5afbd77e9794daa605" category="list-text">上傳您在中建立的「kubeconfig-SA」檔案 <block ref="8753453e8f212c09749310e708af84b1" category="inline-link-macro-rx"></block>。選取Kubernetes叢集、然後選取* Next*。</block>
+  <block id="7c371426945f4674b445faa898f442c8" category="list-text">上傳叢集憑證。</block>
+  <block id="40a58da0341e721e033a4cf334d62ab0" category="inline-image-macro">叢集憑證上傳畫面的快照。</block>
+  <block id="95a989ce51f5125f1cda095e21371ee7" category="paragraph"><block ref="95a989ce51f5125f1cda095e21371ee7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="11fdcf36bc2c8b5bfd93e6121adc30e4" category="list-text">選擇*檔案系統*或*區塊*儲存設備。對於*區塊*儲存設備、請選取檔案系統類型（fstype）。</block>
+  <block id="1688bddc71d0ab83d2459fc2d264cbe0" category="paragraph"><block ref="1688bddc71d0ab83d2459fc2d264cbe0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="157f04e8460a66677d3d8d3b9e7d3b2a" category="summary">您可以使用Cloud Manager新增及管理自我管理的OpenShift Kubernetes叢集。在將叢集新增至Cloud Manager之前、請先確保符合下列需求。</block>
+  <block id="28c5fcd62b4a87354b50e4967cd0022a" category="list-text">需要Cloud Manager Connector才能匯入及管理Kubernetes叢集。您需要建立新的Connector、或是使用具有雲端供應商所需權限的現有Connector：</block>
+  <block id="78f4011ce4eec11823de490a29f344e7" category="inline-link-macro">AWS連接器</block>
+  <block id="cffb555a0390870f6d957bab2b87008e" category="list-text"><block ref="cffb555a0390870f6d957bab2b87008e" category="inline-link-macro-rx"></block></block>
+  <block id="625f50cfccef81e43215d5f35b6122fe" category="inline-link-macro">Azure Connector</block>
+  <block id="c8a8cbc981f0028a05bbbdbdef98749c" category="list-text"><block ref="c8a8cbc981f0028a05bbbdbdef98749c" category="inline-link-macro-rx"></block></block>
+  <block id="6d75f957aed766005dc3be4d9f8c4ec5" category="inline-link-macro">Google Cloud Connector</block>
+  <block id="e51199bdde0640d2bca477ecdc555e8f" category="list-text"><block ref="e51199bdde0640d2bca477ecdc555e8f" category="inline-link-macro-rx"></block></block>
+  <block id="9703b589f82c3c63870b38bf11559988" category="list-text">Kubernetes叢集和Connector之間、以及Kubernetes叢集和Cloud Volumes ONTAP 整個過程之間、都需要網路連線。</block>
+  <block id="890de07cb51c2692baea480106b633e1" category="list-text">具有RBAC授權的Kubernetes組態檔（Kubeconfig）</block>
+  <block id="01c29ea434ec706b9c6a08114a6edec6" category="list-text">若要匯入OpenShift叢集、您需要具備RBAC授權的Kbeconfig檔案、才能啟用不同的功能。 <block ref="e356c2da27abb1a00cc68449c7fb7c0f" category="inline-xref-macro-rx"></block>。</block>
+  <block id="71555b5b57250c45d25fb80d40ba1a02" category="list-text">備份與還原：備份與還原僅需基本授權。</block>
+  <block id="da3cca107e2faeb6cc5e537d940ecafc" category="list-text">新增儲存類別：需要擴充授權、才能使用Cloud Manager新增儲存類別、並監控叢集是否有變更後端。</block>
+  <block id="02bb014d52bfff4da8649fb7d63c8c4e" category="list-text">安裝Astra Trident：您需要提供Cloud Manager完整授權、才能安裝Astra Trident。</block>
+  <block id="d35cb258bf38db8a375c6b851aef5d80" category="section-title">建立Kbeconfig檔案</block>
+  <block id="df0933cfbf38c818728cae3b18f61b03" category="paragraph">使用OpenShift CLI、建立要匯入Cloud Manager的Kbeconfig檔案。</block>
+  <block id="6bc1e2f01411b6d08baccbe5ffe9dc00" category="list-text">使用管理使用者在公共URL上的「ocLogin」（身分登入）登入OpenShift CLI。</block>
+  <block id="5f85438ae0f2c9122a5cf54e8e098c98" category="list-text">建立服務帳戶、如下所示：</block>
+  <block id="565ca50cb95f086800a9a4312c2bf4a1" category="list-text">建立名為「oc-service-account.yaml」的服務帳戶檔案。</block>
+  <block id="210c5331ab46caa141e6ac9d5aeb1bee" category="paragraph">視需要調整名稱和命名空間。如果在此處進行變更、您應該在下列步驟中套用相同的變更。</block>
+  <block id="605443509a67749999ab3b0d3ba43e8b" category="list-text">套用服務帳戶：</block>
+  <block id="d7f435fa7cf0bd0868423fe3be23c07e" category="list-text">根據您的授權需求建立自訂角色繫結。</block>
+  <block id="4759a5a8a6e530a07d366d458377d18b" category="list-text">建立名為「oc-clusterrolebind.yaml」的「ClusterRoeBinding」檔案。</block>
+  <block id="28f58929cb9b848d6403270c1e3c1c7b" category="list-text">視需要為叢集設定RBAC授權。</block>
+  <block id="0b644a2f3f62a8ba3f0ed9c3194a6f5d" category="paragraph">授予完整的系統管理授權、並讓Cloud Manager能夠安裝Astra Trident。</block>
+  <block id="c6c2bc2133c73ae2516508de9a2b5869" category="list-text">套用叢集角色繫結：</block>
+  <block id="b6e00a7dda090ccd5afd1c904d80548c" category="list-text">列出服務帳戶機密、將「&lt;內容&gt;」取代為正確的安裝內容：</block>
+  <block id="f087976277d273660b942918b43af841" category="paragraph">輸出的結尾應類似於下列內容：</block>
+  <block id="34e6e63f528ac4e4d0300281b4ba2af5" category="paragraph">"secretts "陣列中每個元素的索引以0開頭。在上述範例中、「oc-service-account-dockercfg-vhz87」的索引為0、而「oc-service-account-toke-r59kr"的索引則為1。在輸出中、記下含有「權杖」一詞的服務帳戶名稱索引。</block>
+  <block id="d3727d544efa902d0381ec79cec3d488" category="list-text">產生以下的Kbeconfig：</block>
+  <block id="ed6be01d66e94b422222a328f085d0bc" category="list-text">建立「cree-kupeconfig．sh」檔案。將下列指令碼開頭的「toke_index」取代為正確的值。</block>
+  <block id="7d164f3971b504d6203cf274cc77dd35" category="list-text">請輸入命令以將其套用至Kubernetes叢集。</block>
+  <block id="922c92b70dc30bbc8f03dd7e7c4abf3d" category="paragraph">您將使用所產生的「kubeconfig-sa」檔案、將OpenShift叢集新增至Cloud Manager。</block>
+  <block id="0c6a9a1e3ba06deae014e58e617bd162" category="sidebar">OpenShift上的Kubernetes叢集</block>
+  <block id="0ec3c7d00da8bde7e119875963ce517b" category="sidebar">在OpenShift上新增叢集</block>
 </blocks>
