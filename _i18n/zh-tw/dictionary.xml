@@ -489,12 +489,10 @@
   <block id="1d0aa2134f57ae761efb59f68c5d0044" category="paragraph">將自我管理的OpenShift叢集匯入Cloud Manager、以便開始將持續的磁碟區備份到雲端供應商。</block>
   <block id="775f8efc928538f555b4520733a0825d" category="paragraph">在新增OpenShift叢集之前、您需要：</block>
   <block id="d795d581b00d494d8c6250bb5e1fcf89" category="inline-link-macro">建立Kbeconfig檔案</block>
-  <block id="40582f5905c5438cc50d0b3856d01bdd" category="list-text">您在其中建立的「kubeconfig」檔案 <block ref="8753453e8f212c09749310e708af84b1" category="inline-link-macro-rx"></block>。</block>
   <block id="e7076b96b4cfb7668eac66eb624334ad" category="list-text">叢集的公開憑證授權單位（例如、ca．crt）、用戶端金鑰（例如TLS．key）和用戶端憑證（例如TLS．crt）檔案。</block>
   <block id="17011a566ae4f46bae81e507282825fb" category="list-text">在* Canvas*上、選取*新增工作環境*。</block>
   <block id="4c031f22edba9db9f5529644e071eb8a" category="list-text">選擇您的雲端供應商、然後選擇* Kubernetes Cluster*、再選擇* Next*。</block>
   <block id="02ebc3697d40233b9c554520eda51f25" category="list-text">選擇*匯入叢集*、然後選擇*下一步*。</block>
-  <block id="de6737449407eb5afbd77e9794daa605" category="list-text">上傳您在中建立的「kubeconfig-SA」檔案 <block ref="8753453e8f212c09749310e708af84b1" category="inline-link-macro-rx"></block>。選取Kubernetes叢集、然後選取* Next*。</block>
   <block id="7c371426945f4674b445faa898f442c8" category="list-text">上傳叢集憑證。</block>
   <block id="40a58da0341e721e033a4cf334d62ab0" category="inline-image-macro">叢集憑證上傳畫面的快照。</block>
   <block id="95a989ce51f5125f1cda095e21371ee7" category="paragraph"><block ref="95a989ce51f5125f1cda095e21371ee7" category="inline-image-macro-rx" type="image"></block></block>
@@ -535,4 +533,6 @@
   <block id="922c92b70dc30bbc8f03dd7e7c4abf3d" category="paragraph">您將使用所產生的「kubeconfig-sa」檔案、將OpenShift叢集新增至Cloud Manager。</block>
   <block id="0c6a9a1e3ba06deae014e58e617bd162" category="sidebar">OpenShift上的Kubernetes叢集</block>
   <block id="0ec3c7d00da8bde7e119875963ce517b" category="sidebar">在OpenShift上新增叢集</block>
+  <block id="9a1523c9f261730956627967961b03ba" category="list-text">您在其中建立的「kubeconfig」檔案 <block ref="853bbee8a9a9e7ed0c6dbe47e266bf3d" category="inline-link-macro-rx"></block>。</block>
+  <block id="d68d1fb21874c919e4b91a231a5f7974" category="list-text">上傳您在中建立的「kubeconfig-SA」檔案 <block ref="853bbee8a9a9e7ed0c6dbe47e266bf3d" category="inline-link-macro-rx"></block>。選取Kubernetes叢集、然後選取* Next*。</block>
 </blocks>
