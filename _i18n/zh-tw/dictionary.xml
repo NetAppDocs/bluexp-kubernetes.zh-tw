@@ -59,8 +59,6 @@
   <block id="974030a30a48754684d05541fd5e96c9" category="inline-link-macro">Google Kubernetes Engine（GKE）</block>
   <block id="213acaa88814071409958acdc9192518" category="section-title">支援的Astra Trident部署</block>
   <block id="22d8ff517038ce2f90897c500f9ea50f" category="inline-link-macro">檢閱先決條件</block>
-  <block id="74347238ab27b50c48fd1aa9e68844e4" category="inline-link-macro">與營運者一起升級</block>
-  <block id="7c0e36f1a9c7af2d74760d191974b0e0" category="paragraph">若要升級Astra Trident、 <block ref="67d80849aeaf50fe569386f344ed4725" category="inline-link-macro-rx"></block>。</block>
   <block id="c9ece1f2227c56942142d90092ca7fd2" category="section-title">支援的後端儲存設備</block>
   <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">成本</block>
   <block id="57d339f02c71bab84597b5d0376d3fc5" category="paragraph">在Cloud Manager中探索Kubernetes叢集並不收費、但當您使用Cloud Backup Service 支援功能來備份持續的Volume時、系統將會收取您的費用。</block>
@@ -137,7 +135,6 @@
   <block id="89acfe5365df26c5b2d9c418b9507492" category="admonition">本主題使用_Kubernetes叢集_、其中GKE和自我管理Kubernetes叢集的組態相同。叢集類型是在組態不同的地方指定。</block>
   <block id="5a2ebfb8baa378cfcfcba58bbb1380c2" category="section-title">需求</block>
   <block id="086e6c16e3fe8e13c336612ef636aa02" category="list-text">Astra Trident</block>
-  <block id="c4541926fe853a3614406482ac212fff" category="list-text">需要最新版Astra Trident的四種版本之一。您可以直接從Cloud Manager安裝Astra Trident。您應該 <block ref="8da0f2411c72d1a5ebe475af99243801" category="inline-link-macro-rx"></block> 安裝Astra Trident之前</block>
   <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="list-text">Cloud Volumes ONTAP</block>
   <block id="f42c4f194d4364b14558c35f61d5d363" category="inline-link">如需組態步驟、請前往Astra Trident文件</block>
   <block id="1e7fd0342ed668ad1096d1c03fb7af17" category="list-text">在Cloud Manager中、必須使用與Kubernetes叢集相同的租戶帳戶、工作區和Connector。Cloud Volumes ONTAP<block ref="0ffa37c66c18870214970164d37847a6" category="inline-link-rx"></block>。</block>
@@ -200,7 +197,6 @@
   <block id="b65741d409db3b7986653580cc3988b8" category="doc">AWS中Kubernetes叢集的需求</block>
   <block id="b14cae3ee66d712266250a4e735f274a" category="paragraph">您可以將AWS上的託管Amazon Elastic Kubernetes Service（EKS）叢集或自我管理Kubernetes叢集新增至Cloud Manager。在將叢集新增至Cloud Manager之前、您必須確保符合下列需求。</block>
   <block id="f56b205821b231a157cc0e3315bc72a6" category="admonition">本主題使用_Kubernetes叢集_、其中EKS和自我管理Kubernetes叢集的組態相同。叢集類型是在組態不同的地方指定。</block>
-  <block id="74ac826b742735257c4c43faffe62b41" category="list-text">需要最新版Astra Trident的四種版本之一。您可以直接從Cloud Manager安裝Astra Trident。您應該 <block ref="8da0f2411c72d1a5ebe475af99243801" category="inline-link-macro-rx"></block> 安裝Astra Trident之前。</block>
   <block id="acc4a07cbf9763718c5eb67fd34340d7" category="list-text">AWS的for AWS必須設定為叢集的後端儲存設備。Cloud Volumes ONTAP<block ref="0ffa37c66c18870214970164d37847a6" category="inline-link-rx"></block>。</block>
   <block id="1657d67161bf0403482930d6cb81a5ba" category="list-text">連接器必須以所需權限在AWS中執行。 <block ref="666096be9a7c0cee4f03722fd9c8c93c" category="inline-xref-macro-rx"></block>。</block>
   <block id="c6dd30e443f98211931fb0916af6dad7" category="list-text">Cloud Manager Connector角色必須在每個Kubernetes叢集上獲得授權。 <block ref="ed89a5c7598981ce49ff49e89b6578d7" category="inline-xref-macro-rx"></block>。</block>
@@ -535,4 +531,6 @@
   <block id="0ec3c7d00da8bde7e119875963ce517b" category="sidebar">在OpenShift上新增叢集</block>
   <block id="9a1523c9f261730956627967961b03ba" category="list-text">您在其中建立的「kubeconfig」檔案 <block ref="853bbee8a9a9e7ed0c6dbe47e266bf3d" category="inline-link-macro-rx"></block>。</block>
   <block id="d68d1fb21874c919e4b91a231a5f7974" category="list-text">上傳您在中建立的「kubeconfig-SA」檔案 <block ref="853bbee8a9a9e7ed0c6dbe47e266bf3d" category="inline-link-macro-rx"></block>。選取Kubernetes叢集、然後選取* Next*。</block>
+  <block id="9492e4195bc2860d8494e098fbce7244" category="list-text">需要最新版Astra Trident的四種版本之一。您可以直接從Cloud Manager安裝或升級Astra Trident。您應該 <block ref="8da0f2411c72d1a5ebe475af99243801" category="inline-link-macro-rx"></block> 安裝Astra Trident之前。</block>
+  <block id="bfb0695c22e145f8bb8fffaba822ec00" category="list-text">需要最新版Astra Trident的四種版本之一。您可以直接從Cloud Manager安裝或升級Astra Trident。您應該 <block ref="8da0f2411c72d1a5ebe475af99243801" category="inline-link-macro-rx"></block> 安裝Astra Trident之前</block>
 </blocks>

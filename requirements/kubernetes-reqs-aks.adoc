@@ -23,15 +23,11 @@ NOTE: 本主題使用_Kubernetes叢集_、其中的設定與自我管理Kubernet
 
 == 需求
 
-Astra Trident:: 需要最新版Astra Trident的四種版本之一。您可以直接從Cloud Manager安裝Astra Trident。您應該 link:https://docs.netapp.com/us-en/trident/trident-get-started/requirements.html["檢閱先決條件"^] 安裝Astra Trident之前。
-
-
-若要升級Astra Trident、 link:https://docs.netapp.com/us-en/trident/trident-managing-k8s/upgrade-operator.html["與營運者一起升級"^]。
-
+Astra Trident:: 需要最新版Astra Trident的四種版本之一。您可以直接從Cloud Manager安裝或升級Astra Trident。您應該 link:https://docs.netapp.com/us-en/trident/trident-get-started/requirements.html["檢閱先決條件"^] 安裝Astra Trident之前。
 Cloud Volumes ONTAP:: 必須將其設定為叢集的後端儲存設備。Cloud Volumes ONTAP https://docs.netapp.com/us-en/trident/trident-use/backends.html["如需組態步驟、請前往Astra Trident文件"^]。
-Cloud Manager Connector:: 連接器必須在具備必要權限的Azure中執行。 <<Prepare a Connector,深入瞭解>>。
-網路連線能力:: Kubernetes叢集和Connector之間、以及Kubernetes叢集和Cloud Volumes ONTAP 整個過程之間、都需要網路連線。 <<Review networking requirements,深入瞭解>>。
-RBAC授權:: Cloud Manager支援啟用RBAC的叢集、可搭配或不使用Active Directory。Cloud Manager Connector角色必須在每個Azure叢集上獲得授權。 <<Set up RBAC authorization,深入瞭解>>。
+Cloud Manager Connector:: 連接器必須在具備必要權限的Azure中執行。  a Connector,深入瞭解。
+網路連線能力:: Kubernetes叢集和Connector之間、以及Kubernetes叢集和Cloud Volumes ONTAP 整個過程之間、都需要網路連線。  networking requirements,深入瞭解。
+RBAC授權:: Cloud Manager支援啟用RBAC的叢集、可搭配或不使用Active Directory。Cloud Manager Connector角色必須在每個Azure叢集上獲得授權。  up RBAC authorization,深入瞭解。
 
 
 
