@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: /task/task-kubernetes-discover-gke.html 
 keywords: kubernetes, k8s, discover kubernetes cluster, discover k8s, import kubernetes cluster, google, google cloud, gke, kubernetes support 
-summary: 您可以將Kubernetes叢集探索或匯入Cloud Manager、以便將持續的磁碟區備份到Google Cloud。 
+summary: 您可以探索Kubernetes叢集或將其匯入至BlueXP、以便將持續的磁碟區備份至Google Cloud。 
 ---
-= 將Google Cloud Kubernetes叢集新增至Cloud Manager
+= 將Google Cloud Kubernetes叢集新增至BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 您可以將Kubernetes叢集探索或匯入Cloud Manager、以便將持
 
 
 [role="lead"]
-您可以將Kubernetes叢集探索或匯入Cloud Manager、以便將持續的磁碟區備份到Google Cloud。
+您可以探索Kubernetes叢集或將其匯入至BlueXP、以便將持續的磁碟區備份至Google Cloud。
 
 
 
@@ -39,9 +39,9 @@ image:screenshot-k8s-gke-discover.png["「Discover a Kubernetes Cluster」（探
 
 
 
-Cloud Manager會將Kubernetes叢集新增至Canvas.
+BlueXP會將Kubernetes叢集新增至Canvas.
 
-image:screenshot-k8s-gke-canvas.png["Cloud Manager中的Canvases快照、顯示Kubernetes叢集。"]
+image:screenshot-k8s-gke-canvas.png["在BlueXP中顯示Kubernetes叢集的Canvased快照。"]
 
 
 
@@ -65,4 +65,4 @@ image:screenshot-k8s-gke-import-1.png["匯入Kubernetes叢集頁面的快照、�
 
 
 
-Cloud Manager會將Kubernetes叢集新增至Canvas.
+BlueXP會將Kubernetes叢集新增至Canvas.

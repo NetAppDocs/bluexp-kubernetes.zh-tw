@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: /requirements/kubernetes-reqs-aws.html 
 keywords: kubernetes, k8s, discover kubernetes cluster, discover k8s, amazon eks, eks, kubernetes support, aws 
-summary: 在您將Amazon Elastic Kubernetes Service（Amazon EKS）叢集新增至Cloud Manager之前、您必須確保符合下列要求。 
+summary: 在您將Amazon Elastic Kubernetes Service（Amazon EKS）叢集新增至BlueXP之前、您必須確保符合下列要求。 
 ---
 = AWS中Kubernetes叢集的需求
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 在您將Amazon Elastic Kubernetes Service（Amazon EKS）叢集新增�
 
 
 [role="lead"]
-您可以將AWS上的託管Amazon Elastic Kubernetes Service（EKS）叢集或自我管理Kubernetes叢集新增至Cloud Manager。在將叢集新增至Cloud Manager之前、您必須確保符合下列需求。
+您可以將AWS上的託管Amazon Elastic Kubernetes Service（EKS）叢集或自我管理Kubernetes叢集新增至BlueXP。在將叢集新增至BlueXP之前、您必須確保符合下列需求。
 
 
 NOTE: 本主題使用_Kubernetes叢集_、其中EKS和自我管理Kubernetes叢集的組態相同。叢集類型是在組態不同的地方指定。
@@ -23,18 +23,18 @@ NOTE: 本主題使用_Kubernetes叢集_、其中EKS和自我管理Kubernetes叢�
 
 == 需求
 
-Astra Trident:: 需要最新版Astra Trident的四種版本之一。您可以直接從Cloud Manager安裝或升級Astra Trident。您應該 link:https://docs.netapp.com/us-en/trident/trident-get-started/requirements.html["檢閱先決條件"^] 安裝Astra Trident之前。
+Astra Trident:: 需要最新版Astra Trident的四種版本之一。您可以直接從BlueXP安裝或升級Astra Trident。您應該 link:https://docs.netapp.com/us-en/trident/trident-get-started/requirements.html["檢閱先決條件"^] 安裝Astra Trident之前。
 Cloud Volumes ONTAP:: AWS的for AWS必須設定為叢集的後端儲存設備。Cloud Volumes ONTAP https://docs.netapp.com/us-en/trident/trident-use/backends.html["如需組態步驟、請前往Astra Trident文件"^]。
-Cloud Manager Connector:: 連接器必須以所需權限在AWS中執行。  a Connector,深入瞭解。
+BlueXP Connector:: 連接器必須以所需權限在AWS中執行。  a Connector,深入瞭解。
 網路連線能力:: Kubernetes叢集和Connector之間、以及Kubernetes叢集和Cloud Volumes ONTAP 整個過程之間、都需要網路連線。  networking requirements,深入瞭解。
-RBAC授權:: Cloud Manager Connector角色必須在每個Kubernetes叢集上獲得授權。  up RBAC authorization,深入瞭解。
+RBAC授權:: 每個Kubernetes叢集都必須授權BlueXP Connector角色。  up RBAC authorization,深入瞭解。
 
 
 
 
 == 準備連接器
 
-AWS需要Cloud Manager Connector來探索及管理Kubernetes叢集。您需要建立新的Connector、或是使用具有所需權限的現有Connector。
+AWS需要使用BlueXP Connector來探索及管理Kubernetes叢集。您需要建立新的Connector、或是使用具有所需權限的現有Connector。
 
 
 
@@ -42,7 +42,7 @@ AWS需要Cloud Manager Connector來探索及管理Kubernetes叢集。您需要�
 
 請遵循下列其中一個連結中的步驟。
 
-* link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["從Cloud Manager建立Connector"^] （建議）
+* link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["從BlueXP建立連接器"^] （建議）
 * link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-launching-aws-mktp.html["從AWS Marketplace建立連接器"^]
 * link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["在AWS中現有的Linux主機上安裝Connector"^]
 
@@ -106,12 +106,12 @@ image:diagram_kubernetes.png["EKS Kubernetes叢集的架構圖、以及其在Clo
 需要不同的授權才能啟用不同的功能。
 
 備份與還原:: 備份與還原僅需基本授權。
-新增儲存類別:: 若要使用Cloud Manager新增儲存類別、並監控叢集對後端的變更、則需要擴充授權。
-安裝Astra Trident:: 您必須提供Cloud Manager完整授權、才能安裝Astra Trident。
+新增儲存類別:: 若要使用BlueXP新增儲存類別、並監控叢集是否有變更後端、則需要擴充授權。
+安裝Astra Trident:: 您必須提供BlueXP的完整授權、才能安裝Astra Trident。
 +
 --
 
-NOTE: 安裝Astra Trident時、Cloud Manager會安裝Astra Trident後端和Kubernetes機密、其中包含Astra Trident與儲存叢集通訊所需的認證資料。
+NOTE: 安裝Astra Trident時、BlueXP會安裝Astra Trident後端和Kubernetes機密、其中包含Astra Trident與儲存叢集通訊所需的認證資料。
 
 --
 
@@ -202,7 +202,7 @@ roleRef:
 --
 .儲存類別
 --
-新增擴充授權、以使用Cloud Manager新增儲存類別。
+新增擴充授權、以使用BlueXP新增儲存類別。
 
 [source, yaml]
 ----
@@ -268,7 +268,7 @@ roleRef:
 --
 .安裝Trident
 --
-使用命令列提供完整授權、並讓Cloud Manager安裝Astra Trident。
+使用命令列提供完整授權、並讓BlueXP安裝Astra Trident。
 
 [source, cli]
 ----
@@ -290,7 +290,7 @@ kubectl apply -f <file-name>
 ====
 .使用ekscl
 --
-使用eksctl在叢集與Cloud Manager Connector的IAM角色之間建立IAM身分識別對應。
+使用eksctl在叢集與BlueXP Connector的IAM角色之間建立IAM身分識別對應。
 
 https://eksctl.io/usage/iam-identity-mappings/["如需完整說明、請參閱eksctl文件"^]。
 
@@ -303,7 +303,7 @@ eksctl create iamidentitymapping --cluster <eksCluster> --region <us-east-2> --a
 --
 .編輯AWS/AUTH
 --
-直接編輯AWS/AUTH ConfigMap、將RBAC存取權限新增至Cloud Manager Connector的IAM角色。
+直接編輯AWS/AUTH ConfigMap、將RBAC存取權限新增至BlueXP Connector的IAM角色。
 
 https://docs.aws.amazon.com/eks/latest/userguide/add-user-role.html["如需完整指示、請參閱AWS EKS文件"^]。
 

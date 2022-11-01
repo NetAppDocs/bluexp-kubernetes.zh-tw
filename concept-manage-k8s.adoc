@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-manage-k8s.html 
 keywords: overview, manage, k8s, kubernetes 
-summary: 您可以使用Cloud Manager來安裝Astra Trident、設定儲存類別、移除叢集、以及啟用資料服務。 
+summary: 您可以使用BlueXP安裝Astra Trident、設定儲存類別、移除叢集及啟用資料服務。 
 ---
 = 管理Kubernetes叢集
 :hardbreaks:
@@ -13,16 +13,16 @@ summary: 您可以使用Cloud Manager來安裝Astra Trident、設定儲存類別
 :imagesdir: ./media/
 
 
-您可以使用Cloud Manager來安裝或升級Astra Trident、設定儲存類別、移除叢集、以及啟用資料服務。
+您可以使用BlueXP安裝或升級Astra Trident、設定儲存類別、移除叢集、以及啟用資料服務。
 
 
-NOTE: 不支援使用「tridentctl」部署的Astra Trident。如果您使用「tridentctl」部署Astra Trident、就無法使用Cloud Manager來管理Kubernetes叢集。您必須 link:https://docs.netapp.com/us-en/trident/trident-managing-k8s/uninstall-trident.html#uninstall-by-using-tridentctl["使用「tridentctl」解除安裝"^] 並重新安裝 link:https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-deploy-operator.html["使用Trident運算子"^] 或 link:./tasks/task-k8s-manage-trident.html["使用Cloud Manager"]。
+NOTE: 使用部署Astra Trident `tridentctl` 不受支援。如果您使用部署Astra Trident `tridentctl`、您無法使用BlueXP來管理Kubernetes叢集。您必須  並重新安裝 link:https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-deploy-operator.html["使用Trident運算子"^] 或 link:./tasks/task-k8s-manage-trident.html["使用BlueXP"]。
 
 
 
 == 功能
 
-將Kubernetes叢集新增至Cloud Manager之後、即可從資源頁面管理叢集。若要開啟資源頁面、請按兩下Canvas上的Kubernetes工作環境。
+將Kubernetes叢集新增至BlueXP之後、您可以從資源頁面管理叢集。若要開啟資源頁面、請按兩下Canvas上的Kubernetes工作環境。
 
 image:screenshot-k8s-resource-page.png["Kubernetes資源頁面的快照、顯示叢集的詳細資料。"]
 

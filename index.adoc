@@ -2,7 +2,7 @@
 layout: astra 
 sidebar: sidebar 
 permalink: index.html 
-summary: 將您的託管Kubernetes叢集新增至Cloud Manager、以進行進階資料管理。 
+summary: 將您的託管Kubernetes叢集新增至BlueXP、以進行進階資料管理。 
 ---
 = Kubernetes叢集文件
 :hardbreaks:

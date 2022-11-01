@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: /task/task-k8s-manage-trident.html 
 keywords: kubernetes, k8s, install astra trident, kubernetes support 
-summary: 將託管Kubernetes叢集新增至Canvas之後、您可以使用Cloud Manager確認相容的Astra Trident安裝、或是安裝Astra Trident。需要最新版Astra Trident的四種版本之一。 
+summary: 將託管Kubernetes叢集新增至Canvas之後、您可以使用BlueXP確認相容的Astra Trident安裝或安裝Astra Trident。需要最新版Astra Trident的四種版本之一。 
 ---
 = 安裝或升級Astra Trident
 :hardbreaks:
@@ -14,13 +14,13 @@ summary: 將託管Kubernetes叢集新增至Canvas之後、您可以使用Cloud M
 
 
 [role="lead"]
-將受管理的Kubernetes叢集新增至Canvased之後、您可以使用Cloud Manager確認相容的Astra Trident安裝、或是安裝或升級Astra Trident至最新版本。
+將受管理的Kubernetes叢集新增至Canvased之後、您可以使用BlueXP確認相容的Astra Trident安裝、或是安裝或升級Astra Trident至最新版本。
 
 [NOTE]
 ====
 * 如果未安裝Astra Trident、或安裝不相容版本的Astra Trident、叢集會顯示需要採取行動。
 * 需要使用Trident運算子（手動或使用Helm圖表）部署的Astra Trident四個最新版本之一。
-* 不支援使用「tridentctl」部署的Astra Trident。如果您使用「tridentctl」部署Astra Trident、就無法使用Cloud Manager來管理Kubernetes叢集。您必須 link:https://docs.netapp.com/us-en/trident/trident-managing-k8s/uninstall-trident.html#uninstall-by-using-tridentctl["使用「tridentctl」解除安裝"^] 並重新安裝 link:https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-deploy-operator.html["使用Trident運算子"^] 或使用下列步驟。
+* 使用部署Astra Trident `tridentctl` 不受支援。如果您使用部署Astra Trident `tridentctl`、您無法使用BlueXP來管理Kubernetes叢集。您必須  並重新安裝 link:https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-deploy-operator.html["使用Trident運算子"^] 或使用下列步驟。
 
 
 ====

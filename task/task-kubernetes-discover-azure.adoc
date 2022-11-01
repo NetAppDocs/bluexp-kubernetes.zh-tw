@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: /task/task-kubernetes-discover-azure.html 
 keywords: kubernetes, k8s, discover kubernetes cluster, discover k8s, import kubernetes cluster, azure, aks, kubernetes support 
-summary: 將Kubernetes叢集新增至Cloud Manager、以便開始將持續磁碟區備份至Azure。 
+summary: 將Kubernetes叢集新增至BlueXP、以便開始將持續磁碟區備份至Azure。 
 ---
-= 將Azure Kubernetes叢集新增至Cloud Manager
+= 將Azure Kubernetes叢集新增至BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 將Kubernetes叢集新增至Cloud Manager、以便開始將持續磁碟
 
 
 [role="lead"]
-您可以將Kubernetes叢集探索或匯入Cloud Manager、以便將持續的Volume備份到Azure。
+您可以探索Kubernetes叢集或將其匯入至BlueXP、以便將持續磁碟區備份至Azure。
 
 
 
@@ -35,9 +35,9 @@ image:screenshot-k8s-aks-discover.png["「Discover a Kubernetes Cluster」（探
 
 
 
-Cloud Manager會將Kubernetes叢集新增至Canvas.
+BlueXP會將Kubernetes叢集新增至Canvas.
 
-image:screenshot-k8s-aks-canvas.png["Cloud Manager中的Canvases快照、顯示Kubernetes叢集。"]
+image:screenshot-k8s-aks-canvas.png["在BlueXP中顯示Kubernetes叢集的Canvased快照。"]
 
 
 
@@ -65,4 +65,4 @@ image:screenshot-k8s-aks-import-2.png["用於上傳「憑證授權單位」、�
 
 
 
-Cloud Manager會將Kubernetes叢集新增至Canvas.
+BlueXP會將Kubernetes叢集新增至Canvas.

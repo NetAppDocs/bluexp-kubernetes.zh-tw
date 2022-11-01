@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: /task/task-kubernetes-discover-openshift.html 
 keywords: kubernetes, k8s, discover kubernetes cluster, discover k8s, openshift, kubernetes support, import kubernetes cluster, import 
-summary: 將自我管理的OpenShift叢集匯入Cloud Manager、以便開始將持續的磁碟區備份到雲端供應商。 
+summary: 將自我管理的OpenShift叢集匯入至BlueXP、以便開始將持續磁碟區備份至雲端供應商。 
 ---
-= 將OpenShift叢集新增至Cloud Manager
+= 將OpenShift叢集新增至藍圖XP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 將自我管理的OpenShift叢集匯入Cloud Manager、以便開始將�
 
 
 [role="lead"]
-將自我管理的OpenShift叢集匯入Cloud Manager、以便開始將持續的磁碟區備份到雲端供應商。
+將自我管理的OpenShift叢集匯入至BlueXP、以便開始將持續磁碟區備份至雲端供應商。
 
 
 
@@ -42,4 +42,4 @@ image:screenshot-oc-certs.png["叢集憑證上傳畫面的快照。"]
 
 
 
-Cloud Manager會將Kubernetes叢集新增至Canvas.
+BlueXP會將Kubernetes叢集新增至Canvas.

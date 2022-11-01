@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: concept-kubernetes.html 
-keywords: kubernetes, k8s, back up kubernetes, back up k8s, discover kubernetes cluster, discover k8s, amazon eks, eks, azure, aks, back up persistent volumes, persistent volumes, kubernetes support 
+keywords: kubernetes, k8s, back up kubernetes, back up k8s, discover kubernetes cluster, discover k8s, amazon eks, eks, azure, aks, back up persistent volumes, persistent volumes, kubernetes support, cloud manager 
 summary: Astra Trident是由NetApp維護的完全支援開放原始碼專案。Astra Trident與Kubernetes及其持續Volume架構原生整合、可從執行任何NetApp儲存平台組合的系統無縫配置及管理Volume。 
 ---
-= Kubernetes的Cloud Manager資料管理功能
+= Kubernetes的資料管理功能
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -20,7 +20,7 @@ Astra Trident是由NetApp維護的完全支援開放原始碼專案。Astra Trid
 
 == 功能
 
-使用使用Trident營運者部署的相容版本Astra Trident、您可以使用Cloud Manager直接管理Kubernetes叢集。
+使用使用Trident營運者部署的相容版本Astra Trident、您可以使用BlueXP（前身為Cloud Manager）直接管理Kubernetes叢集。
 
 * 安裝或升級Astra Trident。
 * 新增及管理叢集、做為混合雲基礎架構的一部分。
@@ -32,7 +32,7 @@ Astra Trident是由NetApp維護的完全支援開放原始碼專案。Astra Trid
 
 == 支援的Kubernetes部署
 
-Cloud Manager支援在下列環境中執行的託管Kubernetes叢集：
+BlueXP支援在下列環境中執行的託管Kubernetes叢集：
 
 * link:./requirements/kubernetes-reqs-aws.html["Amazon Elastic Kubernetes服務（Amazon EKS）"]
 * link:./requirements/kubernetes-reqs-aks.html["Microsoft Azure Kubernetes服務（英文）"]
@@ -45,7 +45,7 @@ Cloud Manager支援在下列環境中執行的託管Kubernetes叢集：
 
 Astra Trident的四個最新版本之一 link:https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-deploy-operator.html["使用Trident運算子進行部署"^] 為必填項目。
 
-您可以直接從Cloud Manager安裝或升級至最新版的Astra Trident。
+您可以直接從BlueXP安裝或升級至最新版的Astra Trident。
 
 link:https://docs.netapp.com/us-en/trident/trident-get-started/requirements.html["檢閱Astra Trident的先決條件"^]
 
@@ -59,4 +59,4 @@ NetApp Astra Trident必須安裝在每個Kubernetes叢集上、Cloud Volumes ONT
 
 == 成本
 
-在Cloud Manager中探索Kubernetes叢集並不收費、但當您使用Cloud Backup Service 支援功能來備份持續的Volume時、系統將會收取您的費用。
+在BluesXP中、您的Kubernetes叢集不需付費、但當您使用Cloud Backup Service 更新功能來備份持續的磁碟區時、系統將會收取您的費用。

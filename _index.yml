@@ -1,6 +1,6 @@
 ---
 indexpage:
-  lead: 將您的託管Kubernetes叢集新增至Cloud Manager、以進行進階資料管理。
+  lead: 將您的託管Kubernetes叢集新增至BlueXP、以進行進階資料管理。
   tiles:
   - title: 開始使用
     links:
@@ -42,7 +42,7 @@ indexpage:
       url: "/task/task-k8s-manage-remove-cluster.html"
     - title: 啟用資料服務
       url: "/task/task-kubernetes-enable-services.html"
-  - title: 取得Cloud Manager的協助
+  - title: 取得有關BlueXP的協助
     links:
     - title: 註冊以取得支援
       url: "/support/task-support-registration.html"

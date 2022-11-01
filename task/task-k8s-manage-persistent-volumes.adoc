@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: /task/task-k8s-manage-persistent-volumes.html 
 keywords: kubernetes, k8s, view persistent volume 
-summary: 將託管Kubernetes叢集新增至Canvases之後、您可以使用Cloud Manager來檢視連接的持續磁碟區。 
+summary: 將託管Kubernetes叢集新增至Canvased之後、您可以使用BlueXP來檢視連接的持續磁碟區。 
 ---
 = 檢視持續磁碟區
 :hardbreaks:
@@ -14,10 +14,10 @@ summary: 將託管Kubernetes叢集新增至Canvases之後、您可以使用Cloud
 
 
 [role="lead"]
-將受管理的Kubernetes叢集新增至Canvas之後、您可以使用Cloud Manager來檢視持續磁碟區。
+將受管理的Kubernetes叢集新增至Canvased之後、即可使用BlueXP檢視持續磁碟區。
 
 
-NOTE: Cloud Manager會監控Kubernetes叢集是否有變更後端、並在新增新磁碟區時更新持續Volume表格。如果在叢集上設定了自動備份、則會在新的持續磁碟區上自動啟用備份。
+NOTE: BlueXP會監控Kubernetes叢集、以瞭解後端的變更、並在新增新磁碟區時更新持續磁碟區表格。如果在叢集上設定了自動備份、則會在新的持續磁碟區上自動啟用備份。
 
 .步驟
 . 按兩下Canvas上的Kubernetes工作環境、或按一下*輸入工作環境*。

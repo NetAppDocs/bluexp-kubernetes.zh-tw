@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes' 
-summary: 瞭解Cloud Manager Kubernetes的新功能。 
+keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, cloud manager' 
+summary: 瞭解BlueXP中Kubernetes的新功能。 
 ---
-= Cloud Manager中Kubernetes的新功能
+= BlueXP中Kubernetes的新功能
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 瞭解Cloud Manager Kubernetes的新功能。
 
 
 [role="lead"]
-瞭解Cloud Manager Kubernetes的新功能。
+瞭解Cloud Manager（前身為Cloud Manager）Kubernetes的新功能。
 
 
 

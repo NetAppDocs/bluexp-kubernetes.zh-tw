@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: /task/task-kubernetes-discover-aws.html 
 keywords: kubernetes, k8s, discover kubernetes cluster, discover k8s, amazon eks, eks, kubernetes support, import kubernetes cluster, import, amazon s3, amazon, aws 
-summary: 將Amazon Elastic Kubernetes Service（Amazon EKS）叢集新增至Cloud Manager、以便開始將持續磁碟區備份至Amazon S3。 
+summary: 將Amazon Elastic Kubernetes Service（Amazon EKS）叢集新增至BlueXP、以便開始將持續磁碟區備份至Amazon S3。 
 ---
-= 將Amazon Kubernetes叢集新增至Cloud Manager
+= 將Amazon Kubernetes叢集新增至BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 將Amazon Elastic Kubernetes Service（Amazon EKS）叢集新增至Clou
 
 
 [role="lead"]
-您可以將Kubernetes叢集探索或匯入Cloud Manager、以便將持續的磁碟區備份到Amazon S3。
+您可以探索Kubernetes叢集或將其匯入至BlueXP、以便將持續磁碟區備份至Amazon S3。
 
 
 
@@ -35,9 +35,9 @@ image:screenshot-discover-kubernetes-aws-2.png["「Discover a Kubernetes Cluster
 
 
 
-Cloud Manager會將Kubernetes叢集新增至Canvas.
+BlueXP會將Kubernetes叢集新增至Canvas.
 
-image:screenshot-kubernetes-canvas.png["Cloud Manager中的Canvases快照、顯示Kubernetes叢集。"]
+image:screenshot-kubernetes-canvas.png["在BlueXP中顯示Kubernetes叢集的Canvased快照。"]
 
 
 
@@ -56,4 +56,4 @@ image:screenshot-k8s-aks-import-1.png["匯入Kubernetes叢集頁面的快照、�
 . 選取Kubernetes叢集、然後按一下*下一步*。
 
 
-Cloud Manager會將Kubernetes叢集新增至Canvas.
+BlueXP會將Kubernetes叢集新增至Canvas.
