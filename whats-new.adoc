@@ -18,7 +18,7 @@ summary: 瞭解BlueXP中Kubernetes的新功能。
 
 
 
-== 2022年10月30日
+== 2022年11月6日
 
 何時 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["定義儲存類別"]、您現在可以為區塊或檔案系統儲存設備啟用儲存等級的經濟效益。
 
