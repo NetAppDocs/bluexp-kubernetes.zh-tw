@@ -20,7 +20,7 @@ Astra Trident是由NetApp維護的完全支援開放原始碼專案。Astra Trid
 
 == 功能
 
-使用使用Trident營運者部署的相容版本Astra Trident、您可以使用BlueXP（前身為Cloud Manager）直接管理Kubernetes叢集。
+使用相容版本的Astra Trident、您可以使用Trident運算子直接管理Kubernetes叢集 link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/index.html["藍圖"^] （前身為Cloud Manager）。
 
 * 安裝或升級Astra Trident。
 * 新增及管理叢集、做為混合雲基礎架構的一部分。
