@@ -22,6 +22,7 @@ summary: 將Kubernetes叢集新增至BlueXP、即可快速完成進階資料管�
 
 使用 link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/index.html["藍圖"^] 只需幾個步驟、就能開始管理Kubernetes叢集。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"] 檢閱先決條件
 [role="quick-margin-para"]
 確保您的環境符合叢集類型的先決條件。
 
@@ -34,6 +35,7 @@ link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kuberne
 [role="quick-margin-para"]
 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-gke.html["Google Cloud中Kubernetes叢集的需求"]
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 將Kubernetes叢集新增至藍圖XP
 [role="quick-margin-para"]
 您可以新增Kubernetes叢集、並使用BlueXP將其連線至工作環境。
 
@@ -46,12 +48,14 @@ link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-kubernetes
 [role="quick-margin-para"]
 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-kubernetes-discover-gke.html["新增Google Cloud Kubernetes叢集"]
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["四"] 開始配置持續磁碟區
 [role="quick-margin-para"]
 使用原生 Kubernetes 介面和架構來要求及管理持續磁碟區。BlueXP會建立NFS和iSCSI儲存類別、供您在資源配置持續磁碟區時使用。
 
 [role="quick-margin-para"]
 link:https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-postdeployment.html#step-3-provision-your-first-volume["深入瞭解Astra Trident的第一個磁碟區資源配置"^]。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"] 使用BlueXP管理叢集
 [role="quick-margin-para"]
 將Kubernetes叢集新增至BlueXP之後、您可以從BlueXP資源頁面管理叢集。
 

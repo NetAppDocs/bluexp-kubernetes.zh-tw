@@ -35,6 +35,7 @@ image:screenshot-discover-kubernetes-aws-2.png["「Discover a Kubernetes Cluster
 
 
 
+.結果
 BlueXP會將Kubernetes叢集新增至Canvas.
 
 image:screenshot-kubernetes-canvas.png["在BlueXP中顯示Kubernetes叢集的Canvased快照。"]
@@ -56,4 +57,5 @@ image:screenshot-k8s-aks-import-1.png["匯入Kubernetes叢集頁面的快照、�
 . 選取Kubernetes叢集、然後按一下*下一步*。
 
 
+.結果
 BlueXP會將Kubernetes叢集新增至Canvas.

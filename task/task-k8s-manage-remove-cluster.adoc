@@ -28,4 +28,5 @@ image:screenshot-k8s-confirm-remove-cluster.png["確認從工作區移除Kuberne
 
 
 
+.結果
 Kubernetes叢集會從工作區中移除、且在Canvas上不再顯示。

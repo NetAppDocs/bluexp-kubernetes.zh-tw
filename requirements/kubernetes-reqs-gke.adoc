@@ -25,9 +25,9 @@ NOTE: 本主題使用_Kubernetes叢集_、其中GKE和自我管理Kubernetes叢�
 
 Astra Trident:: 需要最新版Astra Trident的四種版本之一。您可以直接從BlueXP安裝或升級Astra Trident。您應該 link:https://docs.netapp.com/us-en/trident/trident-get-started/requirements.html["檢閱先決條件"^] 安裝Astra Trident之前
 Cloud Volumes ONTAP:: 在BlueXP中、必須使用與Kubernetes叢集相同的租戶帳戶、工作區和Connector。Cloud Volumes ONTAP https://docs.netapp.com/us-en/trident/trident-use/backends.html["如需組態步驟、請前往Astra Trident文件"^]。
-BlueXP Connector:: Connector必須以必要權限在Google中執行。  a Connector,深入瞭解。
-網路連線能力:: Kubernetes叢集和Connector之間、以及Kubernetes叢集和Cloud Volumes ONTAP 整個過程之間、都需要網路連線。  networking requirements,深入瞭解。
-RBAC授權:: BlueXP支援使用及不使用Active Directory的RBAC叢集。每個GKE叢集都必須授權BlueXP Connector角色。  up RBAC authorization,深入瞭解。
+BlueXP Connector:: Connector必須以必要權限在Google中執行。 <<準備連接器,深入瞭解>>。
+網路連線能力:: Kubernetes叢集和Connector之間、以及Kubernetes叢集和Cloud Volumes ONTAP 整個過程之間、都需要網路連線。 <<檢閱網路需求,深入瞭解>>。
+RBAC授權:: BlueXP支援使用及不使用Active Directory的RBAC叢集。每個GKE叢集都必須授權BlueXP Connector角色。 <<設定RBAC授權,深入瞭解>>。
 
 
 
@@ -102,6 +102,7 @@ NOTE: 安裝Astra Trident時、BlueXP會安裝Astra Trident後端和Kubernetes�
 --
 
 
+.開始之前
 以進行設定 ``subjects: name:`` 在Yaml檔案中、您需要知道BlueXP的唯一ID。
 
 您可以透過下列兩種方式找到唯一ID：
@@ -119,6 +120,7 @@ image:screenshot-gke-unique-id.png["Cloud Console中服務帳戶詳細資料的�
 
 
 
+.步驟
 建立叢集角色和角色繫結。
 
 . 根據您的授權要求、建立包含下列文字的Y反 洗錢檔案。使用您的使用者名稱取代「子項目：種類：」變數、並以授權服務帳戶的唯一ID取代「子項目：使用者：」。

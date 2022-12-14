@@ -32,7 +32,7 @@ BlueXP Connector:: 需要使用BlueXP Connector來匯入及管理Kubernetes叢�
 
 --
 網路連線能力:: Kubernetes叢集和Connector之間、以及Kubernetes叢集和Cloud Volumes ONTAP 整個過程之間、都需要網路連線。
-具有RBAC授權的Kubernetes組態檔（Kubeconfig）:: 若要匯入OpenShift叢集、您需要具備RBAC授權的Kbeconfig檔案、才能啟用不同的功能。  a kubeconfig file。
+具有RBAC授權的Kubernetes組態檔（Kubeconfig）:: 若要匯入OpenShift叢集、您需要具備RBAC授權的Kbeconfig檔案、才能啟用不同的功能。 <<建立Kbeconfig檔案>>。
 +
 --
 * 備份與還原：備份與還原僅需基本授權。
@@ -368,4 +368,5 @@ source create-kubeconfig.sh
 
 
 
+.結果
 您將使用所產生的 `kubeconfig-sa` 將OpenShift叢集新增至藍圖XP的檔案。

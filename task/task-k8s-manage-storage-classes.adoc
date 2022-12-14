@@ -49,6 +49,7 @@ image:screenshot-k8s-select-storage-class.png["顯示Kubernetes叢集工作環�
 
 
 
+.結果
 您可以按一下、從Kubernetes叢集的資源頁面檢視儲存類別。
 
 image:screenshot-k8s-view-storage-class.png["Kubernetes資源頁面上顯示「View Storage Class」的快照。"]
@@ -63,6 +64,7 @@ image:screenshot-k8s-view-storage-class.png["Kubernetes資源頁面上顯示「V
 . 按一下資訊圖示以檢視工作環境的詳細資料。
 
 
+.結果
 此時會開啟「工作環境詳細資料」面板。
 
 image:screenshot-k8s-info-storage-class.png["Kubernetes叢集的工作環境詳細資料快照。"]
@@ -80,6 +82,7 @@ image:screenshot-k8s-default-storage-class.png["設定預設儲存類別的動�
 
 
 
+.結果
 選取的儲存類別設為預設值。
 
 image:screenshot-k8s-default-set-storage-class.png["顯示預設儲存類別的快照。"]
@@ -101,4 +104,5 @@ image:screenshot-k8s-remove-confirm-storage-class.png["用於移除儲存類別�
 
 
 
+.結果
 選取的儲存類別即會移除。

@@ -22,6 +22,7 @@ summary: 將自我管理的OpenShift叢集匯入至BlueXP、以便開始將持�
 
 您可以使用Kubernetes組態檔匯入自我管理的Kubernetes叢集。
 
+.開始之前
 在新增OpenShift叢集之前、您需要：
 
 * 您在其中建立的「kubeconfig」檔案 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-openshift.html#create-a-kubeconfig-file["建立Kbeconfig檔案"]。
@@ -42,4 +43,5 @@ image:screenshot-oc-certs.png["叢集憑證上傳畫面的快照。"]
 
 
 
+.結果
 BlueXP會將Kubernetes叢集新增至Canvas.

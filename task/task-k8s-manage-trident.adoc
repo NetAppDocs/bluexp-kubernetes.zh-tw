@@ -41,4 +41,5 @@ image:screenshot-k8s-upgrade-trident.png["Astra Trident升級程序的快照。"
 
 
 
+.結果
 安裝最新版的Astra Trident。您現在可以新增儲存類別。

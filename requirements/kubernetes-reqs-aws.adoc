@@ -25,9 +25,9 @@ NOTE: 本主題使用_Kubernetes叢集_、其中EKS和自我管理Kubernetes叢�
 
 Astra Trident:: 需要最新版Astra Trident的四種版本之一。您可以直接從BlueXP安裝或升級Astra Trident。您應該 link:https://docs.netapp.com/us-en/trident/trident-get-started/requirements.html["檢閱先決條件"^] 安裝Astra Trident之前。
 Cloud Volumes ONTAP:: AWS的for AWS必須設定為叢集的後端儲存設備。Cloud Volumes ONTAP https://docs.netapp.com/us-en/trident/trident-use/backends.html["如需組態步驟、請前往Astra Trident文件"^]。
-BlueXP Connector:: 連接器必須以所需權限在AWS中執行。  a Connector,深入瞭解。
-網路連線能力:: Kubernetes叢集和Connector之間、以及Kubernetes叢集和Cloud Volumes ONTAP 整個過程之間、都需要網路連線。  networking requirements,深入瞭解。
-RBAC授權:: 每個Kubernetes叢集都必須授權BlueXP Connector角色。  up RBAC authorization,深入瞭解。
+BlueXP Connector:: 連接器必須以所需權限在AWS中執行。 <<準備連接器,深入瞭解>>。
+網路連線能力:: Kubernetes叢集和Connector之間、以及Kubernetes叢集和Cloud Volumes ONTAP 整個過程之間、都需要網路連線。 <<檢閱網路需求,深入瞭解>>。
+RBAC授權:: 每個Kubernetes叢集都必須授權BlueXP Connector角色。 <<設定RBAC授權,深入瞭解>>。
 
 
 

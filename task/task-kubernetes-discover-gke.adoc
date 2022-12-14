@@ -39,6 +39,7 @@ image:screenshot-k8s-gke-discover.png["「Discover a Kubernetes Cluster」（探
 
 
 
+.結果
 BlueXP會將Kubernetes叢集新增至Canvas.
 
 image:screenshot-k8s-gke-canvas.png["在BlueXP中顯示Kubernetes叢集的Canvased快照。"]
@@ -65,4 +66,5 @@ image:screenshot-k8s-gke-import-1.png["匯入Kubernetes叢集頁面的快照、�
 
 
 
+.結果
 BlueXP會將Kubernetes叢集新增至Canvas.
