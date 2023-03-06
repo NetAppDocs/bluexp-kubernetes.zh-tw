@@ -24,7 +24,7 @@ summary: 將Amazon Elastic Kubernetes Service（Amazon EKS）叢集新增至Blue
 
 .步驟
 . 在* Canvas*上、按一下*新增工作環境*。
-. 選取* Amazon Web Services*>* Kubernetes Cluster*、然後按一下* Next*。
+. 選擇* Amazon Web Services*>* Kubernetes Cluster*>* Discover *。
 +
 image:screenshot-discover-kubernetes-aws-1.png["「Discover a Kubernetes Cluster」（探索Kubernetes叢集）頁面的快照、顯示選取的AWS區域和Kubernetes叢集。"]
 
@@ -48,7 +48,7 @@ image:screenshot-kubernetes-canvas.png["在BlueXP中顯示Kubernetes叢集的Can
 
 .步驟
 . 在* Canvas*上、按一下*新增工作環境*。
-. 選取* Amazon Web Services*>* Kubernetes Cluster*、然後按一下* Next*。
+. 選擇* Amazon Web Services*>* Kubernetes Cluster*>* Discover *。
 . 選取*匯入叢集*、然後按一下*下一步*。
 . 上傳Yaml格式的Kubernetes組態檔案。
 +

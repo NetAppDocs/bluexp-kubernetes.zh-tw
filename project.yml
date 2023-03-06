@@ -45,7 +45,7 @@ sidebar:
     - title: 在Google Cloud上新增叢集
       flavor: gcp
       url: "/task/task-kubernetes-discover-gke.html"
-    - title: 在OpenShift上新增叢集
+    - title: 匯入OpenShift叢集
       url: "/task/task-kubernetes-discover-openshift.html"
   - title: 管理Kubernetes叢集
     url: "/concept-manage-k8s.html"

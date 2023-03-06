@@ -24,7 +24,7 @@ summary: 您可以探索Kubernetes叢集或將其匯入至BlueXP、以便將持�
 
 .步驟
 . 在* Canvas*上、按一下*新增工作環境*。
-. 選擇* Google Cloud Platform*>* Kubernetes Cluster*、然後按一下* Next*。
+. 選擇* Google Cloud Platform*>* Kubernetes Cluster*>* Discover *。
 +
 image:screenshot-discover-kubernetes-gke.png["「新增工作環境」頁面的快照、顯示所選的Google Cloud Platform和Kubernetes叢集。"]
 
@@ -58,7 +58,7 @@ image:screenshot-k8s-gke-canvas.png["在BlueXP中顯示Kubernetes叢集的Canvas
 
 .步驟
 . 在* Canvas*上、按一下*新增工作環境*。
-. 選擇* Google Cloud Platform*>* Kubernetes Cluster*、然後按一下* Next*。
+. 選擇* Google Cloud Platform*>* Kubernetes Cluster*>* Discover *。
 . 選取*匯入叢集*、然後按一下*下一步*。
 . 上傳Yaml格式的Kubernetes組態檔案。
 +

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <blocks>
   <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">取得協助</block>
-  <block id="07d41912a6ab6b97216f8cf89e93205c" category="section-title">自我支援</block>
   <block id="5e4b821a1a82558dead1ef6961e90666" category="paragraph">這些選項可供免費使用、一天24小時、一週7天：</block>
   <block id="19111351b69b6b15668130b38b7f6038" category="inline-link">知識庫</block>
   <block id="fd6bb4fa1ad0caeedd6782d92cc54ea3" category="list-text"><block ref="fd6bb4fa1ad0caeedd6782d92cc54ea3" category="inline-link-rx"></block></block>
@@ -9,9 +8,7 @@
   <block id="410fdb9caa9c64da2ff3f88f4836960d" category="list-text"><block ref="410fdb9caa9c64da2ff3f88f4836960d" category="inline-link-rx"></block></block>
   <block id="5b6cf869265c13af8566f192b4ab3d2a" category="list-text">文件</block>
   <block id="80b1b0d2b1ebf2b3cba2d25759801afd" category="list-text">mailto：ng-cloudmanager-feedback@netapp.com [意見反應電子郵件]</block>
-  <block id="0659d428df833a806e29e65e632d380a" category="section-title">NetApp支援</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">步驟</block>
-  <block id="f5052c65917d7341726235d4d4941461" category="list-text">在「Technical Support（技術支援）」下選擇可用的選項之一：</block>
   <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">註冊以取得支援</block>
   <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">「說明」功能表的快照、其中「支援」是第一個列出的選項</block>
   <block id="868d9aa88f16ea923af1d15eac5d2647" category="paragraph"><block ref="868d9aa88f16ea923af1d15eac5d2647" category="inline-image-macro-rx" type="image"></block></block>
@@ -262,7 +259,6 @@
   <block id="381ebbd947b85d55ba63ca069f4fd6e2" category="section-title">探索叢集</block>
   <block id="59e75b22101388124024ba384dec1f2d" category="paragraph">您可以探索完全託管或自我管理的Kubernetes叢集。必須探索託管叢集、無法匯入。</block>
   <block id="b3077ecf2da7858bca9554a978d04da1" category="list-text">在* Canvas*上、按一下*新增工作環境*。</block>
-  <block id="858e77f2f26c5391299a73161193d161" category="list-text">選擇* Google Cloud Platform*&gt;* Kubernetes Cluster*、然後按一下* Next*。</block>
   <block id="43fbe4a8201abe6b37503070f0c554c0" category="inline-image-macro">「新增工作環境」頁面的快照、顯示所選的Google Cloud Platform和Kubernetes叢集。</block>
   <block id="eb2d4b29a1f82dc5edd4825f3698ddd1" category="paragraph"><block ref="eb2d4b29a1f82dc5edd4825f3698ddd1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="85b561ece86eb3db6c1399eedd6f653e" category="list-text">選擇* Discover Cluster*（探索叢集）、然後按* Next*（下一步*）。</block>
@@ -294,7 +290,6 @@
   <block id="3a84970eaeee39d237d01aa9a3807a56" category="paragraph">此時會顯示已設定的持續磁碟區表格。</block>
   <block id="9d7f06e389e97b5210ff3327f767fb7e" category="inline-image-macro">持續磁碟區表格的快照。</block>
   <block id="592eeadfba828d69880933e6db8c3887" category="paragraph"><block ref="592eeadfba828d69880933e6db8c3887" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="74ee8afccfb46a392dec169f0956097b" category="list-text">選取* Microsoft Azure *&gt;* Kubernetes Cluster*、然後按一下* Next*。</block>
   <block id="16a071ff29c08b2edb676685f737e0a0" category="inline-image-macro">「新增工作環境」頁面的快照、顯示所選的Microsoft Azure和Kubernetes叢集。</block>
   <block id="d15187582d177bb14569cfabe373d93d" category="paragraph"><block ref="d15187582d177bb14569cfabe373d93d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="860ae4b6d7d8ee1a9456e45642a4a03b" category="paragraph"><block ref="860ae4b6d7d8ee1a9456e45642a4a03b" category="inline-image-macro-rx" type="image"></block></block>
@@ -302,10 +297,8 @@
   <block id="bb45c01f0defa7d4025530e60da27413" category="list-text">上傳Kubernetes叢集管理員提供的叢集憑證。</block>
   <block id="88191bdb31785cfc9f3930579c08bc01" category="inline-image-macro">用於上傳「憑證授權單位」、「用戶端金鑰」和「用戶端憑證」憑證的叢集憑證頁面快照。</block>
   <block id="590894349703ecdfd70867c311b0ca06" category="paragraph"><block ref="590894349703ecdfd70867c311b0ca06" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="29508a151c67e3d0dd86c039a47344fd" category="list-text">選取* Amazon Web Services*&gt;* Kubernetes Cluster*、然後按一下* Next*。</block>
   <block id="d59c3e6f1bd8ff190720d2953c94c804" category="inline-image-macro">「Discover a Kubernetes Cluster」（探索Kubernetes叢集）頁面的快照、顯示選取的AWS區域和Kubernetes叢集。</block>
   <block id="f8c9a10cf098481ef28aa7f25a7229aa" category="paragraph"><block ref="f8c9a10cf098481ef28aa7f25a7229aa" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ff2853c5c1f36238a0df55da68e45c91" category="list-text">選擇AWS區域、選取Kubernetes叢集、然後按一下「*下一步*」。</block>
   <block id="319ac76ffc37cba773f6bfe88644a59e" category="paragraph"><block ref="319ac76ffc37cba773f6bfe88644a59e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="208bc8f4c94339fa8fca1463c194cc66" category="list-text">選取Kubernetes叢集、然後按一下*下一步*。</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">版本資訊</block>
@@ -350,7 +343,6 @@
   <block id="d3addf40fe274281b5a1b857dc827df3" category="admonition">如果未定義儲存類別、叢集將顯示需要採取行動。按兩下畫版上的叢集、會開啟動作頁面以新增儲存類別。</block>
   <block id="61d60f1794bd3201467c51134b8ed076" category="sidebar">Kubernetes叢集文件</block>
   <block id="62ee9336109ed1c4538423613b856682" category="section-title">2022年6月6日</block>
-  <block id="cd6d587cb36421715f3cc24a2c91aef6" category="paragraph">Cloud Manager現在支援Amazon FSX ONTAP 作為後端儲存設備。</block>
   <block id="624105df248e28f049a2f58eb3552d40" category="list-text">EC2：取消註冊</block>
   <block id="b272876bb8d27e636bb70f2dce15cb34" category="list-text">EKS：清單叢集</block>
   <block id="457a1b6178515d282232753f808e8cf5" category="list-text">EKS：取消叢集</block>
@@ -388,11 +380,9 @@
   <block id="f82e729d73d970e1bd3789638aed5dca" category="inline-link-macro">將OpenShift叢集新增至Cloud Manager</block>
   <block id="049c95d2615dd6bba6242ffae7eae5fe" category="list-text"><block ref="049c95d2615dd6bba6242ffae7eae5fe" category="inline-link-macro-rx"></block></block>
   <block id="19e7864b32363d7ba3bb16a024e95d79" category="list-text">何時 <block ref="44765f3a3e8511cc80b0083ae1e5f436" category="inline-link-macro-rx"></block>、您現在可以為區塊儲存指定檔案系統類型（fstype-）。</block>
-  <block id="775f8efc928538f555b4520733a0825d" category="paragraph">在新增OpenShift叢集之前、您需要：</block>
   <block id="d795d581b00d494d8c6250bb5e1fcf89" category="inline-link-macro">建立Kbeconfig檔案</block>
   <block id="e7076b96b4cfb7668eac66eb624334ad" category="list-text">叢集的公開憑證授權單位（例如、ca．crt）、用戶端金鑰（例如TLS．key）和用戶端憑證（例如TLS．crt）檔案。</block>
   <block id="17011a566ae4f46bae81e507282825fb" category="list-text">在* Canvas*上、選取*新增工作環境*。</block>
-  <block id="4c031f22edba9db9f5529644e071eb8a" category="list-text">選擇您的雲端供應商、然後選擇* Kubernetes Cluster*、再選擇* Next*。</block>
   <block id="02ebc3697d40233b9c554520eda51f25" category="list-text">選擇*匯入叢集*、然後選擇*下一步*。</block>
   <block id="7c371426945f4674b445faa898f442c8" category="list-text">上傳叢集憑證。</block>
   <block id="40a58da0341e721e033a4cf334d62ab0" category="inline-image-macro">叢集憑證上傳畫面的快照。</block>
@@ -424,13 +414,11 @@
   <block id="ed6be01d66e94b422222a328f085d0bc" category="list-text">建立「cree-kupeconfig．sh」檔案。將下列指令碼開頭的「toke_index」取代為正確的值。</block>
   <block id="7d164f3971b504d6203cf274cc77dd35" category="list-text">請輸入命令以將其套用至Kubernetes叢集。</block>
   <block id="0c6a9a1e3ba06deae014e58e617bd162" category="sidebar">OpenShift上的Kubernetes叢集</block>
-  <block id="0ec3c7d00da8bde7e119875963ce517b" category="sidebar">在OpenShift上新增叢集</block>
   <block id="9a1523c9f261730956627967961b03ba" category="list-text">您在其中建立的「kubeconfig」檔案 <block ref="853bbee8a9a9e7ed0c6dbe47e266bf3d" category="inline-link-macro-rx"></block>。</block>
   <block id="d68d1fb21874c919e4b91a231a5f7974" category="list-text">上傳您在中建立的「kubeconfig-SA」檔案 <block ref="853bbee8a9a9e7ed0c6dbe47e266bf3d" category="inline-link-macro-rx"></block>。選取Kubernetes叢集、然後選取* Next*。</block>
   <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">除了上述的自我支援選項、您也可以在啟動支援之後、與NetApp支援專家合作解決任何問題。</block>
   <block id="e2a733504c4088b809813bbb35a3ddfd" category="inline-link-macro">瞭解如何註冊以取得支援</block>
   <block id="383133cb6f7207b1c65c3ace94aa5e95" category="list-text">如果您想與電話上的其他人通話、請按一下*「呼叫我們*」。您將會被導向netapp.com上的頁面、其中列出您可以撥打的電話號碼。</block>
-  <block id="bf5bc6ab0f95f17f4e98c9d766b8c11d" category="list-text">按一下*建立案例*、與NetApp支援專家一起開啟問題單：</block>
   <block id="b53e0a259f4a0c8e7da80d6c94e26c84" category="list-text">*《支援帳戶*》：選取與開立支援案例的人員相關的適用的NSS帳戶。NetApp 支援網站除了以下提供的其他電子郵件之外、此人將是NetApp聯絡的主要聯絡人。</block>
   <block id="2e50c5f85523f0aba9ff2db10f18279c" category="list-text">*工作環境*：如果適用於儲存設備、請選取* Cloud Volumes ONTAP 《*》或*《內部部署*》、然後選取相關的工作環境。</block>
   <block id="e6f29fb3c7636dc0040600dd0e84bb79" category="list-text">*案例優先順序*：選擇案例的優先順序、可以是低、中、高或嚴重。</block>
@@ -513,10 +501,7 @@
   <block id="1afe19576f77bb0073c93359ed2cbb18" category="list-text">在BlueXP主控台右上角、按一下「說明」圖示、然後選取「*支援*」。</block>
   <block id="cbc6cc3bb022583403171b447b2a962c" category="paragraph">這些行動可讓BlueXP將您的nssa帳戶用於授權下載、軟體升級驗證、以及未來的支援註冊等項目。</block>
   <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">請注意下列事項：</block>
-  <block id="0f0a0d646a020cf3a65ce82ada4cfb01" category="list-text">帳戶必須是客戶層級的帳戶（不是來賓帳戶或臨時帳戶）。</block>
   <block id="1dcb63fd55c4d22e87cb32275b8cc808" category="inline-image-macro">三個橫點的圖示</block>
-  <block id="ff67299785d475e87002751aa6ab5eb8" category="list-text">成功登入後、NetApp會儲存NSS.使用者名稱。這是系統產生的ID、會對應至您的電子郵件。在「* nssn*管理*」頁面上、您可以從顯示電子郵件 <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> 功能表。</block>
-  <block id="505da61efe6bebebbaf092da18f64613" category="list-text">如果您需要重新整理登入認證憑證權杖、也可以在中使用*更新認證*選項 <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> 功能表。使用此選項會提示您重新登入。</block>
   <block id="ad56c7289bc13dcf4f78c285f7f03878" category="section-title">向NetApp註冊</block>
   <block id="f1bac79c2c71fbd93863b9fbd718094c" category="paragraph">您如何註冊NetApp支援取決於您是否已擁有NetApp 支援網站 一個NetApp（NSS）帳戶。</block>
   <block id="bf4c731c0ee7f60c8018ad8f96828dda" category="section-title">現有的客戶、擁有一個新服務客戶帳戶</block>
@@ -566,7 +551,6 @@
   <block id="813e0c140ee10df8f101e9a1489de17b" category="summary">將託管Kubernetes叢集新增至Canvased之後、您可以使用BlueXP來管理儲存類別。</block>
   <block id="810d62676145fe879fed7ed8a1ee0b17" category="paragraph">將受管理的Kubernetes叢集新增至Canvased之後、您可以使用BlueXP來管理儲存類別。</block>
   <block id="eaf3ec2142c8e728c168bcce984b8f8a" category="summary">將自我管理的OpenShift叢集匯入至BlueXP、以便開始將持續磁碟區備份至雲端供應商。</block>
-  <block id="0af3a7ff999cca901839880f4821011a" category="doc">將OpenShift叢集新增至藍圖XP</block>
   <block id="87eb1c50a9edf2828790a29892be6cd8" category="paragraph">將自我管理的OpenShift叢集匯入至BlueXP、以便開始將持續磁碟區備份至雲端供應商。</block>
   <block id="09a68e4db95f2514ba15c0664855019a" category="summary">將託管Kubernetes叢集新增至Canvas之後、您可以使用BlueXP從工作區移除叢集。</block>
   <block id="1de96768a7ac64195941be24c27b9e69" category="paragraph">將受管理的Kubernetes叢集新增至Canvas之後、您可以使用BlueXP從工作區移除叢集。</block>
@@ -629,4 +613,20 @@
   <block id="0e2bc9c853e0af52ead12823c025e58b" category="list-text"><block ref="0e2bc9c853e0af52ead12823c025e58b" category="inline-link-macro-rx"></block></block>
   <block id="b0cee72642f5457a71ddd0b49efb6d93" category="inline-link-macro">適用於 Google Cloud Cloud Volumes Service</block>
   <block id="02efcbea18b9485a78a41871dce1e64d" category="list-text"><block ref="02efcbea18b9485a78a41871dce1e64d" category="inline-link-macro-rx"></block></block>
+  <block id="eea1e3b9ecdd5e32692761a0a78b9463" category="section-title">2023年3月5日</block>
+  <block id="ed9855757b31d516a4fa8f955edec2eb" category="list-text">BlueXP中的Kubernetes現在支援Astra Trident 23.01。</block>
+  <block id="3aea41413b60d0894823e739f01efcbb" category="list-text">使用者介面已進行改善、文件中已更新螢幕擷取畫面。</block>
+  <block id="62825001719fa641c3a8235d2a324b31" category="paragraph">Cloud Manager現在支援Amazon FSX ONTAP 做為後端儲存設備。</block>
+  <block id="020cdcf75af448034455fde9f5359770" category="doc">將OpenShift叢集匯入至BlueXP</block>
+  <block id="d507a2c476794012c5403c02b1e10599" category="paragraph">在匯入OpenShift叢集之前、您需要：</block>
+  <block id="da391b0f5d5be6622fec4f741f6e4b96" category="list-text">選取您的雲端供應商、然後選取* Kubernetes Cluster*&gt;* Discover *。</block>
+  <block id="0777348438f5b5e80b80f0b45f60b666" category="list-text">選擇* Google Cloud Platform*&gt;* Kubernetes Cluster*&gt;* Discover *。</block>
+  <block id="824ab8e63b4d52c9afc7f4925a7654af" category="list-text">選擇* Amazon Web Services*&gt;* Kubernetes Cluster*&gt;* Discover *。</block>
+  <block id="84a9f84fdd14e27de2581a0cef7980f8" category="list-text">選擇AWS區域、選取Kubernetes叢集、然後按一下「*下一步*」。</block>
+  <block id="8382e8880f439b654a53cf3d0d0c1bfc" category="list-text">選擇* Microsoft Azure *&gt;* Kubernetes Cluster*&gt;* Discover *。</block>
+  <block id="edd15fbeb7b2dffa163336ecd4f3e80c" category="section-title">使用自我支援選項</block>
+  <block id="d88bacf2a9fdcbbc844edcba97c34e30" category="section-title">利用NetApp支援建立案例</block>
+  <block id="08d96fdd1a845d80db99e6e1dffb8bc7" category="list-text">在「*資源*」頁面上、選擇「技術支援」下的其中一個可用選項：</block>
+  <block id="5be2e1dfe4bf215289731df45ec8157b" category="list-text">按一下*建立案例*、與NetApp支援專家一起開啟問題單：</block>
+  <block id="14d43bcefa1304e65774a093c0b798c2" category="sidebar">匯入OpenShift叢集</block>
 </blocks>

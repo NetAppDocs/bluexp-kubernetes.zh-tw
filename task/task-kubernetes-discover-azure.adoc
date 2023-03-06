@@ -24,7 +24,7 @@ summary: 將Kubernetes叢集新增至BlueXP、以便開始將持續磁碟區備�
 
 .步驟
 . 在* Canvas*上、按一下*新增工作環境*。
-. 選取* Microsoft Azure *>* Kubernetes Cluster*、然後按一下* Next*。
+. 選擇* Microsoft Azure *>* Kubernetes Cluster*>* Discover *。
 +
 image:screenshot-discover-kubernetes-aks.png["「新增工作環境」頁面的快照、顯示所選的Microsoft Azure和Kubernetes叢集。"]
 
@@ -54,7 +54,7 @@ image:screenshot-k8s-aks-canvas.png["在BlueXP中顯示Kubernetes叢集的Canvas
 
 .步驟
 . 在* Canvas*上、按一下*新增工作環境*。
-. 選取* Microsoft Azure *>* Kubernetes Cluster*、然後按一下* Next*。
+. 選擇* Microsoft Azure *>* Kubernetes Cluster*>* Discover *。
 . 選取*匯入叢集*、然後按一下*下一步*。
 . 上傳Yaml格式的Kubernetes組態檔案。
 +
