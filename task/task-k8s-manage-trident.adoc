@@ -4,7 +4,7 @@ permalink: /task/task-k8s-manage-trident.html
 keywords: kubernetes, k8s, install astra trident, kubernetes support 
 summary: 將託管Kubernetes叢集新增至Canvas之後、您可以使用BlueXP確認相容的Astra Trident安裝或安裝Astra Trident。需要最新版Astra Trident的四種版本之一。 
 ---
-= 安裝或升級Astra Trident
+= 管理Astra Trident
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,17 +14,32 @@ summary: 將託管Kubernetes叢集新增至Canvas之後、您可以使用BlueXP�
 
 
 [role="lead"]
-將受管理的Kubernetes叢集新增至Canvased之後、您可以使用BlueXP確認相容的Astra Trident安裝、或是安裝或升級Astra Trident至最新版本。
-
-[NOTE]
-====
-* 如果未安裝Astra Trident、或安裝不相容版本的Astra Trident、叢集會顯示需要採取行動。
-* 需要使用Trident運算子（手動或使用Helm圖表）部署的Astra Trident四個最新版本之一。
-* 使用部署Astra Trident `tridentctl` 不受支援。如果您使用部署Astra Trident `tridentctl`、您無法使用BlueXP來管理Kubernetes叢集。您必須  並重新安裝 link:https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-deploy-operator.html["使用Trident運算子"^] 或使用下列步驟。
+將託管 Kubernetes 叢集新增至 Canvas 之後、您可以使用 BlueXP 來確認相容的 Astra Trident 安裝、安裝或升級 Astra Trident 至最新版本、或是解除安裝 Astra Trident 。
 
 
-====
+
+== BlueXP 中的 Astra Trident
+
+將 Kubernetes 叢集新增至 BlueXP 之後、您可以從概觀頁面管理 Astra Trident 和 Kubernetes 叢集。若要開啟總覽頁面、請按兩下 Canvas 上的 Kubernetes 工作環境。
+
+image:screenshot-k8s-resource-page.png["Kubernetes資源頁面的快照、顯示叢集的詳細資料。"]
+
+
+
+=== 支援的 Astra Trident 版本
+
+需要使用Trident運算子（手動或使用Helm圖表）部署的Astra Trident四個最新版本之一。如果未安裝Astra Trident、或安裝不相容版本的Astra Trident、叢集會顯示需要採取行動。
+
+
+NOTE: 使用部署Astra Trident `tridentctl` 不受支援。如果您使用部署Astra Trident `tridentctl`、您無法使用 BlueXP 來管理 Kubernetes 叢集或解除安裝 Astra Trident 。您必須  並使用手動重新安裝 Astra Trident link:https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-deploy-operator.html["Trident 運算子"^] 或在 BlueXP 中使用 <<安裝或升級Astra Trident>>。
+
 若要深入瞭解Astra Trident、請參閱 link:https://docs.netapp.com/us-en/trident/index.html["Astra Trident文件"^]。
+
+
+
+== 安裝或升級Astra Trident
+
+您可以在概觀頁面上檢閱 Astra Trident 的安裝狀態和版本。如果 Astra Trident 尚未安裝、或安裝不相容的版本、您可以使用 BlueXP 來管理。
 
 .步驟
 . 按兩下Canvas上的Kubernetes工作環境、或按一下*輸入工作環境*。
@@ -37,9 +52,40 @@ image:screenshot-k8s-install-trident.png["K8s資源頁面的快照、顯示沒�
 +
 image:screenshot-k8s-upgrade-trident.png["Astra Trident升級程序的快照。"]
 
++
+
+NOTE: 您無法使用 BlueXP 從早於 21.01 的 Astra Trident 版本升級。若要從舊版升級、請參閱 link:https://docs.netapp.com/us-en/trident/trident-managing-k8s/upgrade-operator.html["與營運者一起升級"^]。
+
 
 
 
 
 .結果
 安裝最新版的Astra Trident。您現在可以新增儲存類別。
+
+
+
+== 解除安裝Astra Trident
+
+如果您使用 BlueXP 或使用 Trident 運算子（ Helm 或手動）安裝 Astra Trident 、則可以使用 BlueXP 解除安裝。
+
+[NOTE]
+====
+* 解除安裝 Astra Trident 之後、您無法建立新的持續磁碟區、但現有的磁碟區仍可用。
+* 當 Astra Trident 解除安裝時、備份將無法使用。
+* 您可以隨時將 Astra Trident 重新安裝至工作環境、以繼續管理叢集。
+
+
+====
+使用 BlueXP 解除安裝 Astra Trident 並不會移除安裝期間套用的所有 Astra Trident 服務。若要完全移除 Astra Trident 、包括其建立的所有自訂資源定義（ CRD ）、請參閱 link:https://docs.netapp.com/us-en/trident/trident-managing-k8s/uninstall-trident.html#uninstall-by-using-the-trident-operator["使用 Trident 運算子解除安裝"^]
+
+.步驟
+. 從概述頁面中、選取省略號和 * 解除安裝 Astra Trident * 。
++
+image:screenshot-trident-uninstall.png["用於解除安裝 Astra Trident 的功能表螢幕擷取畫面。"]
+
+. 選取 * 解除安裝 * 以確認並解除安裝 Astra Trident 。
+
+
+.結果
+Astra Trident 現在已從工作環境中解除安裝。您可以隨時重新安裝 Astra Trident 。

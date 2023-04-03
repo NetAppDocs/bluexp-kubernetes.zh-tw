@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: /task/task-k8s-quick-start.html 
 keywords: kubernetes, persistent volumes, containers, persistent storage, kubeconfig, trident, kubernetes cluster, storage classes, classes, cvo-single, cvo-ha, thick provisioning, trident_trident, connect, disconnect, provision 
-summary: 將Kubernetes叢集新增至BlueXP、即可快速完成進階資料管理。 
+summary: 使用 BlueXP 、您只需幾個步驟就能開始管理 Kubernetes 叢集。 
 ---
 = 開始使用Kubernetes叢集
 :hardbreaks:
@@ -14,12 +14,6 @@ summary: 將Kubernetes叢集新增至BlueXP、即可快速完成進階資料管�
 
 
 [role="lead"]
-將Kubernetes叢集新增至BlueXP、即可在幾個步驟中進行進階資料管理。
-
-
-
-== 快速入門
-
 使用 link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/index.html["藍圖"^] 只需幾個步驟、就能開始管理Kubernetes叢集。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"] 檢閱先決條件
