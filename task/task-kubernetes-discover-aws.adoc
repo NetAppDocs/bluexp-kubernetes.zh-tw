@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: /task/task-kubernetes-discover-aws.html 
+permalink: task/task-kubernetes-discover-aws.html 
 keywords: kubernetes, k8s, discover kubernetes cluster, discover k8s, amazon eks, eks, kubernetes support, import kubernetes cluster, import, amazon s3, amazon, aws 
 summary: 將Amazon Elastic Kubernetes Service（Amazon EKS）叢集新增至BlueXP、以便開始將持續磁碟區備份至Amazon S3。 
 ---

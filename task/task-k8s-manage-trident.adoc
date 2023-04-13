@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: /task/task-k8s-manage-trident.html 
+permalink: task/task-k8s-manage-trident.html 
 keywords: kubernetes, k8s, install astra trident, kubernetes support 
 summary: 將託管Kubernetes叢集新增至Canvas之後、您可以使用BlueXP確認相容的Astra Trident安裝或安裝Astra Trident。需要最新版Astra Trident的四種版本之一。 
 ---

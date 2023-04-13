@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: /requirements/kubernetes-reqs-gke.html 
+permalink: requirements/kubernetes-reqs-gke.html 
 keywords: kubernetes, k8s, discover kubernetes cluster, discover k8s, google, google cloud, gke, kubernetes support 
 summary: 您可以使用BlueXP在Google中新增及管理託管的Google Kubernetes Engine叢集（GKE）和自我管理的Kubernetes叢集。在您將叢集新增至BlueXP之前、請先確認符合下列需求。 
 ---

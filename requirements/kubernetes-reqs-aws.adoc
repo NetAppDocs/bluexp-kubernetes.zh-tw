@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: /requirements/kubernetes-reqs-aws.html 
+permalink: requirements/kubernetes-reqs-aws.html 
 keywords: kubernetes, k8s, discover kubernetes cluster, discover k8s, amazon eks, eks, kubernetes support, aws 
 summary: 在您將Amazon Elastic Kubernetes Service（Amazon EKS）叢集新增至BlueXP之前、您必須確保符合下列要求。 
 ---

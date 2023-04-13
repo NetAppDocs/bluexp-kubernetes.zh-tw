@@ -455,7 +455,6 @@
   <block id="5accd680218ff9b6eb59e6b42358c82d" category="paragraph">Azure中的BlueXP Connector需要探索及管理Kubernetes叢集。您需要建立新的Connector、或是使用具有所需權限的現有Connector。</block>
   <block id="271a084e5da48dbda9ce571c76885fc2" category="list-text"><block ref="1707909349e0f679cb0ce7a24d808ea4" category="inline-link-macro-rx"></block> （建議）</block>
   <block id="dfbe168da8f2c622999763a901cfb01f" category="summary">您可以使用BlueXP安裝Astra Trident、設定儲存類別、移除叢集及啟用資料服務。</block>
-  <block id="85f3c28401138a5e7e67a35f6a6235fb" category="paragraph">您可以使用BlueXP安裝或升級Astra Trident、設定儲存類別、移除叢集、以及啟用資料服務。</block>
   <block id="a13d7ae6b7b86fa9e684a460792c33c3" category="inline-link-macro">使用&lt;block ref="c67fd1b99934afa248dfeb285a9a4191" prefix ="" CATORILE="ine-code'/&gt;解除安裝</block>
   <block id="b057ae1ed0b2c48dbe6fd1b1b2ea1a30" category="inline-link-macro">使用BlueXP</block>
   <block id="37501597ef11ef33ee3ccd735a467231" category="admonition">使用部署Astra Trident<block ref="c67fd1b99934afa248dfeb285a9a4191" prefix=" " category="inline-code"></block> 不受支援。如果您使用部署Astra Trident<block ref="c67fd1b99934afa248dfeb285a9a4191" prefix=" " category="inline-code"></block>、您無法使用BlueXP來管理Kubernetes叢集。您必須 <block ref="beced4150254b668093e945aacf7262c" category="inline-link-macro-rx"></block> 並重新安裝 <block ref="47df2f698ba12609a6e06bab6dbff5ef" category="inline-link-macro-rx"></block> 或 <block ref="966d0d33f20c27bebc66ad66d76f5da9" category="inline-link-macro-rx"></block>。</block>
@@ -709,4 +708,5 @@
   <block id="5a81378cdc7edd9ea960cf02d6ca78d2" category="paragraph">ifdef::aws[]</block>
   <block id="b010c7530103ef9947582474d65ff9a3" category="paragraph">ifdef::azure[]</block>
   <block id="6e1e9c83b80f4d22d34cbdf60a71383b" category="paragraph">ifdef::gcp[]</block>
+  <block id="8bdda2d9f896ca0243f1004a375b90ba" category="paragraph">[].Lead ] 您可以使用 BlueXP 來安裝或升級 Astra Trident 、設定儲存類別、移除叢集、以及啟用資料服務。</block>
 </blocks>

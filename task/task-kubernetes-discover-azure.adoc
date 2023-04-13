@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: /task/task-kubernetes-discover-azure.html 
+permalink: task/task-kubernetes-discover-azure.html 
 keywords: kubernetes, k8s, discover kubernetes cluster, discover k8s, import kubernetes cluster, azure, aks, kubernetes support 
 summary: 將Kubernetes叢集新增至BlueXP、以便開始將持續磁碟區備份至Azure。 
 ---

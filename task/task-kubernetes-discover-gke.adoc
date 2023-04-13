@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: /task/task-kubernetes-discover-gke.html 
+permalink: task/task-kubernetes-discover-gke.html 
 keywords: kubernetes, k8s, discover kubernetes cluster, discover k8s, import kubernetes cluster, google, google cloud, gke, kubernetes support 
 summary: 您可以探索Kubernetes叢集或將其匯入至BlueXP、以便將持續的磁碟區備份至Google Cloud。 
 ---

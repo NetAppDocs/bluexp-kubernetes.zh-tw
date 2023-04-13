@@ -38,7 +38,7 @@ indexpage:
       url: "/task/task-kubernetes-discover-openshift.html"
   - title: 管理Kubernetes叢集
     links:
-    - title: 安裝Astra Trident
+    - title: 管理Astra Trident
       url: "/task/task-k8s-manage-trident.html"
     - title: 管理儲存類別
       url: "/task/task-k8s-manage-storage-classes.html"
