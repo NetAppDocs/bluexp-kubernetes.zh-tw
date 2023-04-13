@@ -20,39 +20,27 @@ summary: 使用 BlueXP 、您只需幾個步驟就能開始管理 Kubernetes 叢
 [role="quick-margin-para"]
 確保您的環境符合叢集類型的先決條件。
 
-ifdef::aws[]
+[role="quick-margin-para"]
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aws.html["AWS中Kubernetes叢集的需求"]
 
 [role="quick-margin-para"]
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aws.html["AWS中Kubernetes叢集的需求"]endif::AWS []
-
-ifdef::azure[]
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aks.html["Azure中Kubernetes叢集的需求"]
 
 [role="quick-margin-para"]
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aks.html["Azure中Kubernetes叢集的需求"]endif::azure[]
-
-ifdef::gcp[]
-
-[role="quick-margin-para"]
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-gke.html["Google Cloud中Kubernetes叢集的需求"]endif::GCP[]
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-gke.html["Google Cloud中Kubernetes叢集的需求"]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 將Kubernetes叢集新增至藍圖XP
 [role="quick-margin-para"]
 您可以新增Kubernetes叢集、並使用BlueXP將其連線至工作環境。
 
-ifdef::aws[]
+[role="quick-margin-para"]
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-kubernetes-discover-aws.html["新增Amazon Kubernetes叢集"]
 
 [role="quick-margin-para"]
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-kubernetes-discover-aws.html["新增Amazon Kubernetes叢集"]endif::AWS []
-
-ifdef::azure[]
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-kubernetes-discover-azure.html["新增Azure Kubernetes叢集"]
 
 [role="quick-margin-para"]
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-kubernetes-discover-azure.html["新增Azure Kubernetes叢集"]endif::azure[]
-
-ifdef::gcp[]
-
-[role="quick-margin-para"]
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-kubernetes-discover-gke.html["新增Google Cloud Kubernetes叢集"]endif::GCP[]
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-kubernetes-discover-gke.html["新增Google Cloud Kubernetes叢集"]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["四"] 開始配置持續磁碟區
 [role="quick-margin-para"]
