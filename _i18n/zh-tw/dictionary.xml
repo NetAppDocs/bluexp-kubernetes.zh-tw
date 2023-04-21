@@ -455,7 +455,6 @@
   <block id="dfbe168da8f2c622999763a901cfb01f" category="summary">您可以使用BlueXP安裝Astra Trident、設定儲存類別、移除叢集及啟用資料服務。</block>
   <block id="a13d7ae6b7b86fa9e684a460792c33c3" category="inline-link-macro">使用&lt;block ref="c67fd1b99934afa248dfeb285a9a4191" prefix ="" CATORILE="ine-code'/&gt;解除安裝</block>
   <block id="b057ae1ed0b2c48dbe6fd1b1b2ea1a30" category="inline-link-macro">使用BlueXP</block>
-  <block id="37501597ef11ef33ee3ccd735a467231" category="admonition">使用部署Astra Trident<block ref="c67fd1b99934afa248dfeb285a9a4191" prefix=" " category="inline-code"></block> 不受支援。如果您使用部署Astra Trident<block ref="c67fd1b99934afa248dfeb285a9a4191" prefix=" " category="inline-code"></block>、您無法使用BlueXP來管理Kubernetes叢集。您必須 <block ref="beced4150254b668093e945aacf7262c" category="inline-link-macro-rx"></block> 並重新安裝 <block ref="47df2f698ba12609a6e06bab6dbff5ef" category="inline-link-macro-rx"></block> 或 <block ref="966d0d33f20c27bebc66ad66d76f5da9" category="inline-link-macro-rx"></block>。</block>
   <block id="f1353ecc73ca9ea978933e3884b9ce99" category="paragraph">將Kubernetes叢集新增至BlueXP之後、您可以從資源頁面管理叢集。若要開啟資源頁面、請按兩下Canvas上的Kubernetes工作環境。</block>
   <block id="8f696d5a5f9b66b14465e6edd8c0ec21" category="doc">Kubernetes的資料管理功能</block>
   <block id="8b4d25df20eadf8dd52c5fe961669cb3" category="paragraph">BlueXP支援在下列環境中執行的託管Kubernetes叢集：</block>
@@ -697,4 +696,5 @@
   <block id="09e2861e1b9bab7606bd9fd36b62d621" category="paragraph"><block ref="09e2861e1b9bab7606bd9fd36b62d621" category="inline-link-macro-rx"></block></block>
   <block id="f35dd6f069daa276f73035ff894db1e3" category="inline-link-macro">將 OpenShift 叢集匯入 Cloud Manager</block>
   <block id="12b9f0d46f95d9c0c2f1be83526fc206" category="list-text"><block ref="12b9f0d46f95d9c0c2f1be83526fc206" category="inline-link-macro-rx"></block></block>
+  <block id="99c79d7305ef37a48c4a2e79d238d9cf" category="admonition">使用部署Astra Trident<block ref="c67fd1b99934afa248dfeb285a9a4191" prefix=" " category="inline-code"></block> 不受支援。如果您使用部署Astra Trident<block ref="c67fd1b99934afa248dfeb285a9a4191" prefix=" " category="inline-code"></block>、您無法使用BlueXP來管理Kubernetes叢集。您必須 <block ref="beced4150254b668093e945aacf7262c" category="inline-link-macro-rx"></block> 並重新安裝 <block ref="47df2f698ba12609a6e06bab6dbff5ef" category="inline-link-macro-rx"></block> 或 <block ref="6111f1619ab72aa073417e456dea63ce" category="inline-link-macro-rx"></block>。</block>
 </blocks>
