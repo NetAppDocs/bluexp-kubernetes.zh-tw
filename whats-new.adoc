@@ -45,7 +45,7 @@ summary: 瞭解BlueXP中Kubernetes的新功能。
 您現在可以將自我管理的OpenShift叢集匯入Cloud Manager。
 
 * link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-openshift.html["OpenShift中的Kubernetes叢集需求"]
-* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-add-openshift.html["將OpenShift叢集新增至Cloud Manager"]
+* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-kubernetes-discover-openshift.html["將 OpenShift 叢集匯入 Cloud Manager"]
 
 
 

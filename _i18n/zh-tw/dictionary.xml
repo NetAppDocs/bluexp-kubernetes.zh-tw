@@ -363,8 +363,6 @@
   <block id="d8d8980dd9fc5d0937a35fea8cb24808" category="paragraph">您現在可以將自我管理的OpenShift叢集匯入Cloud Manager。</block>
   <block id="b77adae4ee23d10b92f9545417611303" category="inline-link-macro">OpenShift中的Kubernetes叢集需求</block>
   <block id="fd4ea134fa6bbf226ead48569ec25aaa" category="list-text"><block ref="fd4ea134fa6bbf226ead48569ec25aaa" category="inline-link-macro-rx"></block></block>
-  <block id="f82e729d73d970e1bd3789638aed5dca" category="inline-link-macro">將OpenShift叢集新增至Cloud Manager</block>
-  <block id="049c95d2615dd6bba6242ffae7eae5fe" category="list-text"><block ref="049c95d2615dd6bba6242ffae7eae5fe" category="inline-link-macro-rx"></block></block>
   <block id="19e7864b32363d7ba3bb16a024e95d79" category="list-text">何時 <block ref="44765f3a3e8511cc80b0083ae1e5f436" category="inline-link-macro-rx"></block>、您現在可以為區塊儲存指定檔案系統類型（fstype-）。</block>
   <block id="d795d581b00d494d8c6250bb5e1fcf89" category="inline-link-macro">建立Kbeconfig檔案</block>
   <block id="e7076b96b4cfb7668eac66eb624334ad" category="list-text">叢集的公開憑證授權單位（例如、ca．crt）、用戶端金鑰（例如TLS．key）和用戶端憑證（例如TLS．crt）檔案。</block>
@@ -697,4 +695,6 @@
   <block id="187496d0d891ffe76a43f6ffdd995505" category="paragraph"><block ref="187496d0d891ffe76a43f6ffdd995505" category="inline-link-macro-rx"></block></block>
   <block id="e72a8a52b20d0b466a3152c8c60b4f2b" category="paragraph"><block ref="e72a8a52b20d0b466a3152c8c60b4f2b" category="inline-link-macro-rx"></block></block>
   <block id="09e2861e1b9bab7606bd9fd36b62d621" category="paragraph"><block ref="09e2861e1b9bab7606bd9fd36b62d621" category="inline-link-macro-rx"></block></block>
+  <block id="f35dd6f069daa276f73035ff894db1e3" category="inline-link-macro">將 OpenShift 叢集匯入 Cloud Manager</block>
+  <block id="12b9f0d46f95d9c0c2f1be83526fc206" category="list-text"><block ref="12b9f0d46f95d9c0c2f1be83526fc206" category="inline-link-macro-rx"></block></block>
 </blocks>
