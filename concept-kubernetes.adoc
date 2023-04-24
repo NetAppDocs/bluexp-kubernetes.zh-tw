@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-kubernetes.html 
-keywords: kubernetes, k8s, back up kubernetes, back up k8s, discover kubernetes cluster, discover k8s, amazon eks, eks, azure, aks, back up persistent volumes, persistent volumes, kubernetes support, cloud manager 
+keywords: kubernetes, k8s, back up kubernetes, back up k8s, discover kubernetes cluster, discover k8s, amazon eks, eks, azure, aks, back up persistent volumes, persistent volumes, kubernetes support, cloud manager, bluexp 
 summary: Astra Trident是由NetApp維護的完全支援開放原始碼專案。Astra Trident與Kubernetes及其持續Volume架構原生整合、可從執行任何NetApp儲存平台組合的系統無縫配置及管理Volume。 
 ---
 = Kubernetes的資料管理功能
@@ -20,15 +20,7 @@ Astra Trident是由NetApp維護的完全支援開放原始碼專案。Astra Trid
 
 == 功能
 
-使用 link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/index.html["藍圖"^] （前身為 Cloud Manager ）、以及使用 Trident 運算子部署的相容版本 Astra Trident 、您可以：
-
-* 新增及管理 Kubernetes 叢集
-* link:./task/task-k8s-manage-trident.html["安裝、升級或解除安裝 Astra Trident"]
-* link:./task/task-k8s-manage-storage-classes.html["新增及移除儲存類別"]
-* link:./task/task-k8s-manage-persistent-volumes.html["檢視持續磁碟區"]
-* link:./task/task-k8s-manage-remove-cluster.html["移除 Kubernetes 叢集"] 從工作區
-* link:./task/task-kubernetes-enable-services.html["啟動或檢視 Cloud Backup"]
-
+使用 link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/index.html["藍圖"^] （ Cloud Manager ）以及使用 Trident 運算子部署的相容版本 Astra Trident 、您可以： * 新增及管理 Kubernetes 叢集 * link:./task/task-k8s-manage-trident.html["安裝、升級或解除安裝 Astra Trident"]* link:./task/task-k8s-manage-storage-classes.html["新增及移除儲存類別"]* link:./task/task-k8s-manage-persistent-volumes.html["檢視持續磁碟區"]* link:./task/task-k8s-manage-remove-cluster.html["移除 Kubernetes 叢集"] 從工作區 * link:./task/task-kubernetes-enable-services.html["啟動或檢視 BlueXP 備份與還原"]
 
 
 

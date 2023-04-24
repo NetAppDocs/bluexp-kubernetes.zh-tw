@@ -88,7 +88,6 @@
   <block id="642589473fadbb6740e9f7d1a3850cf1" category="list-text">檢視持續磁碟區。請參閱 <block ref="5d330c78fdbd034ad3466dadfcb8a623" category="inline-link-macro-rx"></block>。</block>
   <block id="89a12c12c4f14698d4d0f49fd915edb9" category="list-text">從工作區移除Kubernetes叢集。請參閱 <block ref="33d1886382ffb71c3c53768c25f3a54f" category="inline-link-macro-rx"></block>。</block>
   <block id="c83be9d30dd0d8b55fb8bdbf6f11eb85" category="inline-link-macro">使用NetApp雲端資料服務</block>
-  <block id="cc4669d33ef06bf93b19ebf4331f6973" category="list-text">啟動或檢視Cloud Backup。請參閱 <block ref="f48a95ae0530624cb3f954263c78705c" category="inline-link-macro-rx"></block>。</block>
   <block id="b6511d823d5fc5c8c219b52663e32c20" category="doc">Google Cloud中Kubernetes叢集的需求</block>
   <block id="89acfe5365df26c5b2d9c418b9507492" category="admonition">本主題使用_Kubernetes叢集_、其中GKE和自我管理Kubernetes叢集的組態相同。叢集類型是在組態不同的地方指定。</block>
   <block id="5a2ebfb8baa378cfcfcba58bbb1380c2" category="section-title">需求</block>
@@ -248,9 +247,6 @@
   <block id="35cbaff5433d00a9b082ae5c280b5e9e" category="paragraph"><block ref="35cbaff5433d00a9b082ae5c280b5e9e" category="inline-link-macro-rx"></block></block>
   <block id="c51edbd9644671669f8a6fc9bdfe66fe" category="summary">將託管Kubernetes叢集新增至Canvases之後、您可以使用NetApp雲端資料服務來進行進階資料管理。</block>
   <block id="7c3dba5dcfefe7c148fb75a35249f81c" category="doc">將NetApp雲端資料服務與Kubernetes叢集搭配使用</block>
-  <block id="7f502b44c9ac6d1d030af7019328b0f2" category="inline-link-macro">瞭解如何使用Cloud Backup保護Kubernetes叢集資料</block>
-  <block id="608303aeee3cf05fa80edbe0bfe6fa7f" category="paragraph"><block ref="6bac3e672a275b3f2755f168dc31fbab" category="inline-link-macro-rx"></block>。</block>
-  <block id="a0d9f3ae32f1b7df23e0071308b6cbe5" category="inline-image-macro">此頁面的快照Cloud Backup Service 顯示了Kubernetes叢集的五個備份工作。</block>
   <block id="381ebbd947b85d55ba63ca069f4fd6e2" category="section-title">探索叢集</block>
   <block id="59e75b22101388124024ba384dec1f2d" category="paragraph">您可以探索完全託管或自我管理的Kubernetes叢集。必須探索託管叢集、無法匯入。</block>
   <block id="b3077ecf2da7858bca9554a978d04da1" category="list-text">在* Canvas*上、按一下*新增工作環境*。</block>
@@ -327,7 +323,6 @@
   <block id="a36cee8f656cd9e61ae5593885084071" category="open-title">編輯AWS/AUTH</block>
   <block id="434f77de052a92ee529d95ba80f3bab4" category="inline-link">如需完整指示、請參閱AWS EKS文件</block>
   <block id="05dcb2fa0de0a4549322d783d2f5e5fb" category="paragraph"><block ref="7af1dbb48bd59e8f995e1a97be9e70f8" category="inline-link-rx"></block>。</block>
-  <block id="9caa4ae51ebcef018806ad6f192f8ff2" category="paragraph"><block ref="9caa4ae51ebcef018806ad6f192f8ff2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8fe98c5be333c8d7ddf225ff536de10d" category="paragraph"><block ref="8fe98c5be333c8d7ddf225ff536de10d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d3addf40fe274281b5a1b857dc827df3" category="admonition">如果未定義儲存類別、叢集將顯示需要採取行動。按兩下畫版上的叢集、會開啟動作頁面以新增儲存類別。</block>
   <block id="61d60f1794bd3201467c51134b8ed076" category="sidebar">Kubernetes叢集文件</block>
@@ -348,7 +343,6 @@
   <block id="a4505b3bac04e5dbfea022e8773b5c49" category="paragraph"><block ref="a4505b3bac04e5dbfea022e8773b5c49" category="inline-link-macro-rx"></block></block>
   <block id="8e932625bb22cba770e5b9207060175a" category="paragraph">NetApp Astra Trident必須安裝在每個Kubernetes叢集上、Cloud Volumes ONTAP 且必須ONTAP 將適用於此功能的EFlash或Amazon FSX設定為叢集的後端儲存設備。</block>
   <block id="d6bbc73a6086ac314349118e0d0d4de3" category="paragraph">將託管Kubernetes叢集新增至Canvases之後、您就可以使用NetApp雲端資料服務來進行進階資料管理。</block>
-  <block id="9db5c72d5e9592f882f48324ae18d47c" category="paragraph">您可以使用Cloud Backup將持續磁碟區備份到物件儲存設備。</block>
   <block id="62286cd48d8328138c2c4d1b71e6fe45" category="doc">安裝或升級Astra Trident</block>
   <block id="7d3743c0dc40fd5a7d78e22b9d4f94d4" category="list-text">如果安裝了不受支援的Astra Trident版本、請按一下*升級Trident *。</block>
   <block id="319a42bc8932c7d4f9387e0c5de9c64c" category="list-text">從Canvas,將Kubernetes工作環境拖放到Cloud Volumes ONTAP 支援ONTAP 動作環境的支援區或Amazon FSX來開啟儲存類別精靈。</block>
@@ -561,7 +555,6 @@
   <block id="6b1835b63a667b5d28c6cf5c193ebf6d" category="inline-image-macro">在設定區塊或檔案K8s儲存類別時、顯示「儲存經濟」選項的快照。</block>
   <block id="ffa448ca3a4e90a2baa6bcb5e38dfb5c" category="paragraph"><block ref="ffa448ca3a4e90a2baa6bcb5e38dfb5c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="45c054bee9c262cc9a4a08ee09307ceb" category="admonition">使用儲存等級經濟模式時、不支援備份與還原。</block>
-  <block id="be35568ff63793a98ea03ab0d34ae986" category="paragraph">瞭解BlueXP（前身為Cloud Manager）Kubernetes的新功能。</block>
   <block id="084fbbb062290ef487eac98d44edd278" category="paragraph">何時 <block ref="44765f3a3e8511cc80b0083ae1e5f436" category="inline-link-macro-rx"></block>、您現在可以為區塊或檔案系統儲存設備啟用儲存等級的經濟效益。</block>
   <block id="88268cce7d1b83c765c3f7010df80df5" category="section-title">2022年11月6日</block>
   <block id="9b9477e579c3b44dd623d5a6e1ea8d78" category="inline-link-macro">藍圖</block>
@@ -634,17 +627,9 @@
   <block id="88c49608e723add593f5becc8bd9a968" category="section-title">2023 年 4 月 2 日</block>
   <block id="7786076739da628161f45de338cd6e69" category="inline-link-macro">解除安裝 Astra Trident</block>
   <block id="ffb0a040d2831585e0b568e5514270de" category="list-text">您現在可以了 <block ref="16c9025f993808479cd22f07cd778a2c" category="inline-link-macro-rx"></block> 是使用 Trident 運算子或 BlueXP 安裝的。</block>
-  <block id="b39075adcfffd4fd3160f2f3f63a59c5" category="paragraph">使用 <block ref="541c088337155bc1f5030ebf639984c7" category="inline-link-macro-rx"></block> （前身為 Cloud Manager ）、以及使用 Trident 運算子部署的相容版本 Astra Trident 、您可以：</block>
-  <block id="c8e0b61e09c13c9a6302fff8b355d22c" category="list-text">新增及管理 Kubernetes 叢集</block>
   <block id="a328809c4e80884ded58a673a70bcad8" category="inline-link-macro">安裝、升級或解除安裝 Astra Trident</block>
-  <block id="f21b0b2390c3041251b997210a7cf24f" category="list-text"><block ref="f21b0b2390c3041251b997210a7cf24f" category="inline-link-macro-rx"></block></block>
   <block id="8d9aa96de7c286ee7d10cfa821025a6f" category="inline-link-macro">新增及移除儲存類別</block>
-  <block id="ce62c2574c8872c1fed16a5a0a8d2840" category="list-text"><block ref="ce62c2574c8872c1fed16a5a0a8d2840" category="inline-link-macro-rx"></block></block>
-  <block id="5d330c78fdbd034ad3466dadfcb8a623" category="list-text"><block ref="5d330c78fdbd034ad3466dadfcb8a623" category="inline-link-macro-rx"></block></block>
   <block id="9c153b8dfcd24e0e7636fce1b4bc0046" category="inline-link-macro">移除 Kubernetes 叢集</block>
-  <block id="1055dc3b82f79fd0cc2d70e2b80ad343" category="list-text"><block ref="95401bdeb9da6ac759821eb6cb403909" category="inline-link-macro-rx"></block> 從工作區</block>
-  <block id="579ae5f19c02240c7a837f86f15400b5" category="inline-link-macro">啟動或檢視 Cloud Backup</block>
-  <block id="9f4013cde5baeea58bab7f26d0642b38" category="list-text"><block ref="9f4013cde5baeea58bab7f26d0642b38" category="inline-link-macro-rx"></block></block>
   <block id="c7f5c1a75acc58c6f004efc0ce1eba09" category="list-text">* 附件（選填） * ：上傳最多五個附件、一次上傳一個。</block>
   <block id="bfa80e7aaad6da353b431bff3a0e12d6" category="paragraph">每個檔案的附件上限為 25 MB 。支援下列副檔名： txt 、 log 、 pdf 、 jpg/jpeg 、 rtf 、 doc/dox 、 xls/xlsx 和 csv 。</block>
   <block id="898e35e1a4bf4b025c3edec879439b08" category="section-title">管理支援案例（預覽）</block>
@@ -697,4 +682,13 @@
   <block id="f35dd6f069daa276f73035ff894db1e3" category="inline-link-macro">將 OpenShift 叢集匯入 Cloud Manager</block>
   <block id="12b9f0d46f95d9c0c2f1be83526fc206" category="list-text"><block ref="12b9f0d46f95d9c0c2f1be83526fc206" category="inline-link-macro-rx"></block></block>
   <block id="99c79d7305ef37a48c4a2e79d238d9cf" category="admonition">使用部署Astra Trident<block ref="c67fd1b99934afa248dfeb285a9a4191" prefix=" " category="inline-code"></block> 不受支援。如果您使用部署Astra Trident<block ref="c67fd1b99934afa248dfeb285a9a4191" prefix=" " category="inline-code"></block>、您無法使用BlueXP來管理Kubernetes叢集。您必須 <block ref="beced4150254b668093e945aacf7262c" category="inline-link-macro-rx"></block> 並重新安裝 <block ref="47df2f698ba12609a6e06bab6dbff5ef" category="inline-link-macro-rx"></block> 或 <block ref="6111f1619ab72aa073417e456dea63ce" category="inline-link-macro-rx"></block>。</block>
+  <block id="9fe3360dab01ce9c0d1ba6e2b65f7740" category="paragraph">您可以使用 BlueXP 備份與還原、將持續性磁碟區備份到物件儲存區。</block>
+  <block id="1049611936f50079edb2cfbb3e430d42" category="inline-link-macro">瞭解如何使用 BlueXP 備份與還原來保護 Kubernetes 叢集資料</block>
+  <block id="ffef3f044e2dba86d633dbe1ca47e0ab" category="paragraph"><block ref="e426a27d66dd749e3e55c643391e0ce8" category="inline-link-macro-rx"></block>。</block>
+  <block id="020085b46323ffcdcb569d583c9597ca" category="inline-image-macro">BlueXP 備份與還原中 Kubernetes 頁面的螢幕擷取畫面、顯示 Kubernetes 叢集的五個備份工作。</block>
+  <block id="7700de0c0f5f67fa6642e11a7a8430a9" category="paragraph"><block ref="7700de0c0f5f67fa6642e11a7a8430a9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="77e1e303a063c3bd0ea334e8a2343ce0" category="list-text">啟動或檢視 BlueXP 備份與還原。請參閱 <block ref="f48a95ae0530624cb3f954263c78705c" category="inline-link-macro-rx"></block>。</block>
+  <block id="eb10d90f9780d4b2ba3926ffaaa63b04" category="inline-link-macro">啟動或檢視 BlueXP 備份與還原</block>
+  <block id="d85b4300d8f4111c0c79d2d65cad3858" category="paragraph">使用 <block ref="541c088337155bc1f5030ebf639984c7" category="inline-link-macro-rx"></block> （ Cloud Manager ）以及使用 Trident 運算子部署的相容版本 Astra Trident 、您可以： * 新增及管理 Kubernetes 叢集 * <block ref="f21b0b2390c3041251b997210a7cf24f" category="inline-link-macro-rx"></block>* <block ref="ce62c2574c8872c1fed16a5a0a8d2840" category="inline-link-macro-rx"></block>* <block ref="5d330c78fdbd034ad3466dadfcb8a623" category="inline-link-macro-rx"></block>* <block ref="95401bdeb9da6ac759821eb6cb403909" category="inline-link-macro-rx"></block> 從工作區 * <block ref="de6156e46a0797be4d22df59cc5bf2d9" category="inline-link-macro-rx"></block></block>
+  <block id="bb9d6271eda9dfe1e95490ac0c6196e0" category="paragraph">瞭解 BlueXP （ Cloud Manager ） Kubernetes 的新功能。</block>
 </blocks>

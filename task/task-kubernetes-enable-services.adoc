@@ -16,8 +16,8 @@ summary: 將託管Kubernetes叢集新增至Canvases之後、您可以使用NetAp
 [role="lead"]
 將託管Kubernetes叢集新增至Canvases之後、您就可以使用NetApp雲端資料服務來進行進階資料管理。
 
-您可以使用Cloud Backup將持續磁碟區備份到物件儲存設備。
+您可以使用 BlueXP 備份與還原、將持續性磁碟區備份到物件儲存區。
 
-link:https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-kubernetes-backup-to-cloud.html["瞭解如何使用Cloud Backup保護Kubernetes叢集資料"^]。
+link:https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-kubernetes-backup-to-cloud.html["瞭解如何使用 BlueXP 備份與還原來保護 Kubernetes 叢集資料"^]。
 
-image:screenshot-k8s-backup.png["此頁面的快照Cloud Backup Service 顯示了Kubernetes叢集的五個備份工作。"]
+image:screenshot-k8s-backup.png["BlueXP 備份與還原中 Kubernetes 頁面的螢幕擷取畫面、顯示 Kubernetes 叢集的五個備份工作。"]
