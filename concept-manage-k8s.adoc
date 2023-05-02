@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-manage-k8s.html 
-keywords: overview, manage, k8s, kubernetes 
+keywords: overview, manage, k8s, kubernetes, tridentctl, trident operator, operator 
 summary: 您可以使用BlueXP安裝Astra Trident、設定儲存類別、移除叢集及啟用資料服務。 
 ---
 = 管理Kubernetes叢集
@@ -13,10 +13,8 @@ summary: 您可以使用BlueXP安裝Astra Trident、設定儲存類別、移除�
 :imagesdir: ./media/
 
 
-[].Lead ] 您可以使用 BlueXP 來安裝或升級 Astra Trident 、設定儲存類別、移除叢集、以及啟用資料服務。
-
-
-NOTE: 使用部署Astra Trident `tridentctl` 不受支援。如果您使用部署Astra Trident `tridentctl`、您無法使用BlueXP來管理Kubernetes叢集。您必須  並重新安裝 link:https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-deploy-operator.html["使用Trident運算子"^] 或 link:./task/task-k8s-manage-trident.html["使用BlueXP"]。
+[role="lead"]
+您可以使用BlueXP安裝或升級Astra Trident、設定儲存類別、移除叢集、以及啟用資料服務。
 
 
 
@@ -35,3 +33,9 @@ image:screenshot-k8s-resource-page.png["Kubernetes資源頁面的快照、顯示
 * 從工作區移除Kubernetes叢集。請參閱 link:./task/task-k8s-manage-remove-cluster.html["移除叢集"]。
 * 啟動或檢視 BlueXP 備份與還原。請參閱 link:./task/task-kubernetes-enable-services.html["使用NetApp雲端資料服務"]。
 
+
+
+
+== 已知限制
+
+使用部署Astra Trident `tridentctl` 不受支援。如果您使用部署Astra Trident `tridentctl`、您無法使用BlueXP來管理Kubernetes叢集。您必須  並重新安裝 link:https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-deploy-operator.html["使用Trident運算子"^] 或 link:./task/task-k8s-manage-trident.html["使用BlueXP"]。
