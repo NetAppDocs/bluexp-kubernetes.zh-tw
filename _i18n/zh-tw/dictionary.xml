@@ -137,7 +137,6 @@
   <block id="515f76789d2dca7dac91e44bba61e4f7" category="open-title">備份/還原</block>
   <block id="0653aaf657fc7447bc8ef9afc51f9214" category="paragraph">新增基本授權以啟用Kubernetes叢集的備份與還原。</block>
   <block id="7672a092783c4348b96b40ea2dcf6681" category="open-title">儲存類別</block>
-  <block id="b8b9eab8c1ed7b79387652490f5724ec" category="open-title">安裝Trident</block>
   <block id="26b09dacbaf5084bbe92bfa4d75feba8" category="list-text">將組態套用至叢集。</block>
   <block id="b65741d409db3b7986653580cc3988b8" category="doc">AWS中Kubernetes叢集的需求</block>
   <block id="f56b205821b231a157cc0e3315bc72a6" category="admonition">本主題使用_Kubernetes叢集_、其中EKS和自我管理Kubernetes叢集的組態相同。叢集類型是在組態不同的地方指定。</block>
@@ -421,7 +420,6 @@
   <block id="f7222df6cb8751e5170e0c080b1d9c8b" category="admonition">安裝Astra Trident時、BlueXP會安裝Astra Trident後端和Kubernetes機密、其中包含Astra Trident與儲存叢集通訊所需的認證資料。</block>
   <block id="cdca0da1d2011ac8290613208cd27183" category="paragraph">使用OpenShift CLI、建立要匯入至BlueXP的Kbeconfig檔案。</block>
   <block id="ef8cb07eb709ab2dd77c5197292f1ad7" category="paragraph">新增擴充授權、以使用BlueXP新增儲存類別。</block>
-  <block id="1fe5f07cd7f6b046882a66a9f9c308d2" category="paragraph">授予完整的系統管理授權、並讓BlueXP能夠安裝Astra Trident。</block>
   <block id="1cf62d04ff1d6f106540e83e87189d1e" category="paragraph">您將使用所產生的<block ref="f6adb0f39622272857607018d7dae272" prefix=" " category="inline-code"></block> 將OpenShift叢集新增至藍圖XP的檔案。</block>
   <block id="5864314e79f82b7c3c052854ba96e1e0" category="summary">您可以使用BlueXP在Google中新增及管理託管的Google Kubernetes Engine叢集（GKE）和自我管理的Kubernetes叢集。在您將叢集新增至BlueXP之前、請先確認符合下列需求。</block>
   <block id="16b03cdbe1a0514e3fcd3be6a9b75e53" category="paragraph">您可以使用BlueXP在Google中新增及管理託管的Google Kubernetes Engine（GKE）叢集和自我管理的Kubernetes叢集。在您將叢集新增至BlueXP之前、請先確認符合下列需求。</block>
@@ -434,7 +432,6 @@
   <block id="a98bab458877b0457a2c3a9d497d4c28" category="list-text">若要使用BlueXP新增儲存類別、並監控叢集是否有變更後端、則需要擴充授權。</block>
   <block id="0b8291e09c9132ced81e011fafd4e6f6" category="list-text">您必須提供BlueXP的完整授權、才能安裝Astra Trident。</block>
   <block id="4e5cd7e1a45a0aed5c401dff45585470" category="paragraph">以進行設定 <block ref="28fbe2acd4be605635c165dd4f851ab7" prefix="" category="inline-code"></block> 在Yaml檔案中、您需要知道BlueXP的唯一ID。</block>
-  <block id="52964b35567ba6adef127cdd68d2fa70" category="paragraph">使用命令列提供完整授權、並讓BlueXP安裝Astra Trident。</block>
   <block id="a895f05376600e7bc32dbc4f67005168" category="summary">在您將Amazon Elastic Kubernetes Service（Amazon EKS）叢集新增至BlueXP之前、您必須確保符合下列要求。</block>
   <block id="90d6ace9ee6fceabcd67dc1494bdf5d6" category="paragraph">您可以將AWS上的託管Amazon Elastic Kubernetes Service（EKS）叢集或自我管理Kubernetes叢集新增至BlueXP。在將叢集新增至BlueXP之前、您必須確保符合下列需求。</block>
   <block id="6415585679e8669958974ee45b65dfd2" category="list-text">每個Kubernetes叢集都必須授權BlueXP Connector角色。 <block ref="ed89a5c7598981ce49ff49e89b6578d7" category="inline-xref-macro-rx"></block>。</block>
@@ -689,6 +686,12 @@
   <block id="7700de0c0f5f67fa6642e11a7a8430a9" category="paragraph"><block ref="7700de0c0f5f67fa6642e11a7a8430a9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="77e1e303a063c3bd0ea334e8a2343ce0" category="list-text">啟動或檢視 BlueXP 備份與還原。請參閱 <block ref="f48a95ae0530624cb3f954263c78705c" category="inline-link-macro-rx"></block>。</block>
   <block id="eb10d90f9780d4b2ba3926ffaaa63b04" category="inline-link-macro">啟動或檢視 BlueXP 備份與還原</block>
-  <block id="d85b4300d8f4111c0c79d2d65cad3858" category="paragraph">使用 <block ref="541c088337155bc1f5030ebf639984c7" category="inline-link-macro-rx"></block> （ Cloud Manager ）以及使用 Trident 運算子部署的相容版本 Astra Trident 、您可以： * 新增及管理 Kubernetes 叢集 * <block ref="f21b0b2390c3041251b997210a7cf24f" category="inline-link-macro-rx"></block>* <block ref="ce62c2574c8872c1fed16a5a0a8d2840" category="inline-link-macro-rx"></block>* <block ref="5d330c78fdbd034ad3466dadfcb8a623" category="inline-link-macro-rx"></block>* <block ref="95401bdeb9da6ac759821eb6cb403909" category="inline-link-macro-rx"></block> 從工作區 * <block ref="de6156e46a0797be4d22df59cc5bf2d9" category="inline-link-macro-rx"></block></block>
   <block id="bb9d6271eda9dfe1e95490ac0c6196e0" category="paragraph">瞭解 BlueXP （ Cloud Manager ） Kubernetes 的新功能。</block>
+  <block id="e30f3ee6790404c5b010673da880568c" category="paragraph">使用 <block ref="541c088337155bc1f5030ebf639984c7" category="inline-link-macro-rx"></block> （ Cloud Manager ）以及使用 Trident 運算子部署的相容版本 Astra Trident 、您可以：</block>
+  <block id="c8e0b61e09c13c9a6302fff8b355d22c" category="list-text">新增及管理 Kubernetes 叢集</block>
+  <block id="f21b0b2390c3041251b997210a7cf24f" category="list-text"><block ref="f21b0b2390c3041251b997210a7cf24f" category="inline-link-macro-rx"></block></block>
+  <block id="ce62c2574c8872c1fed16a5a0a8d2840" category="list-text"><block ref="ce62c2574c8872c1fed16a5a0a8d2840" category="inline-link-macro-rx"></block></block>
+  <block id="5d330c78fdbd034ad3466dadfcb8a623" category="list-text"><block ref="5d330c78fdbd034ad3466dadfcb8a623" category="inline-link-macro-rx"></block></block>
+  <block id="1055dc3b82f79fd0cc2d70e2b80ad343" category="list-text"><block ref="95401bdeb9da6ac759821eb6cb403909" category="inline-link-macro-rx"></block> 從工作區</block>
+  <block id="de6156e46a0797be4d22df59cc5bf2d9" category="list-text"><block ref="de6156e46a0797be4d22df59cc5bf2d9" category="inline-link-macro-rx"></block></block>
 </blocks>

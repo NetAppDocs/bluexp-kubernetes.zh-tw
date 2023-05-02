@@ -20,7 +20,15 @@ Astra Trident是由NetApp維護的完全支援開放原始碼專案。Astra Trid
 
 == 功能
 
-使用 link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/index.html["藍圖"^] （ Cloud Manager ）以及使用 Trident 運算子部署的相容版本 Astra Trident 、您可以： * 新增及管理 Kubernetes 叢集 * link:./task/task-k8s-manage-trident.html["安裝、升級或解除安裝 Astra Trident"]* link:./task/task-k8s-manage-storage-classes.html["新增及移除儲存類別"]* link:./task/task-k8s-manage-persistent-volumes.html["檢視持續磁碟區"]* link:./task/task-k8s-manage-remove-cluster.html["移除 Kubernetes 叢集"] 從工作區 * link:./task/task-kubernetes-enable-services.html["啟動或檢視 BlueXP 備份與還原"]
+使用 link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/index.html["藍圖"^] （ Cloud Manager ）以及使用 Trident 運算子部署的相容版本 Astra Trident 、您可以：
+
+* 新增及管理 Kubernetes 叢集
+* link:./task/task-k8s-manage-trident.html["安裝、升級或解除安裝 Astra Trident"]
+* link:./task/task-k8s-manage-storage-classes.html["新增及移除儲存類別"]
+* link:./task/task-k8s-manage-persistent-volumes.html["檢視持續磁碟區"]
+* link:./task/task-k8s-manage-remove-cluster.html["移除 Kubernetes 叢集"] 從工作區
+* link:./task/task-kubernetes-enable-services.html["啟動或檢視 BlueXP 備份與還原"]
+
 
 
 

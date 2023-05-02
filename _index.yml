@@ -33,7 +33,6 @@ indexpage:
       flavor: azure
     - title: 在Google Cloud上新增叢集
       url: "/task/task-kubernetes-discover-gke.html"
-      flavor: gcp
     - title: 匯入OpenShift叢集
       url: "/task/task-kubernetes-discover-openshift.html"
   - title: 管理Kubernetes叢集
