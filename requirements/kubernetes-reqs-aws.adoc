@@ -119,7 +119,7 @@ NOTE: 安裝Astra Trident時、BlueXP會安裝Astra Trident後端和Kubernetes�
 .步驟
 . 建立叢集角色和角色繫結。
 +
-.. 根據您的授權要求、建立包含下列文字的Y反 洗錢檔案。
+.. 您可以根據自己的需求自訂授權。
 +
 [role="tabbed-block"]
 ====
@@ -264,6 +264,15 @@ roleRef:
     kind: ClusterRole
     name: cloudmanager-access-clusterrole
     apiGroup: rbac.authorization.k8s.io
+----
+--
+.Trident 安裝
+--
+使用命令列提供完整授權、並讓BlueXP安裝Astra Trident。
+
+[source, cli]
+----
+eksctl create iamidentitymapping --cluster < > --region < > --arn < > --group "system:masters" --username system:node:{{EC2PrivateDNSName}}
 ----
 --
 ====

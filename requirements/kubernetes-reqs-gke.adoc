@@ -123,13 +123,15 @@ image:screenshot-gke-unique-id.png["Cloud Console中服務帳戶詳細資料的�
 .步驟
 建立叢集角色和角色繫結。
 
-. 根據您的授權要求、建立包含下列文字的Y反 洗錢檔案。使用您的使用者名稱取代「子項目：種類：」變數、並以授權服務帳戶的唯一ID取代「子項目：使用者：」。
+. 您可以根據自己的需求自訂授權。
 +
 [role="tabbed-block"]
 ====
 .備份/還原
 --
 新增基本授權以啟用Kubernetes叢集的備份與還原。
+
+更換 ``subjects: kind:`` 使用您的使用者名稱和 ``subjects: user:`` 具有授權服務帳戶的唯一 ID 。
 
 [source, yaml]
 ----
@@ -208,6 +210,8 @@ roleRef:
 --
 新增擴充授權、以使用BlueXP新增儲存類別。
 
+更換 ``subjects: kind:`` 使用您的使用者名稱和 ``subjects: user:`` 具有授權服務帳戶的唯一 ID 。
+
 [source, yaml]
 ----
 apiVersion: rbac.authorization.k8s.io/v1
@@ -268,6 +272,15 @@ roleRef:
     kind: ClusterRole
     name: cloudmanager-access-clusterrole
     apiGroup: rbac.authorization.k8s.io
+----
+--
+.Trident 安裝
+--
+使用命令列提供完整授權、並讓BlueXP安裝Astra Trident。
+
+[source, cli]
+----
+kubectl create clusterrolebinding test --clusterrole cluster-admin --user <Unique ID>
 ----
 --
 ====

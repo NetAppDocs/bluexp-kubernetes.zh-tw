@@ -133,7 +133,6 @@
   <block id="4bf9575451981aabdb909c6a57da72cf" category="inline-image-macro">Cloud Console中服務帳戶詳細資料的快照。</block>
   <block id="ae62d39210641a9fb9c2dd38c13a2b07" category="paragraph"><block ref="ae62d39210641a9fb9c2dd38c13a2b07" category="inline-image-macro-rx" type="image"></block></block>
   <block id="33ebb2dacbde969dd24700b6e4dbe435" category="paragraph">建立叢集角色和角色繫結。</block>
-  <block id="a392c9c3d2df2d0a5afaed519cd01879" category="list-text">根據您的授權要求、建立包含下列文字的Y反 洗錢檔案。使用您的使用者名稱取代「子項目：種類：」變數、並以授權服務帳戶的唯一ID取代「子項目：使用者：」。</block>
   <block id="515f76789d2dca7dac91e44bba61e4f7" category="open-title">備份/還原</block>
   <block id="0653aaf657fc7447bc8ef9afc51f9214" category="paragraph">新增基本授權以啟用Kubernetes叢集的備份與還原。</block>
   <block id="7672a092783c4348b96b40ea2dcf6681" category="open-title">儲存類別</block>
@@ -166,7 +165,6 @@
   <block id="f6671ef10e842ca53232fd0b982400b1" category="paragraph"><block ref="f6671ef10e842ca53232fd0b982400b1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3af3ead39a5eec5783d926f19a9b6bfe" category="paragraph">您需要在每個Kubernetes叢集上授權Connector角色、以便Connector能夠探索及管理叢集。</block>
   <block id="d1c51ee4ad82e26c7069e126c0a5d25d" category="paragraph">需要不同的授權才能啟用不同的功能。</block>
-  <block id="12fb6938fb90a471014c2abce44ca15b" category="list-text">根據您的授權要求、建立包含下列文字的Y反 洗錢檔案。</block>
   <block id="836c1d30babd0339206570a66bcbb4f3" category="inline-link">如需完整說明、請參閱eksctl文件</block>
   <block id="1e37bf365a6041e37e34936645ebc0a8" category="paragraph"><block ref="1119b51b5b352ff18c686869eb8e6d24" category="inline-link-rx"></block>。</block>
   <block id="c5be663296cc453aa3076c0cfcedc102" category="doc">Azure中Kubernetes叢集的需求</block>
@@ -200,7 +198,6 @@
   <block id="787c8e09d4ba5342ce8f84b1af78b048" category="inline-image-macro">Azure管理入口網站上系統指派物件ID視窗的快照。</block>
   <block id="0c90ae4dc73f81dbbd0a6e0299f5deb5" category="paragraph"><block ref="0c90ae4dc73f81dbbd0a6e0299f5deb5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4ebffaff3187e96f25bb8b4b25978bda" category="list-text">如果您要部署*自我管理的Kubernetes叢集*、則需要任何授權使用者的使用者名稱。</block>
-  <block id="05a0030833e70e4af624c3716f988104" category="list-text">根據您的授權要求、建立包含下列文字的Y反 洗錢檔案。使用您的使用者名稱取代「子物件：種類：」變數、並將「子物件：使用者：」取代為系統指派的託管身分識別的物件ID、或是如上所述的任何授權使用者的使用者名稱。</block>
   <block id="14d9b10c6196045941347a9e85704b50" category="inline-link-macro">Astra Trident文件</block>
   <block id="49884bb39e4730239c5590a42f88d306" category="paragraph">若要深入瞭解Astra Trident、請參閱 <block ref="d243cca937364184efa824b0525b876a" category="inline-link-macro-rx"></block>。</block>
   <block id="1130de8b9b833485eff2e257fb69bfc6" category="list-text">按兩下Canvas上的Kubernetes工作環境、或按一下*輸入工作環境*。</block>
@@ -695,4 +692,10 @@
   <block id="de6156e46a0797be4d22df59cc5bf2d9" category="list-text"><block ref="de6156e46a0797be4d22df59cc5bf2d9" category="inline-link-macro-rx"></block></block>
   <block id="85f3c28401138a5e7e67a35f6a6235fb" category="paragraph">您可以使用BlueXP安裝或升級Astra Trident、設定儲存類別、移除叢集、以及啟用資料服務。</block>
   <block id="51ce397d2f1bccd912fdb6f415de2940" category="section-title">已知限制</block>
+  <block id="363b65cde3a58a4944b673e9d7fce91c" category="list-text">您可以根據自己的需求自訂授權。</block>
+  <block id="134cda91d8ceed300f8bbdb1a6b354ed" category="paragraph">更換 <block ref="860b2d1ba3877711b8cf22d81c10ee15" prefix="" category="inline-code"></block> 使用您的使用者名稱和 <block ref="ee324b4038870a1a0a7d516e6c4c421d" prefix="" category="inline-code"></block> 使用系統指派託管身分識別的物件 ID 、或上述任何授權使用者的使用者名稱。</block>
+  <block id="a108a9c48040b2343bc708a6b5ed0d22" category="open-title">Trident 安裝</block>
+  <block id="52964b35567ba6adef127cdd68d2fa70" category="paragraph">使用命令列提供完整授權、並讓BlueXP安裝Astra Trident。</block>
+  <block id="1fe5f07cd7f6b046882a66a9f9c308d2" category="paragraph">授予完整的系統管理授權、並讓BlueXP能夠安裝Astra Trident。</block>
+  <block id="7c0ad7b6a922ca797e316eb1ed6cdbeb" category="paragraph">更換 <block ref="860b2d1ba3877711b8cf22d81c10ee15" prefix="" category="inline-code"></block> 使用您的使用者名稱和 <block ref="ee324b4038870a1a0a7d516e6c4c421d" prefix="" category="inline-code"></block> 具有授權服務帳戶的唯一 ID 。</block>
 </blocks>

@@ -238,6 +238,26 @@ subjects:
       namespace: default
 ----
 --
+.Trident 安裝
+--
+授予完整的系統管理授權、並讓BlueXP能夠安裝Astra Trident。
+
+[source, yaml]
+----
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: cloudmanager-access-clusterrole
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: cluster-admin
+subjects:
+- kind: ServiceAccount
+  name: oc-service-account
+  namespace: default
+----
+--
 ====
 .. 套用叢集角色繫結：
 +
