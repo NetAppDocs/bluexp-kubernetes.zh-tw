@@ -42,9 +42,9 @@ Azure中的BlueXP Connector需要探索及管理Kubernetes叢集。您需要建�
 
 請遵循下列其中一個連結中的步驟。
 
-* link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html#overview["從BlueXP建立連接器"^] （建議）
-* link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-launching-azure-mktp.html["從Azure Marketplace建立連接器"^]
-* link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["在現有的Linux主機上安裝Connector"^]
+* link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-creating-connectors-azure.html#overview["從BlueXP建立連接器"^] （建議）
+* link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-launching-azure-mktp.html["從Azure Marketplace建立連接器"^]
+* link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-installing-linux.html["在現有的Linux主機上安裝Connector"^]
 
 
 

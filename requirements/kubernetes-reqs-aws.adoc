@@ -42,9 +42,9 @@ AWS需要使用BlueXP Connector來探索及管理Kubernetes叢集。您需要建
 
 請遵循下列其中一個連結中的步驟。
 
-* link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["從BlueXP建立連接器"^] （建議）
-* link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-launching-aws-mktp.html["從AWS Marketplace建立連接器"^]
-* link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["在AWS中現有的Linux主機上安裝Connector"^]
+* link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-creating-connectors-aws.html["從BlueXP建立連接器"^] （建議）
+* link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-launching-aws-mktp.html["從AWS Marketplace建立連接器"^]
+* link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-installing-linux.html["在AWS中現有的Linux主機上安裝Connector"^]
 
 
 
@@ -72,7 +72,7 @@ image:screenshot-aws-edit-policy.png["AWS主控台的快照、顯示「權限」
 
 
 +
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html["檢視原則的完整Json格式"^]
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html["檢視原則的完整Json格式"^]
 
 . 按一下「*檢閱原則*」、然後按一下「*儲存變更*」。
 

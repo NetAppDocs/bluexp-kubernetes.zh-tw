@@ -18,6 +18,6 @@ summary: 將託管Kubernetes叢集新增至Canvases之後、您可以使用NetAp
 
 您可以使用 BlueXP 備份與還原、將持續性磁碟區備份到物件儲存區。
 
-link:https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-kubernetes-backup-to-cloud.html["瞭解如何使用 BlueXP 備份與還原來保護 Kubernetes 叢集資料"^]。
+link:https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-kubernetes-backup-to-cloud.html["瞭解如何使用 BlueXP 備份與還原來保護 Kubernetes 叢集資料"^]。
 
 image:screenshot-k8s-backup.png["BlueXP 備份與還原中 Kubernetes 頁面的螢幕擷取畫面、顯示 Kubernetes 叢集的五個備份工作。"]

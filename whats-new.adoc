@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: whats-new.html 
 keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, cloud manager, bluexp' 
-summary: 瞭解BlueXP中Kubernetes的新功能。 
+summary: 瞭解 BlueXP 中 Kubernetes 的新功能。 
 ---
 = BlueXP中Kubernetes的新功能
 :hardbreaks:
@@ -14,13 +14,13 @@ summary: 瞭解BlueXP中Kubernetes的新功能。
 
 
 [role="lead"]
-瞭解 BlueXP （ Cloud Manager ） Kubernetes 的新功能。
+瞭解 BlueXP 中 Kubernetes 的新功能。
 
 
 
 == 2023 年 4 月 2 日
 
-* 您現在可以了 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-trident.html["解除安裝 Astra Trident"] 是使用 Trident 運算子或 BlueXP 安裝的。
+* 您現在可以了 link:https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-k8s-manage-trident.html["解除安裝 Astra Trident"] 是使用 Trident 運算子或 BlueXP 安裝的。
 * 使用者介面已進行改善、文件中已更新螢幕擷取畫面。
 
 
@@ -36,7 +36,7 @@ summary: 瞭解BlueXP中Kubernetes的新功能。
 
 == 2022年11月6日
 
-何時 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["定義儲存類別"]、您現在可以為區塊或檔案系統儲存設備啟用儲存等級的經濟效益。
+何時 link:https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["定義儲存類別"]、您現在可以為區塊或檔案系統儲存設備啟用儲存等級的經濟效益。
 
 
 
@@ -44,8 +44,8 @@ summary: 瞭解BlueXP中Kubernetes的新功能。
 
 您現在可以將自我管理的OpenShift叢集匯入Cloud Manager。
 
-* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-openshift.html["OpenShift中的Kubernetes叢集需求"]
-* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-kubernetes-discover-openshift.html["將 OpenShift 叢集匯入 Cloud Manager"]
+* link:https://docs.netapp.com/us-en/bluexp-kubernetes/requirements/kubernetes-reqs-openshift.html["OpenShift中的Kubernetes叢集需求"]
+* link:https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-discover-openshift.html["將 OpenShift 叢集匯入 Cloud Manager"]
 
 
 
@@ -54,15 +54,15 @@ summary: 瞭解BlueXP中Kubernetes的新功能。
 
 * Cloud Manager現在可以使用儲存類別中的新「-watch」動詞、備份及還原Yaml組態、監控Kubernetes叢集對叢集後端所做的變更、並在叢集上設定自動備份時、自動為新的持續磁碟區啟用備份。
 +
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aws.html["AWS中Kubernetes叢集的需求"]
+link:https://docs.netapp.com/us-en/bluexp-kubernetes/requirements/kubernetes-reqs-aws.html["AWS中Kubernetes叢集的需求"]
 
 +
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aks.html["Azure中Kubernetes叢集的需求"]
+link:https://docs.netapp.com/us-en/bluexp-kubernetes/requirements/kubernetes-reqs-aks.html["Azure中Kubernetes叢集的需求"]
 
 +
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-gke.html["Google Cloud中Kubernetes叢集的需求"]
+link:https://docs.netapp.com/us-en/bluexp-kubernetes/requirements/kubernetes-reqs-gke.html["Google Cloud中Kubernetes叢集的需求"]
 
-* 何時 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["定義儲存類別"]、您現在可以為區塊儲存指定檔案系統類型（fstype-）。
+* 何時 link:https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["定義儲存類別"]、您現在可以為區塊儲存指定檔案系統類型（fstype-）。
 
 
 
@@ -71,11 +71,11 @@ link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kuberne
 
 * 如果使用Trident營運者部署了Astra Trident、您現在可以使用Cloud Manager升級至最新版的Astra Trident。
 +
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-trident.html["安裝及管理Astra Trident"]
+link:https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-k8s-manage-trident.html["安裝及管理Astra Trident"]
 
 * 您現在可以將Kubernetes叢集拖放到AWS FSX for ONTAP the Sfor the Sfor the fernet工作環境中、直接從Canvas.新增儲存類別。
 +
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["新增儲存類別"]
+link:https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["新增儲存類別"]
 
 
 
@@ -95,7 +95,7 @@ Cloud Manager現在支援Amazon FSX ONTAP 做為後端儲存設備。
 
 您現在可以將Kubernetes叢集拖放到Cloud Volumes ONTAP 運作環境中、直接從Canvas.新增儲存類別。
 
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["新增儲存類別"]
+link:https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["新增儲存類別"]
 
 
 
@@ -105,15 +105,15 @@ link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage
 
 === 使用Cloud Manager資源頁面管理Kubernetes叢集
 
-Kubernetes叢集管理現在已直接從叢集工作環境增強整合功能。全新 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-quick-start.html["快速入門"] 讓您快速上線運作。
+Kubernetes叢集管理現在已直接從叢集工作環境增強整合功能。全新 link:https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-k8s-quick-start.html["快速入門"] 讓您快速上線運作。
 
 您現在可以從叢集資源頁面執行下列動作。
 
-* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-trident.html["安裝Astra Trident"]
-* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html["新增儲存類別"]
-* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-persistent-volumes.html["檢視持續磁碟區"]
-* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-remove-cluster.html["移除叢集"]
-* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-kubernetes-enable-services.html["啟用資料服務"]
+* link:https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-k8s-manage-trident.html["安裝Astra Trident"]
+* link:https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-k8s-manage-storage-classes.html["新增儲存類別"]
+* link:https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-k8s-manage-persistent-volumes.html["檢視持續磁碟區"]
+* link:https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-k8s-manage-remove-cluster.html["移除叢集"]
+* link:https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-enable-services.html["啟用資料服務"]
 
 
 
@@ -126,7 +126,7 @@ Kubernetes叢集管理現在已直接從叢集工作環境增強整合功能。�
 
 您現在可以使用Cloud Manager、在Google Cloud中新增及管理託管的Google Kubernetes Engine（GKE）叢集和自我管理的Kubernetes叢集。
 
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-gke.html["瞭解如何在Google Cloud中開始使用Kubernetes叢集"]。
+link:https://docs.netapp.com/us-en/bluexp-kubernetes/requirements/kubernetes-reqs-gke.html["瞭解如何在Google Cloud中開始使用Kubernetes叢集"]。
 
 
 
@@ -138,7 +138,7 @@ link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kuberne
 
 您現在可以使用Cloud Manager、在Azure中新增及管理託管Azure Kubernetes叢集（KS）和自我管理的Kubernetes叢集。
 
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aks.html["Azure中的Kubernetes叢集入門"]
+link:https://docs.netapp.com/us-en/bluexp-kubernetes/requirements/kubernetes-reqs-aks.html["Azure中的Kubernetes叢集入門"]
 
 
 
@@ -154,7 +154,7 @@ link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kuberne
 * 使用Cloud Backup備份持續性磁碟區
 
 
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/concept-kubernetes.html["深入瞭解Kubernetes支援"]。
+link:https://docs.netapp.com/us-en/bluexp-kubernetes/concept-kubernetes.html["深入瞭解Kubernetes支援"]。
 
 
 TIP: 現有的Kubernetes服務（可透過* K8s*索引標籤取得）已過時、將在未來的版本中移除。

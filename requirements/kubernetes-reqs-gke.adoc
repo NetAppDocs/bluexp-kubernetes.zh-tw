@@ -42,8 +42,8 @@ RBAC授權:: BlueXP支援使用及不使用Active Directory的RBAC叢集。每�
 
 請遵循下列其中一個連結中的步驟。
 
-* link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["從BlueXP建立連接器"^] （建議）
-* link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["在現有的Linux主機上安裝Connector"^]
+* link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-creating-connectors-gcp.html["從BlueXP建立連接器"^] （建議）
+* link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-installing-linux.html["在現有的Linux主機上安裝Connector"^]
 
 
 

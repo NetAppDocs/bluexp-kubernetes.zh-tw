@@ -10,7 +10,6 @@
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">步驟</block>
   <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">註冊以取得支援</block>
   <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">「說明」功能表的快照、其中「支援」是第一個列出的選項</block>
-  <block id="868d9aa88f16ea923af1d15eac5d2647" category="paragraph"><block ref="868d9aa88f16ea923af1d15eac5d2647" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d17d6b5dafebab6b7659da8850737e70" category="list-text">按一下「*」「nss管理」&gt;「新增nssAccount」*。</block>
   <block id="8aaf101e623c543c7eef3c65f6233366" category="list-text">出現提示時、按一下*繼續*以重新導向至Microsoft登入頁面。</block>
   <block id="19d089db572ee6a1e154a0c9c9e57bfd" category="paragraph">NetApp使用Microsoft Azure Active Directory做為身分識別供應商、提供專為支援與授權所設計的驗證服務。</block>
@@ -43,40 +42,29 @@
   <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">開放原始碼</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知檔案提供有關 NetApp 軟體所使用之協力廠商版權與授權的資訊。</block>
-  <block id="72999cd653b12474752fb77bab9691e3" category="inline-link-macro">雲端備份注意事項</block>
-  <block id="75be9a02506771b87be972c89707f0d4" category="list-text"><block ref="75be9a02506771b87be972c89707f0d4" category="inline-link-macro-rx"></block></block>
   <block id="ad806d4b803a5aa7358400786d14dec0" category="section-title">2022年4月4日</block>
   <block id="ecee73066145d2e6f1b75b79d2af7514" category="section-title">使用Cloud Manager資源頁面管理Kubernetes叢集</block>
   <block id="06ad314b340900d226b1196e1fe289e9" category="inline-link-macro">快速入門</block>
-  <block id="a84f0102d02caeeb1c0e554f032c6e35" category="paragraph">Kubernetes叢集管理現在已直接從叢集工作環境增強整合功能。全新 <block ref="a7ce12c998c9439767584776d325ea5b" category="inline-link-macro-rx"></block> 讓您快速上線運作。</block>
   <block id="4e9fabf2f81510967e324cfc9c54b640" category="paragraph">您現在可以從叢集資源頁面執行下列動作。</block>
   <block id="f1fe71442cd08e74d342114df7ee1551" category="inline-link-macro">安裝Astra Trident</block>
-  <block id="b4940c8b54941154dff3675bb279c96f" category="list-text"><block ref="b4940c8b54941154dff3675bb279c96f" category="inline-link-macro-rx"></block></block>
   <block id="fd0987c679e587c89c7d5551c641f09e" category="inline-link-macro">新增儲存類別</block>
-  <block id="be2f7669a1d3d4dec877a85297de18ec" category="list-text"><block ref="be2f7669a1d3d4dec877a85297de18ec" category="inline-link-macro-rx"></block></block>
   <block id="260adbf21b473e18ea0788235c9512b8" category="inline-link-macro">檢視持續磁碟區</block>
-  <block id="6a38c17b4adfb6fade3691d6bab9976a" category="list-text"><block ref="6a38c17b4adfb6fade3691d6bab9976a" category="inline-link-macro-rx"></block></block>
   <block id="f253fdd547a6f5e0e05bbdb671ae8b24" category="inline-link-macro">移除叢集</block>
-  <block id="aa7542e939f8e623254af69a1fcd8e2b" category="list-text"><block ref="aa7542e939f8e623254af69a1fcd8e2b" category="inline-link-macro-rx"></block></block>
   <block id="41e3782291be693bb1f948094d98229d" category="inline-link-macro">啟用資料服務</block>
-  <block id="6d6f9b61b474cb16598eda49f24d6452" category="list-text"><block ref="6d6f9b61b474cb16598eda49f24d6452" category="inline-link-macro-rx"></block></block>
   <block id="ba26e4556a0f160834687982b0479336" category="section-title">2022年2月27日</block>
   <block id="572154af04ccf23551e78649302c6f7b" category="section-title">支援Google Cloud中的Kubernetes叢集</block>
   <block id="45cbe8fd766702dd0ad0022cbde336ce" category="paragraph">您現在可以使用Cloud Manager、在Google Cloud中新增及管理託管的Google Kubernetes Engine（GKE）叢集和自我管理的Kubernetes叢集。</block>
   <block id="f1b377c7d4b75112665bc3e7ee7c340b" category="inline-link-macro">瞭解如何在Google Cloud中開始使用Kubernetes叢集</block>
-  <block id="6fcf7676e8aae6ddc7b3f104efce8aab" category="paragraph"><block ref="5416dc5374fce9a230fcbd66732d82fb" category="inline-link-macro-rx"></block>。</block>
   <block id="ef1bf4095b622ba80ac24b48b8e45eac" category="section-title">2022年1月11日</block>
   <block id="a654243ef958097102b375693f5579bb" category="section-title">支援Azure中的Kubernetes叢集</block>
   <block id="8856f1df28666fb615f0de120179dd80" category="paragraph">您現在可以使用Cloud Manager、在Azure中新增及管理託管Azure Kubernetes叢集（KS）和自我管理的Kubernetes叢集。</block>
   <block id="8e2d16714747b48d3d5d0993c14ca91c" category="inline-link-macro">Azure中的Kubernetes叢集入門</block>
-  <block id="7f3fba83864e800e754c057187c91c9a" category="paragraph"><block ref="7f3fba83864e800e754c057187c91c9a" category="inline-link-macro-rx"></block></block>
   <block id="f61163b681442ac500a8018c87241770" category="section-title">2021年11月28日</block>
   <block id="1dca9cae8959517f7a37b2277e33b485" category="section-title">支援AWS中的Kubernetes叢集</block>
   <block id="40396b2dd864537704e1a71862a49298" category="paragraph">您現在可以將託管Kubernetes叢集新增至Cloud Manager的Canvas、以進行進階資料管理。</block>
   <block id="9bc9d366922b7839c22a9d3f44b59ab5" category="list-text">探索Amazon EKS叢集</block>
   <block id="23225952418ffe65dda9099dae1c476c" category="list-text">使用Cloud Backup備份持續性磁碟區</block>
   <block id="d5f64dd836c164f17e32528a31fdeea5" category="inline-link-macro">深入瞭解Kubernetes支援</block>
-  <block id="4e8dc58f86c5b2a120ce6625e2c53adf" category="paragraph"><block ref="ca8428b0b36dc1f5bee5c45f13cb9819" category="inline-link-macro-rx"></block>。</block>
   <block id="5629dc3c8dacdcb31e6d3bf6d7586e32" category="admonition">現有的Kubernetes服務（可透過* K8s*索引標籤取得）已過時、將在未來的版本中移除。</block>
   <block id="384b71db954a7a463c759208283e47c4" category="doc">管理Kubernetes叢集</block>
   <block id="a55c9ab275da7d6af3d043922cbe9db6" category="inline-image-macro">Kubernetes資源頁面的快照、顯示叢集的詳細資料。</block>
@@ -103,7 +91,6 @@
   <block id="63959f97faa9987d540350850a41505e" category="section-title">建立新的Connector</block>
   <block id="7462e2b2097ede16db64534b30f77751" category="paragraph">請遵循下列其中一個連結中的步驟。</block>
   <block id="d1070a8b89935adc6bb191d1e912b5ca" category="inline-link-macro">在現有的Linux主機上安裝Connector</block>
-  <block id="f2b4c219933d07cd50ec18d34e212cb0" category="list-text"><block ref="f2b4c219933d07cd50ec18d34e212cb0" category="inline-link-macro-rx"></block></block>
   <block id="a7d3a387d14ffdcae3ba49d52638ebb6" category="section-title">將必要權限新增至現有的Connector（以探索託管GKE叢集）</block>
   <block id="960373499947a97e65ed912d5cea84f4" category="paragraph">如果您想要探索託管的GKE叢集、可能需要修改Connector的自訂角色、以提供權限。</block>
   <block id="afcaeb8a33eef207414e875d7fa75193" category="inline-link-macro">雲端主控台</block>
@@ -142,9 +129,7 @@
   <block id="acc4a07cbf9763718c5eb67fd34340d7" category="list-text">AWS的for AWS必須設定為叢集的後端儲存設備。Cloud Volumes ONTAP<block ref="0ffa37c66c18870214970164d37847a6" category="inline-link-rx"></block>。</block>
   <block id="1657d67161bf0403482930d6cb81a5ba" category="list-text">連接器必須以所需權限在AWS中執行。 <block ref="666096be9a7c0cee4f03722fd9c8c93c" category="inline-xref-macro-rx"></block>。</block>
   <block id="e96bc5b1e40abf07ff070b96c65057db" category="inline-link-macro">從AWS Marketplace建立連接器</block>
-  <block id="946fbd834f2d7dd02243acdd3cd2af41" category="list-text"><block ref="946fbd834f2d7dd02243acdd3cd2af41" category="inline-link-macro-rx"></block></block>
   <block id="1bc7cdde75a8dfff8d21690bae5558b4" category="inline-link-macro">在AWS中現有的Linux主機上安裝Connector</block>
-  <block id="6daf52898d494bb924b8e794cabb00ca" category="list-text"><block ref="6daf52898d494bb924b8e794cabb00ca" category="inline-link-macro-rx"></block></block>
   <block id="400029e32a94249459e83aadc7247559" category="section-title">將必要的權限新增至現有的Connector</block>
   <block id="91377322d2f9077c583ad8a53facc870" category="paragraph">從3.9.13版開始、任何_new建立的連接器都包含三個新的AWS權限、可用來探索及管理Kubernetes叢集。如果您在此版本之前建立了Connector、則需要修改Connector IAM角色的現有原則、以提供權限。</block>
   <block id="f724607cfeefa3c0719c729025f470e2" category="list-text">移至AWS主控台並開啟EC2服務。</block>
@@ -172,7 +157,6 @@
   <block id="bfa07c102504658f2166cb96f8328f96" category="list-text">必須將其設定為叢集的後端儲存設備。Cloud Volumes ONTAP<block ref="0ffa37c66c18870214970164d37847a6" category="inline-link-rx"></block>。</block>
   <block id="65a6ead622485d947a36632d3fbe81b8" category="list-text">連接器必須在具備必要權限的Azure中執行。 <block ref="666096be9a7c0cee4f03722fd9c8c93c" category="inline-xref-macro-rx"></block>。</block>
   <block id="6505fd7495c0d65d3dcf8a473c69ddcf" category="inline-link-macro">從Azure Marketplace建立連接器</block>
-  <block id="c325ade42558e45e83dbb26c3b2d99f2" category="list-text"><block ref="c325ade42558e45e83dbb26c3b2d99f2" category="inline-link-macro-rx"></block></block>
   <block id="51024acb2d849b543d1d3b8ba5ac16fe" category="section-title">將必要的權限新增至現有的Connector（以探索託管的高層叢集）</block>
   <block id="7b44ac8a40c4268ddeeb5c27394240a8" category="paragraph">如果您想要探索託管的高效能叢集、可能需要修改Connector的自訂角色、以提供權限。</block>
   <block id="c6d0403561ba931925faedb251300c4d" category="list-text">識別指派給Connector虛擬機器的角色：</block>
@@ -308,7 +292,6 @@
   <block id="6401d12bcac1f01899ab494a0a6d8edb" category="section-title">拖放以新增儲存類別</block>
   <block id="0f808082ee99c2acfbcb1661162034f6" category="paragraph">您現在可以將Kubernetes叢集拖放到Cloud Volumes ONTAP 運作環境中、直接從Canvas.新增儲存類別。</block>
   <block id="d23895cd28f2e8e5d3074279cea7aacf" category="inline-link-macro">新增儲存類別</block>
-  <block id="2556925e0b340fdd647987c6af7fbee9" category="paragraph"><block ref="2556925e0b340fdd647987c6af7fbee9" category="inline-link-macro-rx"></block></block>
   <block id="19f4ed17c6ec00f67063b70e40bfc661" category="section-title">2022年5月4日</block>
   <block id="79ee39f20c9b076e39473401e33c5f12" category="list-text"><block ref="79ee39f20c9b076e39473401e33c5f12" category="inline-link-macro-rx"></block></block>
   <block id="df02ebf4bbdbd23dcf4001f89e193718" category="list-text"><block ref="df02ebf4bbdbd23dcf4001f89e193718" category="inline-link-macro-rx"></block></block>
@@ -330,7 +313,6 @@
   <block id="1511b856d0328cfba458b8f83c2e94e3" category="section-title">2022年7月3日</block>
   <block id="3b5790878c6505820d5eed0428e827bb" category="list-text">如果使用Trident營運者部署了Astra Trident、您現在可以使用Cloud Manager升級至最新版的Astra Trident。</block>
   <block id="26317664fb1c4e8b3a500a7b1e46a4e7" category="inline-link-macro">安裝及管理Astra Trident</block>
-  <block id="74f5fa93248faf352ebad3f966bf3b55" category="paragraph"><block ref="74f5fa93248faf352ebad3f966bf3b55" category="inline-link-macro-rx"></block></block>
   <block id="412d8f1a8f03a7ee8f0983e7ecafe5e4" category="list-text">您現在可以將Kubernetes叢集拖放到AWS FSX for ONTAP the Sfor the Sfor the fernet工作環境中、直接從Canvas.新增儲存類別。</block>
   <block id="b6f2a65b5d8cda52b65468f1121cccbe" category="inline-link-macro">使用Trident運算子</block>
   <block id="510a1dab177e7ff08d50b9ab0588f804" category="inline-link-macro">使用Trident運算子進行部署</block>
@@ -342,7 +324,6 @@
   <block id="62286cd48d8328138c2c4d1b71e6fe45" category="doc">安裝或升級Astra Trident</block>
   <block id="7d3743c0dc40fd5a7d78e22b9d4f94d4" category="list-text">如果安裝了不受支援的Astra Trident版本、請按一下*升級Trident *。</block>
   <block id="319a42bc8932c7d4f9387e0c5de9c64c" category="list-text">從Canvas,將Kubernetes工作環境拖放到Cloud Volumes ONTAP 支援ONTAP 動作環境的支援區或Amazon FSX來開啟儲存類別精靈。</block>
-  <block id="622535c1c45bf857c104b24a29a940e1" category="paragraph"><block ref="622535c1c45bf857c104b24a29a940e1" category="inline-link-rx"></block></block>
   <block id="1ccfa8d0f204060ee0f11f2c9eb14095" category="list-text">提供儲存類別的名稱。</block>
   <block id="a021b0b7caf02edd4dae76afb277c7fc" category="inline-image-macro">在設定K8s儲存類別時、顯示區塊儲存的fstype,選項的快照。</block>
   <block id="3f10ba55f7b5ee2ce092504fcea72477" category="section-title">2022年7月31日</block>
@@ -352,8 +333,6 @@
   <block id="f7ba76d5c9beab0576f118a6254843e9" category="section-title">2022年9月18日</block>
   <block id="d8d8980dd9fc5d0937a35fea8cb24808" category="paragraph">您現在可以將自我管理的OpenShift叢集匯入Cloud Manager。</block>
   <block id="b77adae4ee23d10b92f9545417611303" category="inline-link-macro">OpenShift中的Kubernetes叢集需求</block>
-  <block id="fd4ea134fa6bbf226ead48569ec25aaa" category="list-text"><block ref="fd4ea134fa6bbf226ead48569ec25aaa" category="inline-link-macro-rx"></block></block>
-  <block id="19e7864b32363d7ba3bb16a024e95d79" category="list-text">何時 <block ref="44765f3a3e8511cc80b0083ae1e5f436" category="inline-link-macro-rx"></block>、您現在可以為區塊儲存指定檔案系統類型（fstype-）。</block>
   <block id="d795d581b00d494d8c6250bb5e1fcf89" category="inline-link-macro">建立Kbeconfig檔案</block>
   <block id="e7076b96b4cfb7668eac66eb624334ad" category="list-text">叢集的公開憑證授權單位（例如、ca．crt）、用戶端金鑰（例如TLS．key）和用戶端憑證（例如TLS．crt）檔案。</block>
   <block id="17011a566ae4f46bae81e507282825fb" category="list-text">在* Canvas*上、選取*新增工作環境*。</block>
@@ -362,11 +341,8 @@
   <block id="40a58da0341e721e033a4cf334d62ab0" category="inline-image-macro">叢集憑證上傳畫面的快照。</block>
   <block id="95a989ce51f5125f1cda095e21371ee7" category="paragraph"><block ref="95a989ce51f5125f1cda095e21371ee7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="78f4011ce4eec11823de490a29f344e7" category="inline-link-macro">AWS連接器</block>
-  <block id="cffb555a0390870f6d957bab2b87008e" category="list-text"><block ref="cffb555a0390870f6d957bab2b87008e" category="inline-link-macro-rx"></block></block>
   <block id="625f50cfccef81e43215d5f35b6122fe" category="inline-link-macro">Azure Connector</block>
-  <block id="c8a8cbc981f0028a05bbbdbdef98749c" category="list-text"><block ref="c8a8cbc981f0028a05bbbdbdef98749c" category="inline-link-macro-rx"></block></block>
   <block id="6d75f957aed766005dc3be4d9f8c4ec5" category="inline-link-macro">Google Cloud Connector</block>
-  <block id="e51199bdde0640d2bca477ecdc555e8f" category="list-text"><block ref="e51199bdde0640d2bca477ecdc555e8f" category="inline-link-macro-rx"></block></block>
   <block id="9703b589f82c3c63870b38bf11559988" category="list-text">Kubernetes叢集和Connector之間、以及Kubernetes叢集和Cloud Volumes ONTAP 整個過程之間、都需要網路連線。</block>
   <block id="890de07cb51c2692baea480106b633e1" category="list-text">具有RBAC授權的Kubernetes組態檔（Kubeconfig）</block>
   <block id="01c29ea434ec706b9c6a08114a6edec6" category="list-text">若要匯入OpenShift叢集、您需要具備RBAC授權的Kbeconfig檔案、才能啟用不同的功能。 <block ref="e356c2da27abb1a00cc68449c7fb7c0f" category="inline-xref-macro-rx"></block>。</block>
@@ -388,8 +364,6 @@
   <block id="ed6be01d66e94b422222a328f085d0bc" category="list-text">建立「cree-kupeconfig．sh」檔案。將下列指令碼開頭的「toke_index」取代為正確的值。</block>
   <block id="7d164f3971b504d6203cf274cc77dd35" category="list-text">請輸入命令以將其套用至Kubernetes叢集。</block>
   <block id="0c6a9a1e3ba06deae014e58e617bd162" category="sidebar">OpenShift上的Kubernetes叢集</block>
-  <block id="9a1523c9f261730956627967961b03ba" category="list-text">您在其中建立的「kubeconfig」檔案 <block ref="853bbee8a9a9e7ed0c6dbe47e266bf3d" category="inline-link-macro-rx"></block>。</block>
-  <block id="d68d1fb21874c919e4b91a231a5f7974" category="list-text">上傳您在中建立的「kubeconfig-SA」檔案 <block ref="853bbee8a9a9e7ed0c6dbe47e266bf3d" category="inline-link-macro-rx"></block>。選取Kubernetes叢集、然後選取* Next*。</block>
   <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">除了上述的自我支援選項、您也可以在啟動支援之後、與NetApp支援專家合作解決任何問題。</block>
   <block id="e2a733504c4088b809813bbb35a3ddfd" category="inline-link-macro">瞭解如何註冊以取得支援</block>
   <block id="383133cb6f7207b1c65c3ace94aa5e95" category="list-text">如果您想與電話上的其他人通話、請按一下*「呼叫我們*」。您將會被導向netapp.com上的頁面、其中列出您可以撥打的電話號碼。</block>
@@ -400,7 +374,6 @@
   <block id="0f7d9319c95a8be1492e74601c4b3259" category="list-text">*問題說明*：提供問題的詳細說明、包括任何適用的錯誤訊息或您執行的疑難排解步驟。</block>
   <block id="002c6f26fb01affb37b8cf3cef7a1fb0" category="list-text">*其他電子郵件地址*：如果您想讓其他人知道此問題、請輸入其他電子郵件地址。</block>
   <block id="baaf0e61add7d12cf8d12e023d5aef18" category="inline-image-macro">「建立案例」表單的快照、可讓您使用NetApp支援建立案例。</block>
-  <block id="a2ff30886e1baf1e7d5045b5fc24f5b9" category="paragraph"><block ref="a2ff30886e1baf1e7d5045b5fc24f5b9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="18f487556417bb6d9721a7005ae097c9" category="paragraph">您的支援案例編號會出現快顯視窗。NetApp支援專家將會審查您的案例、並盡快回覆您。</block>
   <block id="04e15da1deae9568b4dcda64fbb0c8d5" category="paragraph">如需支援案例的記錄、請按一下*設定&gt;時間軸*、然後尋找名為「create support case」的行動。 最右側的按鈕可讓您展開動作以查看詳細資料。</block>
   <block id="5c56753585e89a84941bb3a78bc681af" category="paragraph">嘗試建立案例時、可能會遇到下列錯誤訊息：</block>
@@ -425,7 +398,6 @@
   <block id="43df01cd59bb10f6ad1000129d5a03f4" category="list-text">BlueXP支援使用及不使用Active Directory的RBAC叢集。每個GKE叢集都必須授權BlueXP Connector角色。 <block ref="ed89a5c7598981ce49ff49e89b6578d7" category="inline-xref-macro-rx"></block>。</block>
   <block id="57adc0b605977176ed8e5dedce2929fa" category="paragraph">需要Google的BlueXP Connector來探索及管理Kubernetes叢集。您需要建立新的Connector、或是使用具有所需權限的現有Connector。</block>
   <block id="a42616d3c3ebba497b57aee237328d50" category="inline-link-macro">從BlueXP建立連接器</block>
-  <block id="1d62c7476f49ea9e17c8996269118433" category="list-text"><block ref="6712f87c309e850084de4e986f4b827e" category="inline-link-macro-rx"></block> （建議）</block>
   <block id="a98bab458877b0457a2c3a9d497d4c28" category="list-text">若要使用BlueXP新增儲存類別、並監控叢集是否有變更後端、則需要擴充授權。</block>
   <block id="0b8291e09c9132ced81e011fafd4e6f6" category="list-text">您必須提供BlueXP的完整授權、才能安裝Astra Trident。</block>
   <block id="4e5cd7e1a45a0aed5c401dff45585470" category="paragraph">以進行設定 <block ref="28fbe2acd4be605635c165dd4f851ab7" prefix="" category="inline-code"></block> 在Yaml檔案中、您需要知道BlueXP的唯一ID。</block>
@@ -433,13 +405,11 @@
   <block id="90d6ace9ee6fceabcd67dc1494bdf5d6" category="paragraph">您可以將AWS上的託管Amazon Elastic Kubernetes Service（EKS）叢集或自我管理Kubernetes叢集新增至BlueXP。在將叢集新增至BlueXP之前、您必須確保符合下列需求。</block>
   <block id="6415585679e8669958974ee45b65dfd2" category="list-text">每個Kubernetes叢集都必須授權BlueXP Connector角色。 <block ref="ed89a5c7598981ce49ff49e89b6578d7" category="inline-xref-macro-rx"></block>。</block>
   <block id="437a030a28b695be456744f4081e2d60" category="paragraph">AWS需要使用BlueXP Connector來探索及管理Kubernetes叢集。您需要建立新的Connector、或是使用具有所需權限的現有Connector。</block>
-  <block id="92ed323a7d35268a55e425c9a9bcf4f6" category="list-text"><block ref="f2f8993ccdc30f33da43140f4a7a98dc" category="inline-link-macro-rx"></block> （建議）</block>
   <block id="3fbd08713a848d604236ac7651dfbe62" category="paragraph">使用eksctl在叢集與BlueXP Connector的IAM角色之間建立IAM身分識別對應。</block>
   <block id="278d5480d444847e28d7f1c72d2838f3" category="paragraph">直接編輯AWS/AUTH ConfigMap、將RBAC存取權限新增至BlueXP Connector的IAM角色。</block>
   <block id="84c0e18bb0a740c8e3db1b8dbb87bbaf" category="summary">您可以使用BluesXP在Azure中新增及管理託管Azure Kubernetes叢集（KS）和自我管理的Kubernetes叢集。在您將叢集新增至BlueXP之前、請先確認符合下列需求。</block>
   <block id="f930640cd8c2f6280b7631bc1b669bda" category="list-text">BlueXP支援使用及不使用Active Directory的RBAC叢集。每個Azure叢集都必須授權BlueXP Connector角色。 <block ref="ed89a5c7598981ce49ff49e89b6578d7" category="inline-xref-macro-rx"></block>。</block>
   <block id="5accd680218ff9b6eb59e6b42358c82d" category="paragraph">Azure中的BlueXP Connector需要探索及管理Kubernetes叢集。您需要建立新的Connector、或是使用具有所需權限的現有Connector。</block>
-  <block id="271a084e5da48dbda9ce571c76885fc2" category="list-text"><block ref="1707909349e0f679cb0ce7a24d808ea4" category="inline-link-macro-rx"></block> （建議）</block>
   <block id="dfbe168da8f2c622999763a901cfb01f" category="summary">您可以使用BlueXP安裝Astra Trident、設定儲存類別、移除叢集及啟用資料服務。</block>
   <block id="a13d7ae6b7b86fa9e684a460792c33c3" category="inline-link-macro">使用&lt;block ref="c67fd1b99934afa248dfeb285a9a4191" prefix ="" CATORILE="ine-code'/&gt;解除安裝</block>
   <block id="b057ae1ed0b2c48dbe6fd1b1b2ea1a30" category="inline-link-macro">使用BlueXP</block>
@@ -479,7 +449,6 @@
   <block id="25b94e7b58140f12be91fa8fd935fa59" category="list-text">如果您尚未這麼做、請將您的NSS帳戶新增至藍圖XP。</block>
   <block id="819aff12752b7e6a1828e755c7664de7" category="list-text">在*資源*頁面上、按一下*註冊以取得支援*。</block>
   <block id="e8a3d9970b8fc1d92caaf33d9e116bd4" category="inline-image-macro">顯示帳戶序號和「Register for Support」（註冊支援）選項的快照</block>
-  <block id="113f9cd7bac6f4faa6b8d58e3e099a8e" category="paragraph"><block ref="113f9cd7bac6f4faa6b8d58e3e099a8e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1ff5aefce774ec72a211f2b3bb10b950" category="section-title">現有客戶、但無NSS.帳戶</block>
   <block id="cc1d3c161bcf25e6445c2fc771647849" category="paragraph">如果您是現有的NetApp客戶、擁有現有授權和序號、但_否_ nss_帳戶、您只需要建立一個nss.帳戶。</block>
   <block id="5b2b7f628f804bcb786a097c7e45aa41" category="inline-link">《使用者登錄表》NetApp 支援網站</block>
@@ -488,7 +457,6 @@
   <block id="5226d4ec1f4f81b740cbbd27635b441f" category="list-text">請務必複製上述序號欄位使用的BlueXP帳戶序號（960xxxx）。這將加速帳戶處理。</block>
   <block id="e9b1f53d6cabb3394833a4e102eb6a69" category="section-title">NetApp全新推出</block>
   <block id="c20c107d0d4eef6351660f3590324232" category="paragraph">如果您是NetApp的新客戶、而且您沒有新的NSS帳戶、請依照下列每個步驟操作。</block>
-  <block id="ef5e63bb6b6827440a13cc2ec7e9cf56" category="paragraph"><block ref="ef5e63bb6b6827440a13cc2ec7e9cf56" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dd50e314c18933734174c1156dd9237f" category="inline-link">NetApp的支援註冊網站</block>
   <block id="78f94e749b89d69dcbf3baff21ccb958" category="list-text">瀏覽至<block ref="e1c4be66250fd76d5c52bfe2cb7daee2" category="inline-link-rx"></block> 並選擇*我不是NetApp註冊客戶*。</block>
   <block id="d4f633ef130727b2776fa7f45024ca7d" category="list-text">填寫必填欄位（紅色星號）。</block>
@@ -536,10 +504,8 @@
   <block id="5ba4facc62a7fe1280b842092b4e64e3" category="paragraph">您可以新增Kubernetes叢集、並使用BlueXP將其連線至工作環境。</block>
   <block id="6fc0464220dc386a37007468b2c94086" category="paragraph">使用原生 Kubernetes 介面和架構來要求及管理持續磁碟區。BlueXP會建立NFS和iSCSI儲存類別、供您在資源配置持續磁碟區時使用。</block>
   <block id="22a7b4f5dd259ae78aeff6a22466a375" category="paragraph">將Kubernetes叢集新增至BlueXP之後、您可以從BlueXP資源頁面管理叢集。</block>
-  <block id="11f9aaa089264e1c493971bc87da74b1" category="summary">瞭解BlueXP中Kubernetes的新功能。</block>
   <block id="87675ab25dc7f237387bffff0f0b5b0a" category="doc">BlueXP中Kubernetes的新功能</block>
   <block id="c95623cd0395d5a6bb6105b9d32f197b" category="inline-link">藍圖XP注意事項</block>
-  <block id="e8a6d0f19a957eac14b9917a6c92899b" category="list-text"><block ref="e8a6d0f19a957eac14b9917a6c92899b" category="inline-link-rx"></block></block>
   <block id="20047fa95487365e55e0fe5ef4fc9154" category="sidebar">取得有關BlueXP的協助</block>
   <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">所有BlueXP文件</block>
   <block id="c6433cee19c85bb6d8ae6aa94d0f3e29" category="list-text">選擇*檔案系統*或*區塊*儲存設備。</block>
@@ -549,7 +515,6 @@
   <block id="6b1835b63a667b5d28c6cf5c193ebf6d" category="inline-image-macro">在設定區塊或檔案K8s儲存類別時、顯示「儲存經濟」選項的快照。</block>
   <block id="ffa448ca3a4e90a2baa6bcb5e38dfb5c" category="paragraph"><block ref="ffa448ca3a4e90a2baa6bcb5e38dfb5c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="45c054bee9c262cc9a4a08ee09307ceb" category="admonition">使用儲存等級經濟模式時、不支援備份與還原。</block>
-  <block id="084fbbb062290ef487eac98d44edd278" category="paragraph">何時 <block ref="44765f3a3e8511cc80b0083ae1e5f436" category="inline-link-macro-rx"></block>、您現在可以為區塊或檔案系統儲存設備啟用儲存等級的經濟效益。</block>
   <block id="88268cce7d1b83c765c3f7010df80df5" category="section-title">2022年11月6日</block>
   <block id="9b9477e579c3b44dd623d5a6e1ea8d78" category="inline-link-macro">藍圖</block>
   <block id="f2575f6d19024f7288cf78d7dc5b3db9" category="paragraph">「支援儀表板」可讓您新增及管理NetApp 支援網站 搭配BlueXP使用的支援帳戶。</block>
@@ -557,7 +522,6 @@
   <block id="2974170a8b1b5b4a2ac69aacd4c1c9c3" category="list-text">從「Support Registration（支援註冊）」頁面找到您的帳戶ID序號。</block>
   <block id="50a1dc01b7312307c34a888071586955" category="list-text">複製上述步驟2的帳戶序號、完成安全性檢查、然後確認您已閱讀NetApp的全球資料隱私權政策。</block>
   <block id="cc8b0535948da368f832027c19b7f853" category="list-text">請務必複製上述序號欄位使用的帳戶序號（960xxxx）。這將加速帳戶處理。</block>
-  <block id="c0a71f242f9a20837eeb221262b5ec52" category="paragraph">使用 <block ref="541c088337155bc1f5030ebf639984c7" category="inline-link-macro-rx"></block> 只需幾個步驟、就能開始管理Kubernetes叢集。</block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="paragraph-title">開始之前</block>
   <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">結果</block>
   <block id="bd965e38a0c9cf27aa1bde099308e23f" category="paragraph-title">完成後</block>
@@ -572,11 +536,8 @@
   <block id="0375f4855be072c7d856a0233cc21de9" category="section-title">支援雲端供應商解決方案</block>
   <block id="be845c219bb74b14349ffa6e27e7aef3" category="paragraph">如需您已整合至BlueXP的下列雲端供應商解決方案的技術支援、請參閱該產品的藍圖XP文件中的「取得協助」。</block>
   <block id="18cf072964a583150dd247485ba75b92" category="inline-link-macro">Amazon FSX for ONTAP Sf</block>
-  <block id="5bf5309465f91318228a7f956b826348" category="list-text"><block ref="5bf5309465f91318228a7f956b826348" category="inline-link-macro-rx"></block></block>
   <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="inline-link-macro">Azure NetApp Files</block>
-  <block id="0e2bc9c853e0af52ead12823c025e58b" category="list-text"><block ref="0e2bc9c853e0af52ead12823c025e58b" category="inline-link-macro-rx"></block></block>
   <block id="b0cee72642f5457a71ddd0b49efb6d93" category="inline-link-macro">適用於 Google Cloud Cloud Volumes Service</block>
-  <block id="02efcbea18b9485a78a41871dce1e64d" category="list-text"><block ref="02efcbea18b9485a78a41871dce1e64d" category="inline-link-macro-rx"></block></block>
   <block id="eea1e3b9ecdd5e32692761a0a78b9463" category="section-title">2023年3月5日</block>
   <block id="ed9855757b31d516a4fa8f955edec2eb" category="list-text">BlueXP中的Kubernetes現在支援Astra Trident 23.01。</block>
   <block id="3aea41413b60d0894823e739f01efcbb" category="list-text">使用者介面已進行改善、文件中已更新螢幕擷取畫面。</block>
@@ -620,7 +581,6 @@
   <block id="35019b4b6292627398d74835213fc1d9" category="paragraph">Astra Trident 現在已從工作環境中解除安裝。您可以隨時重新安裝 Astra Trident 。</block>
   <block id="88c49608e723add593f5becc8bd9a968" category="section-title">2023 年 4 月 2 日</block>
   <block id="7786076739da628161f45de338cd6e69" category="inline-link-macro">解除安裝 Astra Trident</block>
-  <block id="ffb0a040d2831585e0b568e5514270de" category="list-text">您現在可以了 <block ref="16c9025f993808479cd22f07cd778a2c" category="inline-link-macro-rx"></block> 是使用 Trident 運算子或 BlueXP 安裝的。</block>
   <block id="a328809c4e80884ded58a673a70bcad8" category="inline-link-macro">安裝、升級或解除安裝 Astra Trident</block>
   <block id="8d9aa96de7c286ee7d10cfa821025a6f" category="inline-link-macro">新增及移除儲存類別</block>
   <block id="9c153b8dfcd24e0e7636fce1b4bc0046" category="inline-link-macro">移除 Kubernetes 叢集</block>
@@ -642,48 +602,30 @@
   <block id="27635a52fe4c34c39ffc6430f4244ec6" category="list-text">在*組織案例*下、按一下*檢視*以檢視與貴公司相關的所有案例。</block>
   <block id="059e856250b59be3069246887b74a23c" category="list-text">選擇確切的日期範圍或選擇不同的時間範圍、以修改日期範圍。</block>
   <block id="dfb3764bce2548df4e06357403f9c7d0" category="inline-image-macro">案例管理頁面上方表格上方選項的快照、可讓您選擇確切的日期範圍或過去7天、30天或3個月。</block>
-  <block id="7fcba8aeefa9960d3fc3fa08b360ba2e" category="paragraph"><block ref="7fcba8aeefa9960d3fc3fa08b360ba2e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a1bb576be9e5a356290f231efb51b3f5" category="list-text">篩選欄的內容。</block>
   <block id="3753f10a59e21f58b30e3e67d416453e" category="inline-image-macro">「狀態」欄中篩選選項的快照、可讓您篩選出符合特定狀態（例如「作用中」或「已關閉」）的個案。</block>
-  <block id="37709be3a43df07d5975287545d0ba12" category="paragraph"><block ref="37709be3a43df07d5975287545d0ba12" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1c6ea5ef583389e18e7d7bda70beaa71" category="inline-image-macro">出現在表格中的加號圖示</block>
-  <block id="1614dc8e47c0492434152c990d6c1040" category="list-text">按一下以變更表格中顯示的欄 <block ref="effeab06130cddc8360822b2b706805b" category="inline-image-macro-rx" type="image"></block> 然後選擇您要顯示的欄。</block>
   <block id="370b44009f1b82d0b6b178bb80cc62fa" category="inline-image-macro">顯示可在表格中顯示之欄的快照。</block>
-  <block id="5de408d7cbad49634fb25f9047498132" category="paragraph"><block ref="5de408d7cbad49634fb25f9047498132" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ad0ae9ea1f2e8d973a9a0f6bb169f494" category="inline-image-macro">表格最後一欄中出現三個點的圖示</block>
-  <block id="98efef1c8a47ed5791b41944e8ff4ec2" category="list-text">按一下即可管理現有案例 <block ref="a0b152b50a56901a75affebabc26ed61" category="inline-image-macro-rx" type="image"></block> 並選擇其中一個可用選項：</block>
   <block id="6d9dd74e7709ef802d299966f7898f6b" category="list-text">*檢視案例*：檢視特定案例的完整詳細資料。</block>
   <block id="8e6b52a532a4fbbfc98dca3ebfa5f1e6" category="list-text">* 更新案例附註 * ：提供問題的其他詳細資料、或選擇 * 上傳檔案 * 最多附加五個檔案。</block>
   <block id="f791bc685c526af8296381acff10f6a0" category="list-text">*結案案例*：提供結案原因的詳細資料、然後按一下*結案案例*。</block>
   <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">螢幕擷取畫面、顯示您在表格最後一欄選取功能表後可以採取的動作。</block>
-  <block id="e9a5c374fb47ed2ae5cc6108fb36d829" category="paragraph"><block ref="e9a5c374fb47ed2ae5cc6108fb36d829" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ec084bb25ed5b934c09b361069c246b2" category="list-text">NSS-帳戶必須是客戶層級的帳戶（而非來賓帳戶或暫存帳戶）。您可以擁有多個客戶層級的NSS帳戶。</block>
   <block id="27387009488fe78dcc7cb7e3e432792f" category="list-text">如果該帳戶是合作夥伴層級帳戶、則只能有一個NSS帳戶。如果您嘗試新增客戶層級的NSS帳戶、但有合作夥伴層級的帳戶存在、您會收到下列錯誤訊息：</block>
   <block id="d926847e4634e19a1aa7358becc0fa27" category="paragraph">「此帳戶不允許使用新增服務客戶類型、因為已經有不同類型的新增服務使用者。」</block>
   <block id="a04a3a5322782e8c18d0d64be7e1ccbc" category="paragraph">如果您擁有預先存在的客戶層級的NSS帳戶、並嘗試新增合作夥伴層級的帳戶、情況也是如此。</block>
   <block id="1afe8a81cfddc9fa9559e272bb6b9496" category="list-text">成功登入後、NetApp會儲存NSS.使用者名稱。</block>
-  <block id="452cd4df7b0d5eb1156519a2f3b0206b" category="paragraph">這是系統產生的ID、會對應至您的電子郵件。在「* nssn*管理*」頁面上、您可以從顯示電子郵件 <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> 功能表。</block>
-  <block id="fd02e84624a2fdfd58787131aa2820b5" category="list-text">如果您需要重新整理登入認證憑證權杖、也可以在中使用*更新認證*選項 <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> 功能表。</block>
   <block id="b14d512a3c64fb5df16f6721b0603c63" category="paragraph">使用此選項會提示您重新登入。請注意、這些帳戶的權杖會在90天後過期。系統會張貼通知、提醒您注意此點。</block>
   <block id="942c9249796cf6b78c981ebf15195809" category="list-text"><block ref="942c9249796cf6b78c981ebf15195809" category="inline-link-rx"></block></block>
-  <block id="36e8382aa83e74f8ba70303f62ce8d15" category="paragraph"><block ref="36e8382aa83e74f8ba70303f62ce8d15" category="inline-link-macro-rx"></block></block>
-  <block id="8a7acc1f3e4ade2ee389a4e59f39bf28" category="paragraph"><block ref="8a7acc1f3e4ade2ee389a4e59f39bf28" category="inline-link-macro-rx"></block></block>
-  <block id="2bdb06b2a7060e3efbb60c6fdf551284" category="paragraph"><block ref="2bdb06b2a7060e3efbb60c6fdf551284" category="inline-link-macro-rx"></block></block>
-  <block id="187496d0d891ffe76a43f6ffdd995505" category="paragraph"><block ref="187496d0d891ffe76a43f6ffdd995505" category="inline-link-macro-rx"></block></block>
-  <block id="e72a8a52b20d0b466a3152c8c60b4f2b" category="paragraph"><block ref="e72a8a52b20d0b466a3152c8c60b4f2b" category="inline-link-macro-rx"></block></block>
-  <block id="09e2861e1b9bab7606bd9fd36b62d621" category="paragraph"><block ref="09e2861e1b9bab7606bd9fd36b62d621" category="inline-link-macro-rx"></block></block>
   <block id="f35dd6f069daa276f73035ff894db1e3" category="inline-link-macro">將 OpenShift 叢集匯入 Cloud Manager</block>
-  <block id="12b9f0d46f95d9c0c2f1be83526fc206" category="list-text"><block ref="12b9f0d46f95d9c0c2f1be83526fc206" category="inline-link-macro-rx"></block></block>
   <block id="99c79d7305ef37a48c4a2e79d238d9cf" category="admonition">使用部署Astra Trident<block ref="c67fd1b99934afa248dfeb285a9a4191" prefix=" " category="inline-code"></block> 不受支援。如果您使用部署Astra Trident<block ref="c67fd1b99934afa248dfeb285a9a4191" prefix=" " category="inline-code"></block>、您無法使用BlueXP來管理Kubernetes叢集。您必須 <block ref="beced4150254b668093e945aacf7262c" category="inline-link-macro-rx"></block> 並重新安裝 <block ref="47df2f698ba12609a6e06bab6dbff5ef" category="inline-link-macro-rx"></block> 或 <block ref="6111f1619ab72aa073417e456dea63ce" category="inline-link-macro-rx"></block>。</block>
   <block id="9fe3360dab01ce9c0d1ba6e2b65f7740" category="paragraph">您可以使用 BlueXP 備份與還原、將持續性磁碟區備份到物件儲存區。</block>
   <block id="1049611936f50079edb2cfbb3e430d42" category="inline-link-macro">瞭解如何使用 BlueXP 備份與還原來保護 Kubernetes 叢集資料</block>
-  <block id="ffef3f044e2dba86d633dbe1ca47e0ab" category="paragraph"><block ref="e426a27d66dd749e3e55c643391e0ce8" category="inline-link-macro-rx"></block>。</block>
   <block id="020085b46323ffcdcb569d583c9597ca" category="inline-image-macro">BlueXP 備份與還原中 Kubernetes 頁面的螢幕擷取畫面、顯示 Kubernetes 叢集的五個備份工作。</block>
   <block id="7700de0c0f5f67fa6642e11a7a8430a9" category="paragraph"><block ref="7700de0c0f5f67fa6642e11a7a8430a9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="77e1e303a063c3bd0ea334e8a2343ce0" category="list-text">啟動或檢視 BlueXP 備份與還原。請參閱 <block ref="f48a95ae0530624cb3f954263c78705c" category="inline-link-macro-rx"></block>。</block>
   <block id="eb10d90f9780d4b2ba3926ffaaa63b04" category="inline-link-macro">啟動或檢視 BlueXP 備份與還原</block>
-  <block id="bb9d6271eda9dfe1e95490ac0c6196e0" category="paragraph">瞭解 BlueXP （ Cloud Manager ） Kubernetes 的新功能。</block>
-  <block id="e30f3ee6790404c5b010673da880568c" category="paragraph">使用 <block ref="541c088337155bc1f5030ebf639984c7" category="inline-link-macro-rx"></block> （ Cloud Manager ）以及使用 Trident 運算子部署的相容版本 Astra Trident 、您可以：</block>
   <block id="c8e0b61e09c13c9a6302fff8b355d22c" category="list-text">新增及管理 Kubernetes 叢集</block>
   <block id="f21b0b2390c3041251b997210a7cf24f" category="list-text"><block ref="f21b0b2390c3041251b997210a7cf24f" category="inline-link-macro-rx"></block></block>
   <block id="ce62c2574c8872c1fed16a5a0a8d2840" category="list-text"><block ref="ce62c2574c8872c1fed16a5a0a8d2840" category="inline-link-macro-rx"></block></block>
@@ -698,4 +640,59 @@
   <block id="52964b35567ba6adef127cdd68d2fa70" category="paragraph">使用命令列提供完整授權、並讓BlueXP安裝Astra Trident。</block>
   <block id="1fe5f07cd7f6b046882a66a9f9c308d2" category="paragraph">授予完整的系統管理授權、並讓BlueXP能夠安裝Astra Trident。</block>
   <block id="7c0ad7b6a922ca797e316eb1ed6cdbeb" category="paragraph">更換 <block ref="860b2d1ba3877711b8cf22d81c10ee15" prefix="" category="inline-code"></block> 使用您的使用者名稱和 <block ref="ee324b4038870a1a0a7d516e6c4c421d" prefix="" category="inline-code"></block> 具有授權服務帳戶的唯一 ID 。</block>
+  <block id="9d06990508d25d367d9158c6558eb9c8" category="list-text"><block ref="9d06990508d25d367d9158c6558eb9c8" category="inline-link-macro-rx"></block></block>
+  <block id="2e0c742f4616eb27b5b7646aa790edfe" category="list-text"><block ref="2e0c742f4616eb27b5b7646aa790edfe" category="inline-link-macro-rx"></block></block>
+  <block id="cf14bff66a8b72d3675db8ffe0f02ee3" category="list-text"><block ref="cf14bff66a8b72d3675db8ffe0f02ee3" category="inline-link-macro-rx"></block></block>
+  <block id="e8d4092baef6680c6a35d5228ae31de2" category="paragraph"><block ref="e8d4092baef6680c6a35d5228ae31de2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0dfcbbbe02d3e96f8ad78782e8772587" category="paragraph">這是系統產生的ID、會對應至您的電子郵件。在「* nssn*管理*」頁面上、您可以從顯示電子郵件 <block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block> 功能表。</block>
+  <block id="fc79de85a483938f72fbcb9822ec0ae3" category="list-text">如果您需要重新整理登入認證憑證權杖、也可以在中使用*更新認證*選項 <block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block> 功能表。</block>
+  <block id="1bb5620ed3998fd776980cad36e22c9a" category="paragraph"><block ref="1bb5620ed3998fd776980cad36e22c9a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="379f9cd57d97013f3f7fdd24f692a0b1" category="paragraph"><block ref="379f9cd57d97013f3f7fdd24f692a0b1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="509259be6d5e15d8959f705cbe0cbcc1" category="paragraph"><block ref="509259be6d5e15d8959f705cbe0cbcc1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0972db30d942fdb65d1732e6e84bde99" category="paragraph"><block ref="0972db30d942fdb65d1732e6e84bde99" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cb6a777dd3c6e43b0dc441d38519d219" category="paragraph"><block ref="cb6a777dd3c6e43b0dc441d38519d219" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0f6cac2f77150840994f84044fc1b12b" category="list-text">按一下以變更表格中顯示的欄 <block ref="b574dd55d604ddb721d869a0fc302007" category="inline-image-macro-rx" type="image"></block> 然後選擇您要顯示的欄。</block>
+  <block id="e65065c4fd326b9f3a1eeb9453c30d73" category="paragraph"><block ref="e65065c4fd326b9f3a1eeb9453c30d73" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6ba7d68d8b3ef0f3398afb9d3ea96172" category="list-text">按一下即可管理現有案例 <block ref="566c029d89e7d5421080767a37bf443e" category="inline-image-macro-rx" type="image"></block> 並選擇其中一個可用選項：</block>
+  <block id="2ea260929e27ffcb623c8aa35689bd18" category="paragraph"><block ref="2ea260929e27ffcb623c8aa35689bd18" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="52ba8ac12050d2494572b940a0d65b25" category="paragraph"><block ref="52ba8ac12050d2494572b940a0d65b25" category="inline-link-rx"></block></block>
+  <block id="e950b36a748c3f644010d2b34a80a87e" category="list-text">您在其中建立的「kubeconfig」檔案 <block ref="9896332e592be94efb9691d30786d8c4" category="inline-link-macro-rx"></block>。</block>
+  <block id="5668f4847928235330acc5b35009f645" category="list-text">上傳<block ref="f6adb0f39622272857607018d7dae272" prefix=" " category="inline-code"></block> 您在中建立的檔案 <block ref="9896332e592be94efb9691d30786d8c4" category="inline-link-macro-rx"></block>。選取Kubernetes叢集、然後選取* Next*。</block>
+  <block id="75ad3aaafa6ee0f4007e27b60d7f8558" category="paragraph"><block ref="d730ee46ad89a4ffb0f85d61ce585974" category="inline-link-macro-rx"></block>。</block>
+  <block id="076cbc8898283b76abc29d24df586238" category="paragraph">使用 <block ref="8c756aa88944e7f7746a63349ea859e9" category="inline-link-macro-rx"></block> 只需幾個步驟、就能開始管理Kubernetes叢集。</block>
+  <block id="a2c4c85721677e73d8abf62a5509de12" category="paragraph"><block ref="a2c4c85721677e73d8abf62a5509de12" category="inline-link-macro-rx"></block></block>
+  <block id="916a7a4b593ef603fe27bf6ac1ba4727" category="paragraph"><block ref="916a7a4b593ef603fe27bf6ac1ba4727" category="inline-link-macro-rx"></block></block>
+  <block id="8ed1a52e4ffe61654985b954dd44f1a1" category="paragraph"><block ref="8ed1a52e4ffe61654985b954dd44f1a1" category="inline-link-macro-rx"></block></block>
+  <block id="32268421d1e467285f9c4d31adecbc6b" category="paragraph"><block ref="32268421d1e467285f9c4d31adecbc6b" category="inline-link-macro-rx"></block></block>
+  <block id="99c49bf8f4c84e6f87f6d56bef1324d3" category="paragraph"><block ref="99c49bf8f4c84e6f87f6d56bef1324d3" category="inline-link-macro-rx"></block></block>
+  <block id="670757e7edaf1ee4ab177a6ba0885374" category="paragraph"><block ref="670757e7edaf1ee4ab177a6ba0885374" category="inline-link-macro-rx"></block></block>
+  <block id="524a8a333ef2508b6fffa5050b258f8d" category="paragraph">使用 <block ref="8c756aa88944e7f7746a63349ea859e9" category="inline-link-macro-rx"></block> 相容版本的 Astra Trident 是使用 Trident 運算子部署的、您可以：</block>
+  <block id="d281c39c76b62b870155c01485750a3e" category="summary">瞭解 BlueXP 中 Kubernetes 的新功能。</block>
+  <block id="4e4ff5b7850bf0aae4966bf2353d2764" category="list-text">您現在可以了 <block ref="79330a9a9d35860d426f0d48c9f654a7" category="inline-link-macro-rx"></block> 是使用 Trident 運算子或 BlueXP 安裝的。</block>
+  <block id="08dbc554156c2764d1696fe55d768aed" category="paragraph">何時 <block ref="c5aa031d705396e63c7e52a97cf56f86" category="inline-link-macro-rx"></block>、您現在可以為區塊或檔案系統儲存設備啟用儲存等級的經濟效益。</block>
+  <block id="00a6e55a41bb9905f4551987230ce532" category="list-text"><block ref="00a6e55a41bb9905f4551987230ce532" category="inline-link-macro-rx"></block></block>
+  <block id="68521819e32868952ad88b43a2b7d55a" category="list-text"><block ref="68521819e32868952ad88b43a2b7d55a" category="inline-link-macro-rx"></block></block>
+  <block id="948f75b69b718036e7da1a69742827d5" category="list-text">何時 <block ref="c5aa031d705396e63c7e52a97cf56f86" category="inline-link-macro-rx"></block>、您現在可以為區塊儲存指定檔案系統類型（fstype-）。</block>
+  <block id="3a43943ad4196ac6fd5c16b8cbb5523f" category="paragraph"><block ref="3a43943ad4196ac6fd5c16b8cbb5523f" category="inline-link-macro-rx"></block></block>
+  <block id="6f4132107afdb8d25c653086478b3d32" category="paragraph"><block ref="6f4132107afdb8d25c653086478b3d32" category="inline-link-macro-rx"></block></block>
+  <block id="bed05b2caf6c9983795c08fd0e878b1c" category="paragraph">Kubernetes叢集管理現在已直接從叢集工作環境增強整合功能。全新 <block ref="85eb2991074a3f84f82b662b7bcf6a9c" category="inline-link-macro-rx"></block> 讓您快速上線運作。</block>
+  <block id="cd01ab17475ffa50aac3e07d489c705b" category="list-text"><block ref="cd01ab17475ffa50aac3e07d489c705b" category="inline-link-macro-rx"></block></block>
+  <block id="c5e76a2291f43f66090cef03395bbfda" category="list-text"><block ref="c5e76a2291f43f66090cef03395bbfda" category="inline-link-macro-rx"></block></block>
+  <block id="4f1bbec0c86af9cd063ef6668d844da2" category="list-text"><block ref="4f1bbec0c86af9cd063ef6668d844da2" category="inline-link-macro-rx"></block></block>
+  <block id="3fbbf66f596c7ac11a4a0a822c470054" category="list-text"><block ref="3fbbf66f596c7ac11a4a0a822c470054" category="inline-link-macro-rx"></block></block>
+  <block id="eb4a09a29d7647bc2e1c6158238fc1c7" category="list-text"><block ref="eb4a09a29d7647bc2e1c6158238fc1c7" category="inline-link-macro-rx"></block></block>
+  <block id="69faf47eb9a9ea596a5368deccec7900" category="paragraph"><block ref="df02e80453d67c0ac4630e6cd13a4069" category="inline-link-macro-rx"></block>。</block>
+  <block id="ff6ccf6f33e8e69a1f9498c8ecc8fd58" category="paragraph"><block ref="ff6ccf6f33e8e69a1f9498c8ecc8fd58" category="inline-link-macro-rx"></block></block>
+  <block id="d1c0e7b619c34b6e4c9a8627bec1bab2" category="paragraph"><block ref="03b080faf5fafb3954c4fee2237d0eaa" category="inline-link-macro-rx"></block>。</block>
+  <block id="fca91a83e31e1f75bf840550a7c62577" category="list-text"><block ref="5e1b9a093592091946a75d8104805075" category="inline-link-macro-rx"></block> （建議）</block>
+  <block id="d869791ebe5c2ce20e3127a0326eecf4" category="list-text"><block ref="d869791ebe5c2ce20e3127a0326eecf4" category="inline-link-macro-rx"></block></block>
+  <block id="8567d45753a5f7119fc71f55adfdd239" category="list-text"><block ref="8567d45753a5f7119fc71f55adfdd239" category="inline-link-macro-rx"></block></block>
+  <block id="4cb8f477ef8e17ba49559a9850463046" category="paragraph"><block ref="4cb8f477ef8e17ba49559a9850463046" category="inline-link-rx"></block></block>
+  <block id="862de0e60939fc5186fb24b3170165e1" category="list-text"><block ref="862de0e60939fc5186fb24b3170165e1" category="inline-link-macro-rx"></block></block>
+  <block id="16966b8acb99a4e37780bdff1a97459c" category="list-text"><block ref="16966b8acb99a4e37780bdff1a97459c" category="inline-link-macro-rx"></block></block>
+  <block id="69f71163cf509c48674398dbbc2ba357" category="list-text"><block ref="69f71163cf509c48674398dbbc2ba357" category="inline-link-macro-rx"></block></block>
+  <block id="feb480c5d419f970e22a6b8973455fd3" category="list-text"><block ref="28ee8e910f62b6678f7c21980f6d928a" category="inline-link-macro-rx"></block> （建議）</block>
+  <block id="78f23eab4adf1681136beffb40a427c0" category="list-text"><block ref="78f23eab4adf1681136beffb40a427c0" category="inline-link-macro-rx"></block></block>
+  <block id="0759c45cda97277f83f2014cab98f9c2" category="list-text"><block ref="802ec503906218a0106746158958a55b" category="inline-link-macro-rx"></block> （建議）</block>
+  <block id="62ee1a596396283593a45adc31749737" category="list-text"><block ref="62ee1a596396283593a45adc31749737" category="inline-link-macro-rx"></block></block>
 </blocks>
