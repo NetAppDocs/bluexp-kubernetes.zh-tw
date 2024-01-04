@@ -1,0 +1,1699 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head class="at-element-marker">
+  <title>OpenShift中的Kubernetes叢集需求 | NetApp Documentation</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="OpenShift中的Kubernetes叢集需求 | NetApp Documentation" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/zh-tw/bluexp-kubernetes/requirements/kubernetes-reqs-openshift.html" />
+	<meta property="og:description" content="您可以使用BlueXP新增及管理自我管理的OpenShift Kubernetes叢集。在您將叢集新增至BlueXP之前、請先確認符合下列需求。" />
+  <meta property="og:image" content="https://docs.netapp.com/zh-tw/bluexp-kubernetes/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="您可以使用BlueXP新增及管理自我管理的OpenShift Kubernetes叢集。在您將叢集新增至BlueXP之前、請先確認符合下列需求。">
+  <meta name="keywords" content=" kubernetes, k8s, discover kubernetes cluster, discover k8s, openshift, oc, kubernetes support"><!-- Icons -->
+  <link rel="icon" href="/zh-tw/bluexp-kubernetes/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/zh-tw/bluexp-kubernetes/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/zh-tw/bluexp-kubernetes/css/ie-netappdocs.css">
+
+  
+  <link rel="stylesheet" href="/zh-tw/bluexp-kubernetes/css/ie-landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/zh-tw/bluexp-kubernetes/css/ie-tabbed-blocks.css" type="text/css">
+  <!-- Canonical url -->
+  <link rel="canonical" href="https://docs.netapp.com/zh-tw/bluexp-kubernetes/requirements/kubernetes-reqs-openshift.html" />
+  <link rel="alternate" hreflang="x-default" href="https://docs.netapp.com/us-en/bluexp-kubernetes/requirements/kubernetes-reqs-openshift.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://docs.netapp.com/zh-tw/bluexp-kubernetes/requirements/kubernetes-reqs-openshift.html" />
+  <link rel="alternate" hreflang="en" href="https://docs.netapp.com/us-en/bluexp-kubernetes/requirements/kubernetes-reqs-openshift.html" />
+  <link rel="alternate" hreflang="ja" href="https://docs.netapp.com/ja-jp/bluexp-kubernetes/requirements/kubernetes-reqs-openshift.html" />
+  <link rel="alternate" hreflang="ko" href="https://docs.netapp.com/ko-kr/bluexp-kubernetes/requirements/kubernetes-reqs-openshift.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://docs.netapp.com/zh-cn/bluexp-kubernetes/requirements/kubernetes-reqs-openshift.html" />
+  <link rel="alternate" hreflang="de" href="https://docs.netapp.com/de-de/bluexp-kubernetes/requirements/kubernetes-reqs-openshift.html" />
+  <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/bluexp-kubernetes/requirements/kubernetes-reqs-openshift.html" />
+  <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/bluexp-kubernetes/requirements/kubernetes-reqs-openshift.html" />
+  <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/bluexp-kubernetes/requirements/kubernetes-reqs-openshift.html" />
+  <!-- Top level site integrations -->
+<script type="text/javascript" src="https://cdn.cookielaw.org/consent/72570c5c-fe30-465f-b0e0-b77f7fb4ae34/OtAutoBlock.js"></script>
+    <script type="text/javascript" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" charset="UTF-8" data-document-language="true" data-domain-script="72570c5c-fe30-465f-b0e0-b77f7fb4ae34"></script>
+    <script type="text/javascript">function OptanonWrapper() { }</script>
+    <script type="text/plain" class="optanon-category-C0002" src="https://assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js"></script>
+    <script class="optanon-category-C0001">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.setAttributeNode(d.createAttribute('data-ot-ignore'));j.setAttribute('class','optanon-category-C0001');j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl+'';f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MD73T9M');</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  
+  <script>
+    $(document).ready(function() {
+      const MASTHEAD_OFFSET = 65;
+      const SECTIONS = $("main h2, main h3");
+      // PAGE NAV - Init
+      if (SECTIONS.length == 0) {
+        // remove if there is no elements
+        /*
+        $("#ie-right-navbar").remove();
+        $("#ie-right-navbar-collapse").remove();
+        */
+      } else {
+        $(".page-nav-title").css('display', 'block');
+        for (var i = 0; i < SECTIONS.length; i++) {
+          var sectionId = $(SECTIONS[i]).attr('id');
+          var sectionName = $(SECTIONS[i]).text();
+          var subClass = $(SECTIONS[i]).is("h3") ? ' page-nav__sublink' : '';
+          $("#page-menu").append('<li class="page-nav-item"><a href="#' + sectionId + '" class="page-nav__link' + subClass + '">' + sectionName + '</a></li>');
+        }
+      }
+    });
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/zh-tw/bluexp-kubernetes/js/na-search.js'></script><script src='/zh-tw/bluexp-kubernetes/js/ie-clouddocs.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><script>
+    /*
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+      */
+  </script>
+  <script src='/zh-tw/bluexp-kubernetes/js/custom-dropdown.js'></script>
+  <script src='/zh-tw/bluexp-kubernetes/js/FileSaver.min.js'></script>
+  <script src='/zh-tw/bluexp-kubernetes/js/jszip-utils.min.js'></script>
+  <script src='/zh-tw/bluexp-kubernetes/js/jszip.min.js'></script><script src='/zh-tw/bluexp-kubernetes/js/ie-pdf-ux.js'></script></head>
+
+
+  <body class role="document" data-flavor="">
+    <div class="skip-to-main">
+      <a href="#main" >Skip to main content</a>
+    </div><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MD73T9M"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div id="page" class="">
+      <div id="ie-phone-menu" class=""></div>
+      <div id="ie-content-wrap" class="">
+        <nav id="ie-new-header">
+    <ul>
+        <li id="ie-phone-menu-button">
+            <a href="#">
+                <image id="" src="/zh-tw/bluexp-kubernetes/images/hamburger.svg" alt="menu" />
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.netapp.com/tw">
+                <image id="ie-header-logo" src="/zh-tw/bluexp-kubernetes/images/netapp_logo.svg" alt="netapp" />
+            </a>
+        </li>
+        <li id="ie-header-docs">
+            <a href="https://www.netapp.com/support-and-training/documentation/">文件</a>
+        </li>
+
+        <!-- Empty container to push header left with or without lang selector -->
+        <li id="empty-container" style="margin-left: auto">
+        </li>
+        <!-- Start Language Selector --><li id="ie-language-dropdown">
+            <div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+                <div class="custom-dropdown-select custom-dropdown-select-lang">
+                    <img src="/zh-tw/bluexp-kubernetes/images/language_white_24dp.svg" class="n-globe__icon" />
+                    <span class="lang-name">繁體中文</span>
+                    <img src="/zh-tw/bluexp-kubernetes/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/zh-tw/bluexp-kubernetes/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu"><li>
+                        <a href="https://docs.netapp.com/zh-tw/bluexp-kubernetes/requirements/kubernetes-reqs-openshift.html"
+                            target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/us-en/bluexp-kubernetes/requirements/kubernetes-reqs-openshift.html"
+                            target="_self"><span translate="no" class="notranslate">English</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ja-jp/bluexp-kubernetes/requirements/kubernetes-reqs-openshift.html"
+                            target="_self"><span translate="no" class="notranslate">日本語</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ko-kr/bluexp-kubernetes/requirements/kubernetes-reqs-openshift.html"
+                            target="_self"><span translate="no" class="notranslate">한국어</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-cn/bluexp-kubernetes/requirements/kubernetes-reqs-openshift.html"
+                            target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/de-de/bluexp-kubernetes/requirements/kubernetes-reqs-openshift.html"
+                            target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/es-es/bluexp-kubernetes/requirements/kubernetes-reqs-openshift.html"
+                            target="_self"><span translate="no" class="notranslate">Español</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/fr-fr/bluexp-kubernetes/requirements/kubernetes-reqs-openshift.html"
+                            target="_self"><span translate="no" class="notranslate">Français</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/it-it/bluexp-kubernetes/requirements/kubernetes-reqs-openshift.html"
+                            target="_self"><span translate="no" class="notranslate">Italiano</span></a>
+                    </li></ul>
+            </div>
+            </li>
+        <!-- End Language Selector -->
+
+
+        <li id="ie-allnetapp">
+            <div id="allnetapp-dropdown" class="custom-dropdown custom-dropdown-allnetapp">
+                <div class="custom-dropdown-select custom-dropdown-select-allnetapp">
+                    <img src="/zh-tw/bluexp-kubernetes/images/apps_white_24dp.svg" alt="" class="allnetapp-icon" />
+                    <span class="allnetapp-name">所有 NetApp</span>
+                    <img src="/zh-tw/bluexp-kubernetes/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/zh-tw/bluexp-kubernetes/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu allnetapp-dropdown">
+                    <li>
+                        <a href="https://bluexp.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">BlueXP</span></a>
+                    </li>
+                    <li>
+                        <a href="https://mysupport.netapp.com/site/"
+                            target="_self"><span translate="no" class="notranslate">支援</span></a>
+                    </li>
+                    <li>
+                        <a href="https://kb.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">知識庫</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.netapp.com/support-and-training/netapp-learning-services/"
+                            target="_self"><span translate="no" class="notranslate">訓練</span></a>
+                    </li>
+                </ul>
+            </div>
+
+        </li>
+
+    </ul>
+</nav>
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+
+<div id="ie-new-sidebar-collapse" style="display: none">
+    <img id="sidebar-expand" class="ie-searchbox-icon" src="/zh-tw/bluexp-kubernetes/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-new-sidebar">
+    <div id="ie-product-identity-lockup">
+        <div id="sidebar-collapse" class="">
+            <img src="/zh-tw/bluexp-kubernetes/images/double_arrow.svg" alt="" />
+        </div>
+        <div id="ie-breadcrumb" class="">
+  <ul class="ie-breadcrumb">
+    <li class="">
+      <a href="https://docs.netapp.com">所有文件</a>
+    </li>
+    
+    
+    <li class="">
+      <a href="https://docs.netapp.com/us-en/cloud/">雲端文件</a>
+    </li>
+    
+
+    
+    <li class="">
+      <a href="https://docs.netapp.com/zh-tw/bluexp-family/">
+        BlueXP
+      </a>
+    </li>
+    
+  </ul>
+  
+  <div class="ie-product-name" >
+    <!--<a href="/zh-tw/bluexp-kubernetes/">-->
+      Kubernetes clusters
+    <!--</a>-->
+  </div>
+</div>
+
+            
+
+        
+        
+
+<div id="ie-searchbox" class="ie-searchbox-sidebar ">
+    <img class="ie-searchbox-icon" src="/zh-tw/bluexp-kubernetes/images/loupe.svg" alt=""/>
+    <div id="react-search" 
+        data-search-html="/zh-tw/bluexp-kubernetes/search.html" 
+        data-type="widget"
+        data-placeholder="搜尋說明文件"
+        data-no-results-found="找不到 {query} 的結果"
+        data-did-you-mean="搜尋 {suggestion}。"
+        data-no-results-found-did-you-mean="找不到 {query} 的結果。您的意思是 {suggestion} 嗎？"
+        data-results-found="找到 {hitCount} 個結果"
+        data-error-message="發生錯誤。請再試一次。"
+        data-error-reset="重設搜尋"
+        data-sk-es-pf-indexes="" 
+        data-flavor="">
+    </div>
+</div>
+        
+    </div>
+    <div id="ie-new-toc"><script>
+  let sidebarAccordion = true;
+
+  /* specific css rules for Mac */
+  if(navigator.platform.match('Mac') !== null) {
+    document.body.setAttribute('class', 'OSX');
+  }
+
+</script>
+
+<div id="ie-sidebar-container">
+  <ul id="ie-sidebar-list" ><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Kubernetes叢集文件"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/requirements/kubernetes-reqs-openshift.html" 
+      dale-entry-url="/index.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-tw/bluexp-kubernetes/index.html">
+        Kubernetes叢集文件
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="版本資訊"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/requirements/kubernetes-reqs-openshift.html" 
+      dale-entry-url="/whats-new.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-tw/bluexp-kubernetes/whats-new.html">
+        版本資訊
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="開始使用"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/requirements/kubernetes-reqs-openshift.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/bluexp-kubernetes/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/bluexp-kubernetes/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 開始使用</div>-->
+         開始使用
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="瞭解Kubernetes資料管理"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/requirements/kubernetes-reqs-openshift.html" 
+      dale-entry-url="/concept-kubernetes.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-kubernetes/concept-kubernetes.html">
+        瞭解Kubernetes資料管理
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="快速入門"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/requirements/kubernetes-reqs-openshift.html" 
+      dale-entry-url="/task/task-k8s-quick-start.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-kubernetes/task/task-k8s-quick-start.html">
+        快速入門
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="需求"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/requirements/kubernetes-reqs-openshift.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/bluexp-kubernetes/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/bluexp-kubernetes/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 需求</div>-->
+         需求
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="AWS上的Kubernetes叢集"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/requirements/kubernetes-reqs-openshift.html" 
+      dale-entry-url="/requirements/kubernetes-reqs-aws.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-kubernetes/requirements/kubernetes-reqs-aws.html">
+        AWS上的Kubernetes叢集
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Azure上的Kubernetes叢集"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/requirements/kubernetes-reqs-openshift.html" 
+      dale-entry-url="/requirements/kubernetes-reqs-aks.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-kubernetes/requirements/kubernetes-reqs-aks.html">
+        Azure上的Kubernetes叢集
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Google Cloud上的Kubernetes叢集"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/requirements/kubernetes-reqs-openshift.html" 
+      dale-entry-url="/requirements/kubernetes-reqs-gke.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-kubernetes/requirements/kubernetes-reqs-gke.html">
+        Google Cloud上的Kubernetes叢集
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="OpenShift上的Kubernetes叢集"
+      data-li-level="2#" 
+      class="  ie-sidebar-selected    "
+      dale-page-url="/requirements/kubernetes-reqs-openshift.html" 
+      dale-entry-url="/requirements/kubernetes-reqs-openshift.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-kubernetes/requirements/kubernetes-reqs-openshift.html">
+        OpenShift上的Kubernetes叢集
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="新增Kubernetes叢集"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/requirements/kubernetes-reqs-openshift.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/bluexp-kubernetes/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/bluexp-kubernetes/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 新增Kubernetes叢集</div>-->
+         新增Kubernetes叢集
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="在AWS上新增叢集"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/requirements/kubernetes-reqs-openshift.html" 
+      dale-entry-url="/task/task-kubernetes-discover-aws.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-kubernetes/task/task-kubernetes-discover-aws.html">
+        在AWS上新增叢集
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="在Azure上新增叢集"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/requirements/kubernetes-reqs-openshift.html" 
+      dale-entry-url="/task/task-kubernetes-discover-azure.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-kubernetes/task/task-kubernetes-discover-azure.html">
+        在Azure上新增叢集
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="在Google Cloud上新增叢集"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/requirements/kubernetes-reqs-openshift.html" 
+      dale-entry-url="/task/task-kubernetes-discover-gke.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-kubernetes/task/task-kubernetes-discover-gke.html">
+        在Google Cloud上新增叢集
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="匯入OpenShift叢集"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/requirements/kubernetes-reqs-openshift.html" 
+      dale-entry-url="/task/task-kubernetes-discover-openshift.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-kubernetes/task/task-kubernetes-discover-openshift.html">
+        匯入OpenShift叢集
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="管理Kubernetes叢集"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/requirements/kubernetes-reqs-openshift.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/bluexp-kubernetes/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/bluexp-kubernetes/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 管理Kubernetes叢集</div>-->
+         管理Kubernetes叢集
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="管理Astra Trident"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/requirements/kubernetes-reqs-openshift.html" 
+      dale-entry-url="/task/task-k8s-manage-trident.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-kubernetes/task/task-k8s-manage-trident.html">
+        管理Astra Trident
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="管理儲存類別"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/requirements/kubernetes-reqs-openshift.html" 
+      dale-entry-url="/task/task-k8s-manage-storage-classes.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-kubernetes/task/task-k8s-manage-storage-classes.html">
+        管理儲存類別
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="檢視持續磁碟區"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/requirements/kubernetes-reqs-openshift.html" 
+      dale-entry-url="/task/task-k8s-manage-persistent-volumes.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-kubernetes/task/task-k8s-manage-persistent-volumes.html">
+        檢視持續磁碟區
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="移除叢集"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/requirements/kubernetes-reqs-openshift.html" 
+      dale-entry-url="/task/task-k8s-manage-remove-cluster.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-kubernetes/task/task-k8s-manage-remove-cluster.html">
+        移除叢集
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="啟用NetApp雲端資料服務"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/requirements/kubernetes-reqs-openshift.html" 
+      dale-entry-url="/task/task-kubernetes-enable-services.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-kubernetes/task/task-kubernetes-enable-services.html">
+        啟用NetApp雲端資料服務
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="知識與支援"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/requirements/kubernetes-reqs-openshift.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/bluexp-kubernetes/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/bluexp-kubernetes/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 知識與支援</div>-->
+         知識與支援
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="註冊以取得支援"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/requirements/kubernetes-reqs-openshift.html" 
+      dale-entry-url="/support/task-support-registration.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-kubernetes/support/task-support-registration.html">
+        註冊以取得支援
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="取得協助"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/requirements/kubernetes-reqs-openshift.html" 
+      dale-entry-url="/support/task-get-help.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-kubernetes/support/task-get-help.html">
+        取得協助
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="法律聲明"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/requirements/kubernetes-reqs-openshift.html" 
+      dale-entry-url="/legal-notices.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-tw/bluexp-kubernetes/legal-notices.html">
+        法律聲明
+      </a></li></ul>
+</div>
+<script>
+
+  $(".ie-sidebar-button").click(function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    expandedLI = $('li.ie-sidebar-expand')
+
+    const li = $(this).closest("li");
+
+    const parentsLI = $(li).parents('li');
+
+    expandedLI.map(element => {
+      if (sidebarAccordion && !li.hasClass('ie-sidebar-expand') && jQuery.inArray(expandedLI[element], parentsLI) == -1) {
+        $(expandedLI[element]).toggleClass('ie-sidebar-expand');
+        $(expandedLI[element]).children("ul").animate({ height: 'toggle' }, 400, function () {
+          $(li).children("ul").toggleClass('ie-sidebar-open');
+
+        })
+      }
+
+    })
+
+    $(li).toggleClass('ie-sidebar-expand');
+    $(li).children("ul").animate({ height: 'toggle' }, 400, function () {
+      $(li).children("ul").toggleClass('ie-sidebar-open');
+    })
+  });
+
+
+  
+    $("li.ie-sidebar-selected").parents('ul').toggleClass("ie-sidebar-open");
+    $("li.ie-sidebar-selected").toggleClass("ie-sidebar-expand")
+    $("ul.ie-sidebar-open").parent().toggleClass("ie-sidebar-expand");
+    $("li.ie-sidebar-selected").children('ul').toggleClass("ie-sidebar-open")
+  
+  
+</script>
+    </div>
+</div>
+<script>
+
+    
+    let sidebarScrollTopPosition = 0;
+    $("#ie-new-toc").on("scroll", function () {
+        if (sidebarScrollTopPosition == 0) {
+            $.cookie("sidebarScroll", $("#ie-new-toc").scrollTop(), {
+                path: "/zh-tw/bluexp-kubernetes"
+            });
+        }
+
+        if ($("#ie-new-toc").scrollTop() > 0) {
+            $('#ie-product-identity-lockup').addClass('ie-addShadow');
+        } else {
+            $('#ie-product-identity-lockup').removeClass('ie-addShadow');
+        }
+    });
+
+    $(function () {
+        if ($.cookie("sidebarScroll")) {
+            $("#ie-new-toc").scrollTop($.cookie("sidebarScroll"));
+        }
+    });
+
+    function setSidebarBottom() {
+        const footerGap = PXinViewport($(".n-footer"));
+        document.getElementById("ie-new-sidebar").style.bottom = Math.max(0, footerGap) + "px";
+    }
+
+    window.onscroll = () => {
+        setSidebarBottom();
+    };
+
+    $("#sidebar-collapse").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        if ($.cookie("sidebarScroll")) {
+            sidebarScrollTopPosition = $.cookie("sidebarScroll");
+        }
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 350, function () {
+            $("#ie-new-sidebar-collapse").show();
+            $("#ie-new-sidebar").removeClass("open")
+            $("#ie-new-sidebar").addClass("close")
+            $("#ie-new-sidebar").removeAttr("style")
+        });
+        $(".ie-content-pane").animate({ width: (width + sidebarWidth), marginLeft: (marginLeft - sidebarWidth) }, 350, function () {
+            resizeContent()
+        })
+
+    });
+    $("#sidebar-expand").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 250, function () {
+            $('#ie-new-sidebar').css('display', 'flex');
+            $("#ie-new-sidebar-collapse").hide();
+            $("#ie-new-sidebar").removeClass("close")
+            $("#ie-new-sidebar").addClass("open")
+            setSidebarBottom();
+
+            if (sidebarScrollTopPosition != 0) {
+                $.cookie("sidebarScroll", sidebarScrollTopPosition, {
+                    path: "/zh-tw/bluexp-kubernetes"
+                })
+                $("#ie-new-toc").scrollTop(sidebarScrollTopPosition);
+                sidebarScrollTopPosition = 0;
+            }
+        });
+        $(".ie-content-pane").animate({ width: (width - sidebarWidth), 'marginLeft': (marginLeft + sidebarWidth) }, 250, function () {
+            resizeContent()
+        })
+    });
+    function resizeContent() {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        const rightNavbarVisible =  $("#ie-right-navbar").css('display') && $("#ie-right-navbar").css('display') != 'none';
+        const sidebarVisible = $("#ie-new-sidebar").css('display') != 'none';
+        const rightNavbarWidth = $("#ie-right-navbar").width();
+        const rightNavbarCollapseWidth = $("#ie-right-navbar-collapse").width();
+        const rightNavbarCollapseVisible = $("#ie-right-navbar-collapse").css('display') && $("#ie-right-navbar-collapse").css('display') != 'none';
+        
+        if (rightNavbarVisible && sidebarVisible) {
+            $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarWidth}px)`)
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+        } else if (sidebarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarCollapseWidth}px)`)
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar").width()}px)`)
+            }
+
+        } else if (rightNavbarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            $(".ie-content-pane").width(`calc(100% - ${rightNavbarWidth}px)`)
+        } else {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${rightNavbarCollapseWidth}px)`);
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar-collapse").width()}px) `);
+            }
+            
+        }
+    }
+    $(window).on("resize load", function () {
+        setSidebarBottom();
+        resizeContent()
+    });
+
+
+</script>
+
+<div class="ie-content-pane ie-component-detail-content ie-component-detail-content--show-code">
+    <!-- Begin of page container --><article class="page-content" id="main">
+      <!-- include utility.html -->
+      <div class="ie-info-disclaimer">
+    <span>
+      <div class="ie-info-disclaimer-container">
+        <div class="ie-info-disclaimer-icon">
+          <img src="/zh-tw/bluexp-kubernetes/images/notification-icons.svg" class="luci-icon" alt="" />
+        </div>
+        <div class="ie-info-disclaimer-content">
+          <span> 本繁體中文版使用機器翻譯，譯文僅供參考，若與英文版本牴觸，應以英文版本為準。 </span>
+        </div>
+        <div style="clear:both;"></div>
+      </div>
+    </span>
+  </div><div class="ie-component-detail-heading-wrap">
+  <h1 class="ie-component-detail-heading">OpenShift中的Kubernetes叢集需求</h1>
+</div>
+
+<div id="ie-byline">
+  
+<div class="page-details">
+    
+        
+            <time datetime="2023-05-31 15:10:02 +0000">05/31/2023</time>
+        
+    
+    
+        <span>貢獻者
+        </span>
+    
+    
+</div>
+<div class="page-controls">
+    <div id="contribute-dropdown" class="custom-dropdown custom-dropdown-contrib" >
+        <div class="custom-dropdown-select custom-dropdown-select-contrib">
+        <span class="contrib-name"><img src="/zh-tw/bluexp-kubernetes/images/discuss-sm.svg" alt="" class="github-icon" />建議變更</span>
+        <img src="/zh-tw/bluexp-kubernetes/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown invisible" />
+        <img src="/zh-tw/bluexp-kubernetes/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup" />
+        </div>
+        <ul class="custom-dropdown-menu suggested-changes-dropdown"><li>
+                <a target="_blank" href="https://github.com/NetAppDocs/bluexp-kubernetes.zh-tw/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/zh-tw/bluexp-kubernetes/requirements/kubernetes-reqs-openshift.html&page-title=OpenShift中的Kubernetes叢集需求" class="page-nav-contribute-link" role="button">請求文件變更</a>
+            </li><li> 
+                <a target="_blank" href="https://github.com/NetAppDocs/bluexp-kubernetes/blob/main/requirements/kubernetes-reqs-openshift.adoc" class="page-nav-contribute-link" role="button">編輯本頁</a>
+            </li><li><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  >瞭解如何貢獻</a></li>
+        </ul>
+    </div>
+    <div id="pdf-control-container">
+        <div class="n-pdf-header">
+            <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+                <img class="adobe-icon" src="/zh-tw/bluexp-kubernetes/images/pdf-icon.png" alt="" width="16" height="16"/>PDF<img src="/zh-tw/bluexp-kubernetes/images/dropdown-arrow.svg" class="custom-icon" alt="" />
+            </a>
+        </div>
+        <div class="n-pdf-body-container">
+            <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+                    
+                    
+                    
+                    <a target="_blank" class="pdf-download-link" href="/zh-tw/bluexp-kubernetes/pdfs/fullsite-sidebar/Kubernetes叢集文件.pdf" >
+                    <img src="/zh-tw/bluexp-kubernetes/images/pdf-icon.png" alt="" width="16" height="16"/>此文件 PDF 的網站</a>
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/bluexp-kubernetes/pdfs/sidebar/開始使用.pdf" 
+            
+          >
+            <img src="/zh-tw/bluexp-kubernetes/images/pdf-icon.png" alt="" width="16" height="16"/>
+            開始使用
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/bluexp-kubernetes/pdfs/sidebar/需求.pdf" 
+            
+          >
+            <img src="/zh-tw/bluexp-kubernetes/images/pdf-icon.png" alt="" width="16" height="16"/>
+            需求
+          </a>
+          
+
+
+
+
+
+
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/bluexp-kubernetes/pdfs/sidebar/新增Kubernetes叢集.pdf" 
+            
+          >
+            <img src="/zh-tw/bluexp-kubernetes/images/pdf-icon.png" alt="" width="16" height="16"/>
+            新增Kubernetes叢集
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/bluexp-kubernetes/pdfs/sidebar/管理Kubernetes叢集.pdf" 
+            
+          >
+            <img src="/zh-tw/bluexp-kubernetes/images/pdf-icon.png" alt="" width="16" height="16"/>
+            管理Kubernetes叢集
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/bluexp-kubernetes/pdfs/sidebar/知識與支援.pdf" 
+            
+          >
+            <img src="/zh-tw/bluexp-kubernetes/images/pdf-icon.png" alt="" width="16" height="16"/>
+            知識與支援
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+</li></ul>
+            <div class="zip-pdf-link-container" style="display: none;">   
+                <a href="#" id="zipPdf">
+                <img src="/zh-tw/bluexp-kubernetes/images/pdf-zip.png" alt="" width="16" height="16"/>
+                <pre>個別的 PDF 文件集合<span class="zip-size"></span></pre>
+                </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+        </div>
+    </div>        
+<script>
+$("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+$("#toggleButtonPdf").on('click', function(e){ 
+    e.stopPropagation();
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+});
+
+//hide is by clicking outside pdfcontainer
+$(document).on('click', function (e) {
+    if ($('#toggleContainerPdf').is(':visible') && !$('.n-pdf-body-container').is(e.target) && !$('.n-pdf-body-container').has(e.target).length)  {
+        
+        $("#toggleContainerPdf").toggle('display');
+        $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+        $("#toggleButtonPdf").removeClass("active");
+    }
+});
+</script>
+<script>
+    function getPdfLocation() {
+        const pdfLocation = window.scrollX + document.querySelector('#pdf-control-container').getBoundingClientRect().left
+        if (pdfLocation < 450) {
+            $(".n-pdf-body-container").addClass("block")
+        } else {
+            $(".n-pdf-body-container").removeClass("block")
+        }
+    
+    }
+    $( window ).on( "resize", function() {
+        getPdfLocation()
+} );
+</script>
+<script>
+    const pdfButtonWidth =  $(".n-pdf-header").width();
+    const pdfMenuWidth = $(".n-pdf-body-container").width();
+    $(".n-pdf-body-container").css('margin-left', `calc(${pdfButtonWidth - pdfMenuWidth}px)`);
+</script>
+</div>
+
+    
+
+</div>
+
+
+
+
+<div class="content-to-index">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>您可以使用BlueXP新增及管理自我管理的OpenShift Kubernetes叢集。在您將叢集新增至BlueXP之前、請先確認符合下列需求。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="需求">需求</h2>
+<div class="sectionbody">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Astra Trident</dt>
+<dd>
+<p>需要最新版Astra Trident的四種版本之一。您可以直接從BlueXP安裝或升級Astra Trident。您應該 <a href="https://docs.netapp.com/us-en/trident/trident-get-started/requirements.html" target="_blank" rel="noopener">"檢閱先決條件"</a> 安裝Astra Trident之前。</p>
+</dd>
+<dt class="hdlist1">Cloud Volumes ONTAP</dt>
+<dd>
+<p>必須將其設定為叢集的後端儲存設備。Cloud Volumes ONTAP <a href="https://docs.netapp.com/us-en/trident/trident-use/backends.html" target="_blank" rel="noopener">"如需組態步驟、請前往Astra Trident文件"</a>。</p>
+</dd>
+<dt class="hdlist1">BlueXP Connector</dt>
+<dd>
+<p>需要使用BlueXP Connector來匯入及管理Kubernetes叢集。您需要建立新的Connector、或是使用具有雲端供應商所需權限的現有Connector：</p>
+<div class="openblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://docs.netapp.com/us-en/bluexp-kubernetes/requirements/kubernetes-reqs-aws.html#prepare-a-connector">"AWS連接器"</a></p>
+</li>
+<li>
+<p><a href="https://docs.netapp.com/us-en/bluexp-kubernetes/requirements/kubernetes-reqs-aks.html#prepare-a-connector">"Azure Connector"</a></p>
+</li>
+<li>
+<p><a href="https://docs.netapp.com/us-en/bluexp-kubernetes/requirements/kubernetes-reqs-gke.html#prepare-a-connector">"Google Cloud Connector"</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">網路連線能力</dt>
+<dd>
+<p>Kubernetes叢集和Connector之間、以及Kubernetes叢集和Cloud Volumes ONTAP 整個過程之間、都需要網路連線。</p>
+</dd>
+<dt class="hdlist1">具有RBAC授權的Kubernetes組態檔（Kubeconfig）</dt>
+<dd>
+<p>若要匯入OpenShift叢集、您需要具備RBAC授權的Kbeconfig檔案、才能啟用不同的功能。 <a href="#建立kbeconfig檔案">建立Kbeconfig檔案</a>。</p>
+<div class="openblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>備份與還原：備份與還原僅需基本授權。</p>
+</li>
+<li>
+<p>新增儲存類別：需要擴充授權、才能使用BlueXP新增儲存類別、並監控叢集是否有變更後端。</p>
+</li>
+<li>
+<p>安裝Astra Trident：您需要提供BlueXP的完整授權、才能安裝Astra Trident。</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/bluexp-kubernetes/images/note.svg" alt="註">
+</td>
+<td class="content">
+安裝Astra Trident時、BlueXP會安裝Astra Trident後端和Kubernetes機密、其中包含Astra Trident與儲存叢集通訊所需的認證資料。
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="建立kbeconfig檔案">建立Kbeconfig檔案</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>使用OpenShift CLI、建立要匯入至BlueXP的Kbeconfig檔案。</p>
+</div>
+<div class="olist arabic">
+<div class="title">步驟</div>
+<ol class="arabic">
+<li>
+<p>使用管理使用者在公共URL上的「ocLogin」（身分登入）登入OpenShift CLI。</p>
+</li>
+<li>
+<p>建立服務帳戶、如下所示：</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>建立名為「oc-service-account.yaml」的服務帳戶檔案。</p>
+<div class="paragraph">
+<p>視需要調整名稱和命名空間。如果在此處進行變更、您應該在下列步驟中套用相同的變更。</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-cli" data-lang="cli">oc-service-account.yaml</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>+</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-cli" data-lang="cli">apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: oc-service-account
+  namespace: default</code></pre>
+</div>
+</div>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>套用服務帳戶：</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-cli" data-lang="cli">kubectl apply -f oc-service-account.yaml</code></pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>根據您的授權需求建立自訂角色繫結。</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>建立名為「oc-clusterrolebind.yaml」的「ClusterRoeBinding」檔案。</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-cli" data-lang="cli">oc-clusterrolebinding.yaml</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>視需要為叢集設定RBAC授權。</p>
+<div class="exampleblock tabbed-block">
+<div class="content">
+<div class="openblock">
+<div class="title">備份/還原</div>
+<div class="content">
+<div class="paragraph">
+<p>新增基本授權以啟用Kubernetes叢集的備份與還原。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+    name: cloudmanager-access-clusterrole
+rules:
+    - apiGroups:
+          - ''
+      resources:
+          - namespaces
+      verbs:
+          - list
+          - watch
+    - apiGroups:
+          - ''
+      resources:
+          - persistentvolumes
+      verbs:
+          - list
+          - watch
+    - apiGroups:
+          - ''
+      resources:
+          - pods
+          - pods/exec
+      verbs:
+          - get
+          - list
+          - watch
+    - apiGroups:
+          - ''
+      resources:
+          - persistentvolumeclaims
+      verbs:
+          - list
+          - create
+          - watch
+    - apiGroups:
+          - storage.k8s.io
+      resources:
+          - storageclasses
+      verbs:
+          - list
+    - apiGroups:
+          - trident.netapp.io
+      resources:
+          - tridentbackends
+      verbs:
+          - list
+          - watch
+    - apiGroups:
+          - trident.netapp.io
+      resources:
+          - tridentorchestrators
+      verbs:
+          - get
+          - watch
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+    name: k8s-access-binding
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: cloudmanager-access-clusterrole
+subjects:
+    - kind: ServiceAccount
+      name: oc-service-account
+      namespace: default</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="openblock">
+<div class="title">儲存類別</div>
+<div class="content">
+<div class="paragraph">
+<p>新增擴充授權、以使用BlueXP新增儲存類別。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+    name: cloudmanager-access-clusterrole
+rules:
+    - apiGroups:
+          - ''
+      resources:
+          - secrets
+          - namespaces
+          - persistentvolumeclaims
+          - persistentvolumes
+          - pods
+          - pods/exec
+      verbs:
+          - get
+          - list
+          - watch
+          - create
+          - delete
+          - watch
+    - apiGroups:
+          - storage.k8s.io
+      resources:
+          - storageclasses
+      verbs:
+          - get
+          - create
+          - list
+          - watch
+          - delete
+          - patch
+    - apiGroups:
+          - trident.netapp.io
+      resources:
+          - tridentbackends
+          - tridentorchestrators
+          - tridentbackendconfigs
+      verbs:
+          - get
+          - list
+          - watch
+          - create
+          - delete
+          - watch
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+    name: k8s-access-binding
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: cloudmanager-access-clusterrole
+subjects:
+    - kind: ServiceAccount
+      name: oc-service-account
+      namespace: default</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="openblock">
+<div class="title">Trident 安裝</div>
+<div class="content">
+<div class="paragraph">
+<p>授予完整的系統管理授權、並讓BlueXP能夠安裝Astra Trident。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: cloudmanager-access-clusterrole
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: cluster-admin
+subjects:
+- kind: ServiceAccount
+  name: oc-service-account
+  namespace: default</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<p>套用叢集角色繫結：</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-cli" data-lang="cli">kubectl apply -f oc-clusterrolebinding.yaml</code></pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>列出服務帳戶機密、將「&lt;內容&gt;」取代為正確的安裝內容：</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-cli" data-lang="cli">kubectl get serviceaccount oc-service-account --context &lt;context&gt; --namespace default -o json</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>輸出的結尾應類似於下列內容：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-cli" data-lang="cli">"secrets": [
+{ "name": "oc-service-account-dockercfg-vhz87"},
+{ "name": "oc-service-account-token-r59kr"}
+]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>"secretts "陣列中每個元素的索引以0開頭。在上述範例中、「oc-service-account-dockercfg-vhz87」的索引為0、而「oc-service-account-toke-r59kr"的索引則為1。在輸出中、記下含有「權杖」一詞的服務帳戶名稱索引。</p>
+</div>
+</li>
+<li>
+<p>產生以下的Kbeconfig：</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>建立「cree-kupeconfig．sh」檔案。將下列指令碼開頭的「toke_index」取代為正確的值。</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-cli" data-lang="cli">create-kubeconfig.sh</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-sh" data-lang="sh"># Update these to match your environment.
+# Replace TOKEN_INDEX with the correct value
+# from the output in the previous step. If you
+# didn't change anything else above, don't change
+# anything else here.
+
+SERVICE_ACCOUNT_NAME=oc-service-account
+NAMESPACE=default
+NEW_CONTEXT=oc
+KUBECONFIG_FILE='kubeconfig-sa'
+
+CONTEXT=$(kubectl config current-context)
+
+SECRET_NAME=$(kubectl get serviceaccount ${SERVICE_ACCOUNT_NAME} \
+  --context ${CONTEXT} \
+  --namespace ${NAMESPACE} \
+  -o jsonpath='{.secrets[TOKEN_INDEX].name}')
+TOKEN_DATA=$(kubectl get secret ${SECRET_NAME} \
+  --context ${CONTEXT} \
+  --namespace ${NAMESPACE} \
+  -o jsonpath='{.data.token}')
+
+TOKEN=$(echo ${TOKEN_DATA} | base64 -d)
+
+# Create dedicated kubeconfig
+# Create a full copy
+kubectl config view --raw &gt; ${KUBECONFIG_FILE}.full.tmp
+
+# Switch working context to correct context
+kubectl --kubeconfig ${KUBECONFIG_FILE}.full.tmp config use-context ${CONTEXT}
+
+# Minify
+kubectl --kubeconfig ${KUBECONFIG_FILE}.full.tmp \
+  config view --flatten --minify &gt; ${KUBECONFIG_FILE}.tmp
+
+# Rename context
+kubectl config --kubeconfig ${KUBECONFIG_FILE}.tmp \
+  rename-context ${CONTEXT} ${NEW_CONTEXT}
+
+# Create token user
+kubectl config --kubeconfig ${KUBECONFIG_FILE}.tmp \
+  set-credentials ${CONTEXT}-${NAMESPACE}-token-user \
+  --token ${TOKEN}
+
+# Set context to use token user
+kubectl config --kubeconfig ${KUBECONFIG_FILE}.tmp \
+  set-context ${NEW_CONTEXT} --user ${CONTEXT}-${NAMESPACE}-token-user
+
+# Set context to correct namespace
+kubectl config --kubeconfig ${KUBECONFIG_FILE}.tmp \
+  set-context ${NEW_CONTEXT} --namespace ${NAMESPACE}
+
+# Flatten/minify kubeconfig
+kubectl config --kubeconfig ${KUBECONFIG_FILE}.tmp \
+  view --flatten --minify &gt; ${KUBECONFIG_FILE}
+
+# Remove tmp
+rm ${KUBECONFIG_FILE}.full.tmp
+rm ${KUBECONFIG_FILE}.tmp</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>請輸入命令以將其套用至Kubernetes叢集。</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-cli" data-lang="cli">source create-kubeconfig.sh</code></pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">結果</div>
+<p>您將使用所產生的 <code>kubeconfig-sa</code> 將OpenShift叢集新增至藍圖XP的檔案。</p>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  
+  <!-- Start Page Toolbar -->
+<div id="ie-right-navbar-collapse" class="close">
+  <img id="navbar-expand" class="ie-searchbox-icon" src="/zh-tw/bluexp-kubernetes/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-right-navbar" class="open">
+  <div id="right-navbar-collapse">
+    <img src="/zh-tw/bluexp-kubernetes/images/double_arrow.svg" alt="" />
+  </div>
+  <div class="page-nav-container">
+    <nav class="page-nav-fixed">
+      <div class="page-nav-title">在本頁</div>
+      <div class="page-nav-links">
+        <ul class="page-nav-inner" id="page-menu"></ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+
+<script>
+  resizeContent();
+  function setRightBarHeight() {
+    var h = 0;
+
+    // header 1
+    h += PXinViewport($('.n-footer'));
+    h += PXinViewport($('#ie-new-header'));
+
+    if ($('#ie-right-navbar').length) {
+      $('#ie-right-navbar').css({ height: `calc(100vh - ${h}px)` });
+    }
+    if ($('.page-nav-links').length) {
+      h += 98;
+      $('.page-nav-links').css({ height: `calc(100vh - ${h}px)` });
+    }
+  }
+
+  $(document).ready(function () {
+    // PAGE NAV - Click
+    const MASTHEAD_OFFSET = 65;
+    const SECTIONS = $("main h2, main h3");
+    let calculateActiveSection = false;
+    setTimeout(() => {
+      calculateActiveSection = true;
+    }, 100)
+
+    $(".page-nav__link").click(function (event) {
+      calculateActiveSection = false;
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      var target = $(event.target);
+      target.addClass('page-nav__link--active');
+      location.hash = event.target.hash;
+      setTimeout(() => {
+        calculateActiveSection = true;
+      }, 100)
+
+    });
+
+    // PAGE NAV - Scroll
+    $(window).on('resize scroll', function () {
+      if (calculateActiveSection) {
+        var activeSection = getActiveSection(SECTIONS, MASTHEAD_OFFSET);
+        if (activeSection) {
+          var activeHref = $(activeSection).attr('id');
+          $(".page-nav__link").removeClass('page-nav__link--active');
+          $("#page-menu a[href=#" + activeHref + "]").addClass('page-nav__link--active');
+          if (location.hash != "#" + activeHref) {
+            if (history.replaceState) {
+              history.replaceState(null, null, "#" + activeHref);
+            }
+          }
+        }
+      }
+    });
+
+    $(".n-pdf-button").click(function () {
+      $(this).toggleClass("active");
+    });
+
+    $.fn.isVisibleAndInViewport = function () {
+      var elementTop = $(this).offset().top;
+      var elementBottom = elementTop + $(this).outerHeight();
+
+      var viewportTop = $(window).scrollTop();
+      var viewportBottom = viewportTop + $(window).height();
+
+      return elementBottom > viewportTop && elementTop < viewportBottom && $(this).is(":visible");
+    };
+
+
+    $(window).on('resize scroll', function () {
+      setRightBarHeight();
+    });
+
+    $(window).trigger('resize');
+
+
+  });
+
+  $("#right-navbar-collapse").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 350, function () {
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+    });
+    $(".ie-content-pane").animate({ width: (width + rightNavbarWidth) }, 350, function () {
+      resizeContent()
+      setSidebarBottom();
+    })
+
+  });
+  $("#navbar-expand").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 250, function () {
+      $("#ie-right-navbar-collapse").removeClass("open")
+      $("#ie-right-navbar-collapse").addClass("close")
+      $("#ie-right-navbar").removeClass("close")
+      $("#ie-right-navbar").addClass("open")
+      setRightBarHeight();
+      setSidebarBottom();
+    });
+    $(".ie-content-pane").animate({ width: (width - rightNavbarWidth) }, 250, function () {
+      resizeContent()
+    })
+  });
+
+  function navbarResize() {
+    const rightNavbarResized = $("#ie-right-navbar-collapse").hasClass('resized');
+    if (window.innerWidth < 1024) {
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+      $("#ie-right-navbar").removeAttr("style")
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar-collapse").addClass("resized")
+    } else {
+      if (rightNavbarResized) {
+        $('#ie-right-navbar').removeClass('close');
+        $('#ie-right-navbar').addClass('open');
+        $("#ie-right-navbar-collapse").removeClass("resized")
+        $("#ie-right-navbar-collapse").removeClass("open")
+        $("#ie-right-navbar-collapse").addClass("close")
+      }
+    }
+    resizeContent()
+  }
+  navbarResize();
+  $(window).on('resize load', function () {
+    navbarResize()
+  });
+
+  function getActiveSection(sections, offset) {
+    var scrollPosition = $(window).scrollTop() + offset + 5;
+    var activeSection;
+    for (var i = 0; i < sections.length; i++) {
+      var el = $(sections[i]);
+      var activePosition = el.offset().top;
+      if (activePosition > scrollPosition) {
+        break;
+      }
+
+      activeSection = sections[i];
+    }
+
+    return activeSection;
+  }
+
+  $("a[href*=#]:not([href=#])").click(function () {
+    setTimeout(() => {
+      $(window).trigger('scroll');
+    }, 105)
+  })
+
+  const hashOnLoad = location.href.split("#")[1];
+  setTimeout(function () {
+    if (hashOnLoad) {
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      $("#page-menu a[href=#" + hashOnLoad + "]").addClass('page-nav__link--active');
+    }
+  }, 100)
+
+</script>
+
+
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+        <div class="n-footer__left">
+          <li class="n-footer__copyright-link">
+                    <a href="https://www.netapp.com/company/legal/copyright/">© 2023 NetApp, Inc.</a>
+          </li>
+        </div>
+        <div class="n-footer__center">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">使用條款</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">隱私權政策</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Cookie 政策</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">Cookie 設定</a>
+            </li>
+          </ul>
+       </div>
+        <div class="n-footer__right">
+              <li class="n-footer__copyright-link">
+                <a target="_self" href="javascript:netapp_mailto()">傳送有關本網頁的意見反應</a>
+              </li>
+        </div>
+     </div>
+  </div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/zh-tw/bluexp-kubernetes/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/zh-tw/bluexp-kubernetes/js/prism.js'></script>
+      <script type="text/javascript" src='/zh-tw/bluexp-kubernetes/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/zh-tw/bluexp-kubernetes/js/ie-tabbed-blocks.js'></script>
+    <script src='/zh-tw/bluexp-kubernetes/js/ie-sidebar.js'></script>
+  </body>
+
+</html>
