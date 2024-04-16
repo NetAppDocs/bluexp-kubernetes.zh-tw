@@ -50,7 +50,7 @@ Astra Trident的四個最新版本之一 link:https://docs.netapp.com/us-en/trid
 
 NOTE: 使用部署Astra Trident `tridentctl` 不受支援。如果您使用部署Astra Trident `tridentctl`、您無法使用BlueXP來管理Kubernetes叢集。您必須  並重新安裝 link:https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-deploy-operator.html["使用Trident運算子"^] 或 link:./task/task-k8s-manage-trident.html["使用BlueXP"]。
 
-您可以直接從BlueXP安裝或升級至最新版的Astra Trident。
+您可以直接從 BlueXP 安裝 Astra Trident 或升級至支援的版本。
 
 link:https://docs.netapp.com/us-en/trident/trident-get-started/requirements.html["檢閱Astra Trident的先決條件"^]
 
